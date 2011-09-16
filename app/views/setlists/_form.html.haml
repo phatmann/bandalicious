@@ -1,0 +1,12 @@
+= semantic_form_for @setlist do |f|
+  -if @setlist.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@setlist.errors.count, "error")} prohibited this setlist from being saved:"
+      %ul
+        - @setlist.errors.full_messages.each do |msg|
+          %li= msg
+
+  = f.inputs do
+    = f.input :songs, :as => :check_boxes
+    = f.input :band
+  = f.buttons

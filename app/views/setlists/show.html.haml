@@ -1,0 +1,16 @@
+%p#notice= notice
+
+%p
+  %b Setlist ##{@setlist.id}
+
+%ul
+  - for show in @setlist.shows
+    %li #{show.name} (#{show.date})
+
+%ol
+  - for song in @setlist.songs
+    %li= song.name
+
+= link_to 'Edit', edit_setlist_path(@setlist)
+\|
+= link_to 'Back', setlists_path
