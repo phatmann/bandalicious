@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Position:
+  = @setlist_song.position
+%p
+  %b Song:
+  = @setlist_song.song
+%p
+  %b Setlist:
+  = @setlist_song.setlist
+
+= link_to 'Edit', edit_setlist_song_path(@setlist_song)
+\|
+= link_to 'Back', setlist_songs_path

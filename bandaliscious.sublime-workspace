@@ -7,6 +7,70 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/tony/Documents/bandaliscious/app/models/setlist.rb",
+			"settings":
+			{
+				"buffer_size": 192,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/tony/Documents/bandaliscious/Gemfile",
+			"settings":
+			{
+				"buffer_size": 605,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/tony/Documents/bandaliscious/app/views/setlists/_form.html.haml",
+			"settings":
+			{
+				"buffer_size": 534,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/tony/Documents/bandaliscious/app/assets/javascripts/setlists.js.coffee",
+			"settings":
+			{
+				"buffer_size": 516,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/tony/Documents/bandaliscious/app/assets/javascripts/application.js",
+			"settings":
+			{
+				"buffer_size": 485,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/tony/Documents/bandaliscious/app/assets/stylesheets/setlist_songs.css.scss",
+			"settings":
+			{
+				"buffer_size": 241,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/tony/Documents/bandaliscious/config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1946,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/tony/Documents/bandaliscious/app/controllers/setlist_songs_controller.rb",
+			"settings":
+			{
+				"buffer_size": 75,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
@@ -32,19 +96,33 @@
 	},
 	"file_history":
 	[
+		"/Users/tony/Documents/bandaliscious/app/views/setlist_songs/index.html.haml",
+		"/Users/tony/Documents/bandaliscious/app/assets/javascripts/application.js",
+		"/Users/tony/Documents/bandaliscious/app/views/setlist_songs/_form.html.haml",
+		"/Users/tony/Documents/bandaliscious/app/models/setlist_song.rb",
+		"/Users/tony/Documents/bandaliscious/app/models/setlist.rb",
+		"/Users/tony/Documents/bandaliscious/Gemfile",
+		"/Users/tony/Documents/bandaliscious/db/development.sqlite3",
+		"/Users/tony/Documents/bandaliscious/app/views/setlists/index.html.haml",
+		"/Users/tony/Documents/bandaliscious/app/views/shows/_form.html.haml",
+		"/Users/tony/Documents/bandaliscious/app/views/setlists/show.html.haml",
+		"/Users/tony/Documents/bandaliscious/db/migrate/20110916063213_create_setlists.rb",
+		"/Users/tony/Documents/bandaliscious/db/migrate/20110916065650_create_shows.rb",
+		"/Users/tony/Documents/bandaliscious/app/views/setlists/_form.html.haml",
+		"/Users/tony/Documents/bandaliscious/app/models/show.rb",
+		"/Users/tony/Documents/bandaliscious/.gitignore",
+		"/Users/tony/Documents/bandaliscious/db/migrate/20110916062436_create_setlists_songs.rb",
+		"/Users/tony/Documents/bandaliscious/db/migrate/20110916065723_create_setlists_shows.rb",
+		"/Users/tony/Documents/bandaliscious/db/migrate/20110916062436_create_setlists_songs_join_table.rb",
 		"/Users/tony/Documents/bandaliscious/app/views/layouts/application.html.erb",
 		"/Users/tony/Documents/bandaliscious/config/routes.rb",
 		"/Users/tony/Documents/bandaliscious/app/assets/stylesheets/application.css",
-		"/Users/tony/Documents/bandaliscious/Gemfile",
 		"/Users/tony/Documents/bandaliscious/app/views/bands/index.html.haml",
 		"/Users/tony/Documents/bandaliscious/app/views/bands/show.html.haml",
 		"/Users/tony/Documents/bandaliscious/app/views/bands/_form.html.haml",
 		"/Users/tony/Documents/bandaliscious/app/views/songs/_form.html.haml",
 		"/Users/tony/Documents/bandaliscious/app/controllers/setlists_controller.rb",
-		"/Users/tony/Documents/bandaliscious/app/models/setlist.rb",
 		"/Users/tony/Documents/bandaliscious/app/models/song.rb",
-		"/Users/tony/Documents/bandaliscious/db/migrate/20110916062436_create_setlists_songs.rb",
-		"/Users/tony/Documents/bandaliscious/db/migrate/20110916062436_create_setlists_songs_join_table.rb",
 		"/Users/tony/Documents/bandaliscious/db/migrate/20110916055553_create_songs.rb",
 		"/Users/tony/Documents/bandaliscious/app/controllers/bands_controller.rb",
 		"/Users/tony/Documents/bandaliscious/app/assets/stylesheets/ie6.css",
@@ -145,21 +223,7 @@
 		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.18/spec/ats_req_spec.rb",
 		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.18/lib/ts_ats_sync/models/reqs_downloading_run.rb",
 		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.17/spec/ats_req_spec.rb",
-		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.17/lib/ts_ats_sync/models/reqs_downloading_run.rb",
-		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.16/lib/ts_ats_sync/models/reqs_downloading_run.rb",
-		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.15/spec/ats_req_spec.rb",
-		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.15/lib/ts_ats_sync/models/reqs_downloading_run.rb",
-		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.14/spec/ats_req_spec.rb",
-		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.14/lib/ts_ats_sync/models/reqs_downloading_run.rb",
-		"/Users/tony/Documents/TalentTech/src/github/ts_job_runner/Gemfile.lock",
-		"/Users/tony/Documents/TalentTech/src/github/ts_web/app/parts/reqs_part.rb",
-		"/Users/tony/Documents/TalentTech/src/github/ts_web/app/views/reqs/edit.html.haml",
-		"/Users/tony/Documents/TalentTech/src/github/ts_web/app/views/resumes/_toolbar.html.haml",
-		"/Users/tony/Documents/TalentTech/src/github/gems/ts_ats_sync/lib/ts_ats_sync/models/reqs_downloading_run.rb",
-		"/Users/tony/Documents/TalentTech/src/github/gems/ts_ats_sync/spec/ats_req_spec.rb",
-		"/Users/tony/Documents/TalentTech/src/github/ts_job_runner/vendor/ruby/1.8/gems/ts_ats_sync-0.1.14/spec/ats_req_spec.rb",
-		"/Users/tony/Documents/TalentTech/src/github/ts_job_runner/vendor/ruby/1.8/gems/ts_ats_sync-0.1.16/spec/ats_req_spec.rb",
-		"/Users/tony/Documents/TalentTech/src/github/ts_job_runner/vendor/ruby/1.8/gems/ts_ats_sync-0.1.18/lib/ts_ats_sync/models/reqs_downloading_run.rb"
+		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.17/lib/ts_ats_sync/models/reqs_downloading_run.rb"
 	],
 	"find":
 	{
@@ -274,8 +338,221 @@
 	"groups":
 	[
 		{
+			"selected": 7,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/tony/Documents/bandaliscious/app/models/setlist.rb",
+					"settings":
+					{
+						"buffer_size": 192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/tony/Documents/bandaliscious/Gemfile",
+					"settings":
+					{
+						"buffer_size": 605,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								273,
+								273
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/tony/Documents/bandaliscious/app/views/setlists/_form.html.haml",
+					"settings":
+					{
+						"buffer_size": 534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								411,
+								411
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/tony/Documents/bandaliscious/app/assets/javascripts/setlists.js.coffee",
+					"settings":
+					{
+						"buffer_size": 516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								375,
+								375
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/tony/Documents/bandaliscious/app/assets/javascripts/application.js",
+					"settings":
+					{
+						"buffer_size": 485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								440,
+								440
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/tony/Documents/bandaliscious/app/assets/stylesheets/setlist_songs.css.scss",
+					"settings":
+					{
+						"buffer_size": 241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								240
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/tony/Documents/bandaliscious/config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 1946,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								104
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/tony/Documents/bandaliscious/app/controllers/setlist_songs_controller.rb",
+					"settings":
+					{
+						"buffer_size": 75,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

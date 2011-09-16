@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
-
-one:
-  name: MyString
-  date: 2011-09-15
-
-two:
-  name: MyString
-  date: 2011-09-15

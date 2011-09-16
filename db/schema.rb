@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110916065650) do
+ActiveRecord::Schema.define(:version => 20110916140809) do
 
   create_table "bands", :force => true do |t|
     t.string   "name"
@@ -19,18 +19,22 @@ ActiveRecord::Schema.define(:version => 20110916065650) do
     t.datetime "updated_at"
   end
 
+  create_table "setlist_songs", :force => true do |t|
+    t.integer  "position"
+    t.integer  "song_id"
+    t.integer  "setlist_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "setlist_songs", ["setlist_id"], :name => "index_setlist_songs_on_setlist_id"
+  add_index "setlist_songs", ["song_id"], :name => "index_setlist_songs_on_song_id"
+
   create_table "setlists", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "band_id"
   end
-
-  create_table "setlists_songs", :id => false, :force => true do |t|
-    t.integer "setlist_id"
-    t.integer "song_id"
-  end
-
-  add_index "setlists_songs", ["setlist_id", "song_id"], :name => "index_setlists_songs_on_setlist_id_and_song_id", :unique => true
 
   create_table "shows", :force => true do |t|
     t.string   "name"
