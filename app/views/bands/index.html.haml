@@ -5,14 +5,12 @@
     %th
     %th
     %th
-    %th
 
   - @bands.each do |band|
     %tr
-      %td= band.name
-      %td= link_to 'Show', band
-      %td= link_to 'Edit', edit_band_path(band)
-      %td= link_to 'Destroy', band, :confirm => 'Are you sure?', :method => :delete
+      %td= link_to band.name, band
+      %td= link_to 'edit', edit_band_path(band)
+      %td= link_to 'destroy', band, :confirm => 'Are you sure?', :method => :delete
 
 %br
 

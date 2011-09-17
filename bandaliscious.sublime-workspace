@@ -27,7 +27,7 @@
 			"file": "/Users/tony/Documents/bandaliscious/app/views/setlists/_form.html.haml",
 			"settings":
 			{
-				"buffer_size": 534,
+				"buffer_size": 574,
 				"line_ending": "Unix"
 			}
 		},
@@ -35,31 +35,7 @@
 			"file": "/Users/tony/Documents/bandaliscious/app/assets/javascripts/setlists.js.coffee",
 			"settings":
 			{
-				"buffer_size": 516,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/tony/Documents/bandaliscious/app/assets/javascripts/application.js",
-			"settings":
-			{
-				"buffer_size": 485,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/tony/Documents/bandaliscious/app/assets/stylesheets/setlist_songs.css.scss",
-			"settings":
-			{
-				"buffer_size": 241,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/tony/Documents/bandaliscious/config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 1946,
+				"buffer_size": 602,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,7 +43,7 @@
 			"file": "/Users/tony/Documents/bandaliscious/app/controllers/setlist_songs_controller.rb",
 			"settings":
 			{
-				"buffer_size": 75,
+				"buffer_size": 318,
 				"line_ending": "Unix"
 			}
 		}
@@ -96,8 +72,10 @@
 	},
 	"file_history":
 	[
-		"/Users/tony/Documents/bandaliscious/app/views/setlist_songs/index.html.haml",
 		"/Users/tony/Documents/bandaliscious/app/assets/javascripts/application.js",
+		"/Users/tony/Documents/bandaliscious/config/routes.rb",
+		"/Users/tony/Documents/bandaliscious/app/assets/stylesheets/setlist_songs.css.scss",
+		"/Users/tony/Documents/bandaliscious/app/views/setlist_songs/index.html.haml",
 		"/Users/tony/Documents/bandaliscious/app/views/setlist_songs/_form.html.haml",
 		"/Users/tony/Documents/bandaliscious/app/models/setlist_song.rb",
 		"/Users/tony/Documents/bandaliscious/app/models/setlist.rb",
@@ -115,7 +93,6 @@
 		"/Users/tony/Documents/bandaliscious/db/migrate/20110916065723_create_setlists_shows.rb",
 		"/Users/tony/Documents/bandaliscious/db/migrate/20110916062436_create_setlists_songs_join_table.rb",
 		"/Users/tony/Documents/bandaliscious/app/views/layouts/application.html.erb",
-		"/Users/tony/Documents/bandaliscious/config/routes.rb",
 		"/Users/tony/Documents/bandaliscious/app/assets/stylesheets/application.css",
 		"/Users/tony/Documents/bandaliscious/app/views/bands/index.html.haml",
 		"/Users/tony/Documents/bandaliscious/app/views/bands/show.html.haml",
@@ -222,8 +199,7 @@
 		"/Users/tony/Documents/TalentTech/src/github/ts_web/app/models/recruiter.rb",
 		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.18/spec/ats_req_spec.rb",
 		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.18/lib/ts_ats_sync/models/reqs_downloading_run.rb",
-		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.17/spec/ats_req_spec.rb",
-		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.17/lib/ts_ats_sync/models/reqs_downloading_run.rb"
+		"/Users/tony/Documents/TalentTech/src/github/ts_web/vendor/ruby/1.8/gems/ts_ats_sync-0.1.17/spec/ats_req_spec.rb"
 	],
 	"find":
 	{
@@ -338,7 +314,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -398,15 +374,15 @@
 					"file": "/Users/tony/Documents/bandaliscious/app/views/setlists/_form.html.haml",
 					"settings":
 					{
-						"buffer_size": 534,
+						"buffer_size": 574,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								411,
-								411
+								562,
+								562
 							]
 						],
 						"settings":
@@ -426,20 +402,21 @@
 					"file": "/Users/tony/Documents/bandaliscious/app/assets/javascripts/setlists.js.coffee",
 					"settings":
 					{
-						"buffer_size": 516,
+						"buffer_size": 602,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								375,
-								375
+								397,
+								397
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0,
 						"translation.y": 0,
@@ -449,98 +426,18 @@
 				},
 				{
 					"buffer": 4,
-					"file": "/Users/tony/Documents/bandaliscious/app/assets/javascripts/application.js",
-					"settings":
-					{
-						"buffer_size": 485,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								440,
-								440
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0,
-						"translation.y": 0,
-						"zoom_level": 1
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/Users/tony/Documents/bandaliscious/app/assets/stylesheets/setlist_songs.css.scss",
-					"settings":
-					{
-						"buffer_size": 241,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								240,
-								240
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0,
-						"translation.y": 0,
-						"zoom_level": 1
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/Users/tony/Documents/bandaliscious/config/routes.rb",
-					"settings":
-					{
-						"buffer_size": 1946,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								104,
-								104
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0,
-						"translation.y": 0,
-						"zoom_level": 1
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "/Users/tony/Documents/bandaliscious/app/controllers/setlist_songs_controller.rb",
 					"settings":
 					{
-						"buffer_size": 75,
+						"buffer_size": 318,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								65,
-								65
+								184,
+								184
 							]
 						],
 						"settings":
