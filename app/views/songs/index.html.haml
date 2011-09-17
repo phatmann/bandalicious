@@ -10,10 +10,10 @@
   - @songs.each do |song|
     %tr
       %td= song.name
-      %td= link_to 'Show', resource_url(song)
-      %td= link_to 'Edit', edit_resource_url(song)
-      / %td= link_to 'Destroy', song, :confirm => 'Are you sure?', :method => :delete
+      %td= link_to 'Show', resource_path(song)
+      %td= link_to 'Edit', edit_resource_path(song)
+      %td= link_to 'Destroy', resource_path(song), :confirm => 'Are you sure?', :method => :delete
 
 %br
 
-= link_to 'New Song', new_resource_url
+= link_to 'New Song', new_resource_path

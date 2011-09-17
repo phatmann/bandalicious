@@ -1,14 +1,14 @@
 Bandaliscious::Application.routes.draw do
+  root :to => 'bands#index'
+
   resources :setlist_songs do 
     post 'sort', :on => :collection
   end
 
-  # resources :songs
-  resources :shows
-  resources :setlists
-  
   resources :bands do
     resources :songs
+    resources :shows
+    resources :setlists
   end
 
   # The priority is based upon order of creation:

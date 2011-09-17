@@ -5,6 +5,6 @@ class Setlist < ActiveRecord::Base
 	has_many :shows
 
 	def name
-		self.id
+		self.created_at.to_date
 	end
 end

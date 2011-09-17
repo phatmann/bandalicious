@@ -1,7 +1,7 @@
 %p#notice= notice
 
 %p
-  %b Setlist ##{@setlist.id}
+  %b Setlist #{@setlist.name}
 
 %ul
   - for show in @setlist.shows
@@ -11,6 +11,6 @@
   - for song in @setlist.songs
     %li= song.name
 
-= link_to 'Edit', edit_setlist_path(@setlist)
+= link_to 'Edit', edit_resource_path
 \|
-= link_to 'Back', setlists_path
+= link_to 'Back', collection_path
