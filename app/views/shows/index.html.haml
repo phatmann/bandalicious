@@ -2,17 +2,15 @@
 
 %table
   %tr
-    %th Name
-    %th Date
+    %th 
     %th
     %th
     %th
 
   - @shows.each do |show|
     %tr
-      %td= show.name
       %td= show.date
-      %td= link_to 'Show', resource_path(show)
+      %td= link_to show.name, resource_path(show)
       %td= link_to 'Edit', edit_resource_path(show)
       %td= link_to 'Destroy', resource_path(show), :confirm => 'Are you sure?', :method => :delete
 

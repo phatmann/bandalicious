@@ -28,5 +28,7 @@ gem 'rspec-rails'
 gem 'cucumber-rails'
 gem 'haml-rails'
 gem 'inherited_resources'
-gem 'formtastic', "~> 2.0.0.rc"
 gem 'acts_as_list'
+
+# Get version 2.0 (not released yet)
+gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'

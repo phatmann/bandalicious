@@ -1,14 +1,3 @@
-/ = semantic_form_for [@band, @setlist] do |f|
-/   -if @setlist.errors.any?
-/     #error_explanation
-/       %h2= "#{pluralize(@setlist.errors.count, "error")} prohibited this setlist from being saved:"
-/       %ul
-/         - @setlist.errors.full_messages.each do |msg|
-/           %li= msg
-
-/   = f.inputs :band
-/   = f.buttons
-
 %h2 Songs in list
 %ul.sortable#selected_songs{'data-setlist_id' => @setlist.id}
   - for song in @setlist.songs

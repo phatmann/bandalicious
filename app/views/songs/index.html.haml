@@ -2,15 +2,13 @@
 
 %table
   %tr
-    %th Name
     %th
     %th
     %th
 
   - @songs.each do |song|
     %tr
-      %td= song.name
-      %td= link_to 'Show', resource_path(song)
+      %td= link_to song.name, resource_path(song)
       %td= link_to 'Edit', edit_resource_path(song)
       %td= link_to 'Destroy', resource_path(song), :confirm => 'Are you sure?', :method => :delete
 

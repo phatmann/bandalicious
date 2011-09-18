@@ -1,10 +1,5 @@
-= semantic_form_for [@band, @show] do |f|
-  -if @show.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@show.errors.count, "error")} prohibited this show from being saved:"
-      %ul
-        - @show.errors.full_messages.each do |msg|
-          %li= msg
-
-  = f.inputs :name, :date
-  = f.buttons
+= simple_form_for [@band, @show] do |f|
+  = f.input :name
+  = f.input :date
+  .actions
+    = f.button :submit

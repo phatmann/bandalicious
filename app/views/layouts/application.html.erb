@@ -4,16 +4,15 @@
   <title>Bandaliscious</title>
 
   <%= stylesheet_link_tag    "application" %>
-  <!--[if IE 6]><%= stylesheet_link_tag 'ie6' %><![endif]-->
-  <!--[if IE 7]><%= stylesheet_link_tag 'ie7' %><![endif]-->
-
   <%= javascript_include_tag "application" %>
+
+  <%= stylesheet_link_tag "/stylesheets/ui-lightness/jquery-ui.css" %>
 
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div class="container">
+		<%= yield %>
+	</div>
 </body>
 </html>
