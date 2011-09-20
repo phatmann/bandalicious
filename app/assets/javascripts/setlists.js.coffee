@@ -6,7 +6,6 @@ $ ->
 	$('#available_songs, #selected_songs').sortable(
 		connectWith: '.sortable'
 		scroll: true,
-		axis: 'y',
 		stop: ->
 			setlistID = $('#selected_songs').data('setlist_id')
 			

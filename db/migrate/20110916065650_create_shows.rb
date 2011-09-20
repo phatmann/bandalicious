@@ -3,8 +3,8 @@ class CreateShows < ActiveRecord::Migration
     create_table :shows do |t|
       t.string :name
       t.date :date
+      t.string :external_id
       t.references :band
-      t.references :setlist
       t.timestamps
     end
   end

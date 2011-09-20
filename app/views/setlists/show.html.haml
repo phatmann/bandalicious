@@ -1,16 +1,14 @@
 %p#notice= notice
 
-%p
-  %b Setlist #{@setlist.name}
+%h1 Setlist #{@setlist.name}
 
-%ul
-  - for show in @setlist.shows
-    %li #{show.name} (#{show.date})
+- if @setlist.show
+  #{show.name} (#{show.date})
 
 %ol
   - for song in @setlist.songs
     %li= song.name
 
 = link_to 'Edit', edit_resource_path
-\|
+|
 = link_to 'Back', collection_path

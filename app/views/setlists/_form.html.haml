@@ -1,9 +1,21 @@
-%h2 Songs in list
-%ul.sortable#selected_songs{'data-setlist_id' => @setlist.id}
-  - for song in @setlist.songs
-    %li[song]= song.name
+= simple_form_for [@band, @setlist] do |f|
+  .inputs
+    = f.input :name
+    .clearfix
+      = f.label 'Songs'
+      .input
+        %ul.sortable#selected_songs{'data-setlist_id' => @setlist.id}
+          - for song in @setlist.songs
+            %li[song]
+              = image_tag 'drag-handle.gif'
+              %span= song.name
+        %ul.sortable#available_songs
+          - for song in @band.songs - @setlist.songs
+            %li[song]
+              = image_tag 'drag-handle.gif'
+              %span= song.name
+  .actions
+    = f.button :submit
 
-%h2 Available Songs
-%ul.sortable#available_songs
-  - for song in @band.songs - @setlist.songs
-    %li[song]= song.name
+
+

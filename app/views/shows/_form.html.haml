@@ -1,5 +1,6 @@
 = simple_form_for [@band, @show] do |f|
-  = f.input :name
-  = f.input :date
+  .inputs
+    = f.input :name
+    = f.input :date
   .actions
     = f.button :submit
