@@ -1,21 +1,20 @@
-= simple_form_for [@band, @setlist] do |f|
-  .inputs
-    = f.input :name
-    .clearfix
-      = f.label 'Songs'
-      .input
-        %ul.sortable#selected_songs{'data-setlist_id' => @setlist.id}
-          - for song in @setlist.songs
-            %li[song]
-              = image_tag 'drag-handle.gif'
-              %span= song.name
-        %ul.sortable#available_songs
-          - for song in @band.songs - @setlist.songs
-            %li[song]
-              = image_tag 'drag-handle.gif'
-              %span= song.name
-  .actions
-    = f.button :submit
+.row
+  .span8
+    = simple_form_for [@band, @setlist] do |f|
+      .inputs
+        = f.input :name
+        .clearfix
+          = f.label 'Songs'
+          .input
+            %ul.sortable#selected_songs{'data-setlist_id' => @setlist.id}
+              = render :partial => 'song', :collection => @setlist.songs
+            
+      .actions
+        = f.button :submit
+  .span8
+    %ul.sortable#available_songs
+      = render :partial => 'song', :collection => @band.songs - @setlist.songs
+    
 
 
 

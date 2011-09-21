@@ -6,14 +6,12 @@ $ ->
 	$('#available_songs, #selected_songs').sortable(
 		connectWith: '.sortable'
 		scroll: true,
-		stop: ->
+		xstop: ->
 			setlistID = $('#selected_songs').data('setlist_id')
 			
 			$.ajax
-				url: '/setlist_songs/sort'
+				url: '/setlists/sort'
 				type: 'post',
 				data: "setlist_id=#{setlistID}&" + $('#selected_songs').sortable('serialize'),
 				dataType: 'script'
-	)
-
-	$('.sortable').disableSelection();
+	).disableSelection;
