@@ -5,9 +5,11 @@
 - if @setlist.show
   #{show.name} (#{show.date})
 
-%ol
+%ol#songs.sortable{'data-setlist_id' => @setlist.id}
   - for song in @setlist.songs
-    %li= song.name
+    %li[song]
+      = image_tag 'drag-handle.gif'
+      %span= song.name
 
 = link_to 'Edit', edit_resource_path
 |

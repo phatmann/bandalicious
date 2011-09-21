@@ -3,18 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap/bootstrap.scss";
 
-.sortable {
-	li {
-		cursor: move;
-	  color: $gray;
-	  font-size: 13px;
-	  padding-bottom: 2px;
-
-	  img, span {
-	  	vertical-align: middle;
-	  }
-	}
-
+.draggable {
 	display: inline-block;
 	width: 300px;
   padding: 4px;
@@ -29,5 +18,16 @@
 	padding: 0;
 	margin-right: 10px;
 	min-height: 30px;
+}
+
+.sortable li {
+	cursor: move;
+  color: $gray;
+  font-size: 13px;
+  padding-bottom: 2px;
+
+  img, span {
+  	vertical-align: middle;
+  }
 }
 	

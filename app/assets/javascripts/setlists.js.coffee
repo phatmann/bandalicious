@@ -1,17 +1,19 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
-
 $ ->
 	$('#available_songs, #selected_songs').sortable(
-		connectWith: '.sortable'
+		connectWith: '.draggable'
 		scroll: true,
-		xstop: ->
-			setlistID = $('#selected_songs').data('setlist_id')
+		tolerance: 'pointer'
+	).disableSelection;
+
+	$('#songs').sortable(
+		scroll: true,
+		axis: 'y',
+		stop: ->
+			setlistID = $('#songs').data('setlist_id')
 			
 			$.ajax
 				url: '/setlists/sort'
 				type: 'post',
-				data: "setlist_id=#{setlistID}&" + $('#selected_songs').sortable('serialize'),
+				data: "setlist_id=#{setlistID}&" + $('#songs').sortable('serialize'),
 				dataType: 'script'
 	).disableSelection;

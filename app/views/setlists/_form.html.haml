@@ -6,13 +6,13 @@
         .clearfix
           = f.label 'Songs'
           .input
-            %ul.sortable#selected_songs{'data-setlist_id' => @setlist.id}
+            %ul.draggable.sortable#selected_songs
               = render :partial => 'song', :collection => @setlist.songs
             
       .actions
         = f.button :submit
   .span8
-    %ul.sortable#available_songs
+    %ul.draggable.sortable#available_songs
       = render :partial => 'song', :collection => @band.songs - @setlist.songs
     
 
