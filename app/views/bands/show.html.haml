@@ -2,16 +2,11 @@
 
 %h1= @band.name
 
-%p
-  %b Handle:
-  = @band.handle
-
-= link_to 'Edit', edit_band_path(@band)
-|
 = link_to 'Songs', band_songs_path(@band)
-|
+%br
 = link_to 'Setlists', band_setlists_path(@band)
-|
+%br
 = link_to 'Shows', band_shows_path(@band)
-|
-= link_to 'Back', bands_path
+%br
+%br
+= link_to 'Edit Band Info', edit_band_path(@band)

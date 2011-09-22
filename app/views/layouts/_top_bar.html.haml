@@ -1,0 +1,16 @@
+.topbar-wrapper
+	.topbar
+		.fill
+			.container
+				%h3
+					%a{:href=>'/'} Bandaliscious
+				- if @band
+					%ul.nav
+						%li{:class => controller_name == 'songs' ? 'active' : ''}
+							= link_to 'Songs', band_songs_path(@band)
+						%li{:class => controller_name == 'setlists' ? 'active' : ''}
+							= link_to 'Setlists', band_setlists_path(@band)
+						%li{:class => controller_name == 'shows' ? 'active' : ''}
+							= link_to 'Shows', band_shows_path(@band)
+						%li{:class => controller_name == 'bands' ? 'active' : ''}
+							= link_to 'Edit Band Info', edit_band_path(@band)

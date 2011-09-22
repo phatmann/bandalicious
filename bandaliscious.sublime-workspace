@@ -11,7 +11,15 @@
 			"file": "/Users/tony/Documents/bandaliscious/app/views/setlists/_form.html.haml",
 			"settings":
 			{
-				"buffer_size": 554,
+				"buffer_size": 479,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/tony/Documents/bandaliscious/app/views/setlists/_song.html.haml",
+			"settings":
+			{
+				"buffer_size": 100,
 				"line_ending": "Unix"
 			}
 		},
@@ -19,7 +27,7 @@
 			"file": "/Users/tony/Documents/bandaliscious/app/assets/stylesheets/setlists.css.scss",
 			"settings":
 			{
-				"buffer_size": 652,
+				"buffer_size": 654,
 				"line_ending": "Unix"
 			}
 		},
@@ -35,7 +43,31 @@
 			"file": "/Users/tony/Documents/bandaliscious/app/assets/javascripts/setlists.js.coffee",
 			"settings":
 			{
-				"buffer_size": 602,
+				"buffer_size": 428,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/tony/Documents/bandaliscious/app/controllers/setlists_controller.rb",
+			"settings":
+			{
+				"buffer_size": 521,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/tony/Documents/bandaliscious/app/views/setlists/show.html.haml",
+			"settings":
+			{
+				"buffer_size": 330,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/tony/Documents/bandaliscious/config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1989,
 				"line_ending": "Unix"
 			}
 		}
@@ -64,6 +96,7 @@
 	},
 	"file_history":
 	[
+		"/Users/tony/Documents/bandaliscious/app/controllers/setlist_songs_controller.rb",
 		"/Users/tony/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
 		"/Users/tony/Documents/bandaliscious/app/views/songs/index.html.haml",
 		"/Users/tony/Documents/bandaliscious/app/views/setlists/show.html.haml",
@@ -72,7 +105,6 @@
 		"/Users/tony/Documents/bandaliscious/db/migrate/20110916065650_create_shows.rb",
 		"/Users/tony/Documents/bandaliscious/config/initializers/wrap_parameters.rb",
 		"/Users/tony/Documents/bandaliscious/app/models/setlist.rb",
-		"/Users/tony/Documents/bandaliscious/app/controllers/setlist_songs_controller.rb",
 		"/Users/tony/Documents/bandaliscious/app/views/setlists/index.html.haml",
 		"/Users/tony/Documents/bandaliscious/app/assets/stylesheets/setlists.css.scss",
 		"/Users/tony/Documents/bandaliscious/config/initializers/simple_form.rb",
@@ -309,6 +341,7 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -316,20 +349,21 @@
 					"file": "/Users/tony/Documents/bandaliscious/app/views/setlists/_form.html.haml",
 					"settings":
 					{
-						"buffer_size": 554,
+						"buffer_size": 479,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								318,
-								318
+								211,
+								211
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0,
@@ -340,18 +374,44 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/Users/tony/Documents/bandaliscious/app/assets/stylesheets/setlists.css.scss",
+					"file": "/Users/tony/Documents/bandaliscious/app/views/setlists/_song.html.haml",
 					"settings":
 					{
-						"buffer_size": 652,
+						"buffer_size": 100,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								583,
-								583
+								40,
+								11
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/tony/Documents/bandaliscious/app/assets/stylesheets/setlists.css.scss",
+					"settings":
+					{
+						"buffer_size": 654,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								226,
+								226
 							]
 						],
 						"settings":
@@ -366,7 +426,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "/Users/tony/Documents/bandaliscious/app/assets/stylesheets/bootstrap/forms.scss",
 					"settings":
 					{
@@ -394,25 +454,106 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "/Users/tony/Documents/bandaliscious/app/assets/javascripts/setlists.js.coffee",
 					"settings":
 					{
-						"buffer_size": 602,
+						"buffer_size": 428,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								327,
-								327
+								121,
+								121
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/tony/Documents/bandaliscious/app/controllers/setlists_controller.rb",
+					"settings":
+					{
+						"buffer_size": 521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								341,
+								341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/tony/Documents/bandaliscious/app/views/setlists/show.html.haml",
+					"settings":
+					{
+						"buffer_size": 330,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								195,
+								195
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/tony/Documents/bandaliscious/config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 1989,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								158,
+								158
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0,
 						"translation.y": 0,
@@ -454,10 +595,6 @@
 		]
 	},
 	"menu_visible": true,
-	"output.find_results":
-	{
-		"height": 150.15625
-	},
 	"replace":
 	{
 		"height": 62

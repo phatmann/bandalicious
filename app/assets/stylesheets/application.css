@@ -8,3 +8,6 @@
  *= require bootstrap/bootstrap.css
 */
 
+body {
+	padding-top: 40px !important;
+}
