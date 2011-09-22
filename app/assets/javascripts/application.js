@@ -5,6 +5,10 @@
 // the compiled file.
 //
 //= require jquery
-//= require_tree ../../../vendor/assets/javascripts/jquery-ui
+//= require jquery-ui
 //= require jquery_ujs
+//= require ../../../vendor/assets/javascripts/jquery.ui.mouse.touch.js
 //= require_tree .
+
+// require_tree ../../../vendor/assets/javascripts/jquery-ui-1.9m6
+
