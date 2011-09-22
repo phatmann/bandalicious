@@ -24,6 +24,10 @@ group :test do
   gem 'turn', :require => false
 end
 
+group :production do
+	gem 'therubyracer-heroku', '0.8.1.pre3'
+end
+
 gem 'rspec-rails'
 gem 'cucumber-rails'
 gem 'haml-rails'
