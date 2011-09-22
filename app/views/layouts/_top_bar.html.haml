@@ -4,7 +4,7 @@
 			.container
 				%h3
 					%a{:href=>'/'} Bandaliscious
-				- if @band
+				- if @band && @band.id
 					%ul.nav
 						%li{:class => controller_name == 'songs' ? 'active' : ''}
 							= link_to 'Songs', band_songs_path(@band)
