@@ -2,10 +2,10 @@ class SongsController < InheritedResources::Base
 	belongs_to :band
 
   def create
-    create!{ collection_path }
+    create!(:notice => 'New song added.') { collection_path }
   end
 
   def update
-    update!{ collection_path }
+    update!(:notice => 'Song updated.'){ collection_path }
   end
 end

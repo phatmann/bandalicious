@@ -7,8 +7,5 @@
 //= require jquery
 //= require jquery-ui
 //= require jquery_ujs
-//= require ../../../vendor/assets/javascripts/jquery.ui.mouse.touch.js
+//= require_tree ../../../vendor/assets/javascripts/
 //= require_tree .
-
-// require_tree ../../../vendor/assets/javascripts/jquery-ui-1.9m6
-

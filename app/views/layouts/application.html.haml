@@ -11,6 +11,10 @@
   %body
     = render "layouts/top_bar"
     .container
+      -if notice
+        .alert-message.success{:'data-alert'=>"alert"}
+          %a.close{:href=>"#"} &times
+          = notice
       = yield
       %footer
         %div{:style => "float:left"}
