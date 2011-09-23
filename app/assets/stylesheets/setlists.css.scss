@@ -6,8 +6,6 @@
 .draggable-container {
   display: inline-block;
   width: 300px;
-  font-size: 13px;
-  color: $gray;
   border: 1px solid #ccc;
   @include border-radius(3px);
   margin: 0;
@@ -18,7 +16,6 @@
 
 .draggable {
   min-height: 30px;
-  xborder: 1px solid green;
   margin-bottom: 0;
 }
 
@@ -37,4 +34,8 @@ li.empty {
   display: none;
   list-style-type: none;
   font-style: italic;
+}
+
+ol.empty, ul.empty {
+  margin-left: 6px;
 }

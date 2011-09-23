@@ -5,42 +5,14 @@ $ ->
     tolerance: 'pointer'
     items: 'li:not(.empty)'
     appendTo: 'body'
-
-    start: ->
-      if $(this).css('list-style-type') == 'decimal'
-        $(this).data('list-style-type', 'decimal')
-        $(this).css('list-style-type', 'disc')
-    
-    stop: ->
-      if $(this).data('list-style-type')
-        $(this).css('list-style-type', $(this).data('list-style-type'))
-
-    activate: ->
-      if $(this).css('list-style-type') == 'decimal'
-        $(this).data('list-style-type', 'decimal')
-        $(this).css('list-style-type', 'disc')
-
-    deactivate: ->
-      if $(this).data('list-style-type')
-        $(this).css('list-style-type', $(this).data('list-style-type'))
-
-    create: ->
-      if $('li:not(.empty)', this).length == 0
-        $('li.empty', this).show()
-        $(this).css('margin-left', '6px')
-    
-    over: ->
-      $('li.empty', this).hide()
-      $(this).css('margin-left', '25px')
-    
-    receive: ->
-      $('li.empty', this).hide()
-      $(this).css('margin-left', '25px')
-
-    remove: ->
-      if $('li:not(.empty)', this).length == 0
-        $('li.empty', this).show()
-        $(this).css('margin-left', '6px')
+    start: startDragging
+    stop: stopDragging
+    activate: startDragging
+    deactivate: stopDragging
+    create: showEmptyMessageIfEmpty
+    over: hideEmptyMessage
+    receive: hideEmptyMessage
+    remove: showEmptyMessageIfEmpty
   ).disableSelection;
 
   $('#songs').sortable(
@@ -58,3 +30,21 @@ $ ->
         data: "setlist_id=#{setlistID}&" + $('#songs').sortable('serialize'),
         dataType: 'script'
   ).disableSelection;
+
+startDragging = -> 
+  if this.id == 'selected-songs'
+    $(this).css('list-style-type', 'disc')
+
+stopDragging = ->
+  if this.id == 'selected-songs'
+    $(this).css('list-style-type', 'decimal')
+
+hideEmptyMessage = ->
+  $('li.empty', this).hide()
+  $(this).removeClass('empty')
+ 
+showEmptyMessageIfEmpty = ->
+  if $('li:not(.empty)', this).length == 0
+    $('li.empty', this).show()
+    $(this).addClass('empty')
+    
