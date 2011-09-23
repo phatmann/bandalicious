@@ -6,17 +6,18 @@
         .clearfix
           = f.label 'Songs'
           .input
-            %ul.draggable.sortable#selected_songs
-              %li.empty Drag songs from right
-              = render :partial => 'song', :collection => @setlist.songs
+            .draggable-container
+              %ol.draggable.sortable#selected-songs
+                %li.empty Drag songs from right
+                = render :partial => 'song', :collection => @setlist.songs
             
       .actions
         = f.button :submit
   .span8
-    %ul.draggable.sortable#available_songs
-      %li.empty No more songs!
-      = render(:partial => 'song', :collection => @setlist.available_songs)
-    .help-block 
+    .draggable-container#available-songs-container
+      %ul.draggable.sortable#available-songs
+        %li.empty No more songs!
+        = render(:partial => 'song', :collection => @setlist.available_songs)
     
 
 

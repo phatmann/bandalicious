@@ -3,20 +3,23 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap/bootstrap.scss";
 
-.draggable {
-	display: inline-block;
-	width: 300px;
-  padding: 4px;
+.draggable-container {
+  display: inline-block;
+  width: 300px;
   font-size: 13px;
-  list-style-position: inside;
   color: $gray;
   border: 1px solid #ccc;
   @include border-radius(3px);
+  margin: 0;
+  padding: 4px 4px 4px 0;
+  margin-right: 10px;
   vertical-align: top;
-	margin: 0;
-	padding: 6px;
-	margin-right: 10px;
-	min-height: 30px;
+}
+
+.draggable {
+  min-height: 30px;
+  xborder: 1px solid green;
+  margin-bottom: 0;
 }
 
 .sortable li {
@@ -26,7 +29,7 @@
   padding-bottom: 2px;
 }
 
-#available_songs {
+#available-songs-container {
   margin-top: 46px;
 }
 

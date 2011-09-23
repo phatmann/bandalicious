@@ -1,16 +1,15 @@
 %p#notice= notice
 
-%h1
-  #{@setlist.name} 
-  %a{:href=>edit_resource_path}
-    %small edit
+%h1 #{@setlist.name} 
 
 - if @setlist.show
   #{show.name} (#{show.date})
+
+%p.help-block Drag songs to reorder
 
 %ol#songs.sortable{'data-setlist_id' => @setlist.id}
   - for song in @setlist.songs
     %li[song]= song.name
 
-%p.help-block Drag songs to reorder
-
+%p
+  = link_to 'Edit Setlist', edit_resource_path
