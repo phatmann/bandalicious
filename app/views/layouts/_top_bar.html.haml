@@ -12,5 +12,6 @@
 							= link_to 'Setlists', band_setlists_path(@band)
 						%li{:class => controller_name == 'shows' ? 'active' : ''}
 							= link_to 'Shows', band_shows_path(@band)
+					%ul.nav.secondary-nav
 						%li{:class => controller_name == 'bands' ? 'active' : ''}
-							= link_to 'Band Info', edit_band_path(@band)
+							= link_to @band.name, edit_band_path(@band)

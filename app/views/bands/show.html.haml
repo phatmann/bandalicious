@@ -2,11 +2,5 @@
 
 %h1= @band.name
 
-= link_to 'Songs', band_songs_path(@band)
 %br
-= link_to 'Setlists', band_setlists_path(@band)
-%br
-= link_to 'Shows', band_shows_path(@band)
-%br
-%br
-= link_to 'Edit Band Info', edit_band_path(@band)
+= link_to 'Edit Band', edit_band_path(@band)

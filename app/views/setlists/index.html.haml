@@ -1,17 +1,15 @@
 %h1 Setlists
 
 %table
-  %tr
-    %th
-    %th
-    %th
-
-  - @setlists.each do |setlist|
+  %thead
     %tr
-      %td= link_to setlist.name, resource_path(setlist)
-      %td= link_to 'edit', edit_resource_path(setlist)
-      %td= link_to 'destroy', resource_path(setlist), :confirm => 'Are you sure?', :method => :delete
+      %th
+      %th
+  %tbody
+    - @setlists.each do |setlist|
+      %tr
+        %td= link_to setlist.name, resource_path(setlist)
+        %td= link_to 'delete', resource_path(setlist), :confirm => 'Are you sure?', :method => :delete
 
 %br
-
 = link_to 'New Setlist', new_resource_path

@@ -1,0 +1,19 @@
+!!! 5
+%html
+  %head
+    %title Bandaliscious
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    
+    / = stylesheet_link_tag "/stylesheets/ui-lightness/jquery-ui.css"
+    
+    = csrf_meta_tags
+  %body
+    = render "layouts/top_bar"
+    .container
+      = yield
+      %footer
+        %div{:style => "float:left"}
+          Questions? Email thephatmann@gmail.com.
+        %div{:style => "float:right"}
+          &copy; 7Actions Development
