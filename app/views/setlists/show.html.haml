@@ -1,16 +1,16 @@
 %p#notice= notice
 
-%h1 Setlist #{@setlist.name}
+%h1
+  #{@setlist.name} 
+  %a{:href=>edit_resource_path}
+    %small edit
 
 - if @setlist.show
   #{show.name} (#{show.date})
 
 %ol#songs.sortable{'data-setlist_id' => @setlist.id}
   - for song in @setlist.songs
-    %li[song]
-      = image_tag 'drag-handle.gif'
-      %span= song.name
+    %li[song]= song.name
 
-= link_to 'Edit', edit_resource_path
-|
-= link_to 'Back', collection_path
+%p.help-block Drag songs to reorder
+

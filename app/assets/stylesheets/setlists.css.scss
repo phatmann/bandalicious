@@ -8,14 +8,13 @@
 	width: 300px;
   padding: 4px;
   font-size: 13px;
-  line-height: $baseline;
+  list-style-position: inside;
   color: $gray;
   border: 1px solid #ccc;
   @include border-radius(3px);
   vertical-align: top;
-	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 6px;
 	margin-right: 10px;
 	min-height: 30px;
 }
@@ -25,9 +24,14 @@
   color: $gray;
   font-size: 13px;
   padding-bottom: 2px;
-
-  img, span {
-  	vertical-align: middle;
-  }
 }
-	
+
+#available_songs {
+  margin-top: 46px;
+}
+
+li.empty {
+  display: none;
+  list-style-type: none;
+  font-style: italic;
+}

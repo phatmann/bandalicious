@@ -1,4 +1,3 @@
 %li[song]
-	= image_tag 'drag-handle.gif'
-	%span= song.name
+	= song.name
 	= hidden_field_tag 'song_ids[]', song.id
