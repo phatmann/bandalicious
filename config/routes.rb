@@ -1,5 +1,5 @@
 Bandaliscious::Application.routes.draw do
-  root :to => 'bands#index'
+  root :to => 'home#index'
 
   resources :bands do
     resources :songs

@@ -2,22 +2,18 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
 gem 'sqlite3'
-
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails', "~> 3.1.0"
-  gem 'coffee-rails', "~> 3.1.0"
-  gem 'uglifier'
-end
-
 gem 'jquery-rails'
+gem 'rspec-rails'
+gem 'cucumber-rails'
+gem 'haml-rails'
+gem 'inherited_resources'
+gem 'acts_as_list'
+gem 'unicorn'
+gem 'authlogic'
 
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+group :development do
+  gem 'ruby-debug19', :require => 'ruby-debug'
+end
 
 group :test do
   # Pretty printed test output
@@ -29,11 +25,11 @@ group :production do
 	gem 'pg'
 end
 
-gem 'rspec-rails'
-gem 'cucumber-rails'
-gem 'haml-rails'
-gem 'inherited_resources'
-gem 'acts_as_list'
+group :assets do
+  gem 'sass-rails', "~> 3.1.0"
+  gem 'coffee-rails', "~> 3.1.0"
+  gem 'uglifier'
+end
 
 # Get version 2.0 (not released yet)
 gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'

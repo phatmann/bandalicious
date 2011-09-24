@@ -1,0 +1,11 @@
+!!! 5
+%html
+  %head
+    %title Bandaliscious
+    = stylesheet_link_tag "home", "bootstrap"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .container
+      = yield
+      = render 'layouts/footer'

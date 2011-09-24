@@ -2,7 +2,7 @@
 %html
   %head
     %title Bandaliscious
-    = stylesheet_link_tag    "application"
+    = stylesheet_link_tag "site", "bootstrap"
     = javascript_include_tag "application"
     
     / = stylesheet_link_tag "/stylesheets/ui-lightness/jquery-ui.css"
@@ -16,8 +16,4 @@
           %a.close{:href=>"#"} &times
           = notice
       = yield
-      %footer
-        %div{:style => "float:left"}
-          Questions? Email thephatmann@gmail.com.
-        %div{:style => "float:right"}
-          &copy; 7Actions Development
+      = render 'layouts/footer'

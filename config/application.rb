@@ -39,5 +39,6 @@ module Bandaliscious
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    config.assets.precompile += %w( site.css home.css bootstrap.css )
   end
 end
