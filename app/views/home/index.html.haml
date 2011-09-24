@@ -1,3 +1,7 @@
 .hero-unit
   %h1 Bandaliscious
-  Setlist nirvana
+  %p Remember all your songs, make killer setlists from them
+.row
+  .span16 
+    = render 'band_sessions/form'
+    = link_to 'Sign up', new_band_path

@@ -15,7 +15,11 @@ ActiveRecord::Schema.define(:version => 20110916140809) do
 
   create_table "bands", :force => true do |t|
     t.string   "name"
-    t.string   "handle"
+    t.string   "username"
+    t.string   "crypted_password",  :null => false
+    t.string   "password_salt",     :null => false
+    t.string   "persistence_token", :null => false
+    t.string   "perishable_token",  :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

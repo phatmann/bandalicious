@@ -9,7 +9,8 @@ SimpleForm.setup do |config|
     b.use :label
     b.use :tag => 'div', :class => 'input' do |ba|
       ba.use :input #, :class => 'xlarge'
-      ba.use :hint,  :tag => :span, :class => :hint
+      ba.use :hint,  :tag => :span, :class => 'help-inline'
+      # ba.use :help,  :tag => :span, :class => 'help-block'
       ba.use :error, :tag => :span, :class => 'help-inline'
     end
   end

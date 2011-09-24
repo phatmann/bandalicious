@@ -11,6 +11,8 @@ Bandaliscious::Application.routes.draw do
     post 'sort', :on => :collection
   end
 
+  resources :band_sessions
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

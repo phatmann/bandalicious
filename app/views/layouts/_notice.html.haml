@@ -1,0 +1,4 @@
+- if flash[:notice]
+  .alert-message.success{:'data-alert'=>"alert"}
+    %a.close{:href=>"#"} &times
+    = flash[:notice]
