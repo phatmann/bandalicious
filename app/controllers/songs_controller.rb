@@ -1,6 +1,7 @@
 class SongsController < InheritedResources::Base
 	belongs_to :band
-
+  before_filter :require_band
+  
   def create
     create!(:notice => 'New song added.') { collection_path }
   end

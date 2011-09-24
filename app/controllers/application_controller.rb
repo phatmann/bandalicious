@@ -20,19 +20,26 @@ class ApplicationController < ActionController::Base
         redirect_to new_band_session_url
         return false
       end
+
+      if params[:band_id] && params[:band_id].to_i != current_band.id
+        store_location
+        flash[:notice] = "You cannot access this page"
+        redirect_to '/'
+        return false
+      end
     end
 
     def require_no_band
       if current_band
         store_location
         flash[:notice] = "You must be logged out to access this page"
-        redirect_to band_url
+        redirect_to '/'
         return false
       end
     end
     
     def store_location
-      session[:return_to] = request.request_uri
+      session[:return_to] = request.url
     end
     
     def redirect_back_or_default(default)
