@@ -1,16 +1,23 @@
 %h1 Bands
 
 %table
-  %tr
-    %th
-    %th
-    %th
-
-  - @bands.each do |band|
+  %thead
     %tr
-      %td= link_to band.name, band_songs_path(band)
-      %td= link_to 'edit', edit_band_path(band)
-      %td= link_to 'delete', band, :confirm => 'Are you sure?', :method => :delete
+      %th
+      %th
+      %th
+      %th
+      %th
+
+  %tbody
+    - @bands.each do |band|
+      - next if band.admin?
+      %tr
+        %td= link_to band.name, edit_band_path(band)
+        %td= link_to 'Songs', band_songs_path(band)
+        %td= link_to 'Setlists', band_setlists_path(band) 
+        %td= link_to 'Shows', band_shows_path(band) 
+        %td= link_to 'Delete', band, :confirm => 'Are you sure?', :method => :delete
 
 %br
 

@@ -1,6 +1,6 @@
 = simple_form_for @band_session do |f|
   .inputs
-    = f.input :username
-    = f.input :password
+    = f.input :username, :required => false
+    = f.input :password, :required => false
   .actions
-    = f.submit 'Login'
+    = f.button :submit, 'Login'

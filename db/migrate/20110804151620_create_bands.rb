@@ -7,7 +7,8 @@ class CreateBands < ActiveRecord::Migration
       t.string  :password_salt,       :null => false
       t.string  :persistence_token,   :null => false
       t.string  :perishable_token,    :null => false
-
+      t.boolean :admin
+      
       t.timestamps
     end
   end

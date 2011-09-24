@@ -1,7 +1,17 @@
 .hero-unit
   %h1 Bandaliscious
   %p Remember all your songs, make killer setlists from them
+  %p
+    %a.btn.primary.large{:href=>new_band_path} Get started &raquo;
 .row
-  .span16 
-    = render 'band_sessions/form'
-    = link_to 'Sign up', new_band_path
+  .span9
+    %h2 More info
+    %p
+      Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante
+      venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare
+      sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi
+      erat porttitor ligula, eget lacinia odio sem nec elit.
+  .span7
+    .well
+      %h2 Login
+      = render 'band_sessions/form'

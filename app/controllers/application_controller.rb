@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
         return false
       end
 
-      if params[:band_id] && params[:band_id].to_i != current_band.id
+      if !current_band.admin? && params[:band_id] && params[:band_id].to_i != current_band.id
         store_location
         flash[:notice] = "You cannot access this page"
         redirect_to '/'
@@ -30,9 +30,18 @@ class ApplicationController < ActionController::Base
     end
 
     def require_no_band
-      if current_band
+      if current_band && !current_band.admin?
         store_location
         flash[:notice] = "You must be logged out to access this page"
+        redirect_to '/'
+        return false
+      end
+    end
+
+    def require_admin
+      unless current_band && current_band.admin?
+        store_location
+        flash[:notice] = "You cannot access this page"
         redirect_to '/'
         return false
       end

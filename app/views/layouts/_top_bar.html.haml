@@ -5,13 +5,14 @@
         %h3
           %a{:href=>'/'} Bandaliscious
         - if current_band
-          %ul.nav
-            %li{:class => controller_name == 'songs' ? 'active' : ''}
-              = link_to 'Songs', band_songs_path(current_band)
-            %li{:class => controller_name == 'setlists' ? 'active' : ''}
-              = link_to 'Setlists', band_setlists_path(current_band)
-            %li{:class => controller_name == 'shows' ? 'active' : ''}
-              = link_to 'Shows', band_shows_path(current_band)
+          - unless current_band.admin?
+            %ul.nav
+              %li{:class => controller_name == 'songs' ? 'active' : ''}
+                = link_to 'Songs', band_songs_path(current_band)
+              %li{:class => controller_name == 'setlists' ? 'active' : ''}
+                = link_to 'Setlists', band_setlists_path(current_band)
+              %li{:class => controller_name == 'shows' ? 'active' : ''}
+                = link_to 'Shows', band_shows_path(current_band)
           %ul.nav.secondary-nav
             %li{:class => controller_name == 'bands' ? 'active' : ''}
               = link_to current_band.name, edit_band_path(current_band)
