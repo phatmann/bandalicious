@@ -1,7 +1,7 @@
-%p#notice= notice
-
-%p
-  %b Name:
-  = @song.name
-
+.page-header
+  %h1 Song
+%b Name:
+= @song.name
+%br
+%br
 = link_to 'Edit Song', edit_resource_path

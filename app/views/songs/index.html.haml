@@ -1,11 +1,7 @@
-%h1 Songs
+.page-header
+  %h1 Songs
 
 %table
-  %tr
-    %th
-    %th
-    %th
-
   - @songs.each do |song|
     %tr
       %td= link_to song.name, resource_path(song)

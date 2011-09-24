@@ -1,14 +1,7 @@
-%h1 Bands
+.page-header
+  %h1 Bands
 
 %table
-  %thead
-    %tr
-      %th
-      %th
-      %th
-      %th
-      %th
-
   %tbody
     - @bands.each do |band|
       - next if band.admin?

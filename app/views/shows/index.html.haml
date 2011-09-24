@@ -1,12 +1,7 @@
-%h1 Shows
+.page-header
+  %h1 Shows
 
 %table
-  %tr
-    %th 
-    %th
-    %th
-    %th
-
   - @shows.each do |show|
     %tr
       %td= show.date
