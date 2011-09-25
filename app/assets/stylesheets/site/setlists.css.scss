@@ -46,6 +46,11 @@ li.song {
   padding: 0 0;
 }
 
+li.song .close {
+  display: inline-block;
+  float: right;
+}
+
 #available-songs li.song .close {
-  display:none;
+  display: none;
 }
