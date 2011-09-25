@@ -7,10 +7,10 @@
           = f.label 'Songs'
           .input
             .draggable-container
-              %ol.draggable.sortable#selected-songs
+              %ul.draggable.sortable#selected-songs
                 %li.empty Drag songs from right
                 = render :partial => 'song', :collection => @setlist.songs
-            %p.help-block Drag songs to reorder. Click &times to remove a song.
+            %p.help-block Drag songs from right to add to setlist. Drag songs above to reorder. Click &times to remove a song.
             
       .actions
         = f.button :submit

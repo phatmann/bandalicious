@@ -5,10 +5,11 @@
   #{show.name} (#{show.date})
 
 %p.help-block Drag songs to reorder
+.row
+  .span6
+    %ol#songs.sortable{'data-setlist_id' => @setlist.id}
+      - for song in @setlist.songs
+        %li[song]= song.name
 
-%ol#songs.sortable{'data-setlist_id' => @setlist.id}
-  - for song in @setlist.songs
-    %li[song]= song.name
-
-%p
-  = link_to 'Edit Setlist', edit_resource_path
+    %p
+      = link_to 'Edit Setlist', edit_resource_path

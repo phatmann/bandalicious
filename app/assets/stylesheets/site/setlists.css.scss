@@ -1,12 +1,13 @@
 @import "bootstrap/preboot.scss";
 
+/* mimic input field */
 .draggable-container {
   display: inline-block;
   width: 300px;
   border: 1px solid #ccc;
   @include border-radius(3px);
   margin: 0;
-  padding: 4px 4px 4px 0;
+  padding: 6px;
   margin-right: 10px;
   vertical-align: top;
 }
@@ -16,11 +17,17 @@
   margin-bottom: 0;
 }
 
-.sortable li {
-	cursor: move;
-  color: $gray;
-  font-size: 13px;
-  padding-bottom: 2px;
+.sortable {
+  list-style-type: none;
+  list-style-position: inside;
+  margin-left: 0;
+
+  li {
+    cursor: move;
+    color: $gray;
+    font-size: 13px;
+    padding-bottom: 2px;
+  }
 }
 
 #available-songs-container {
@@ -29,19 +36,16 @@
 
 li.empty {
   display: none;
-  list-style-type: none;
   font-style: italic;
 }
 
 li.song {
-  xborder: solid 1px $grayLighter;
-  xpadding: 2px;
+  border-bottom-width: 1px;
+  border-color: $grayLighter;
+  border-style: solid;
+  padding: 0 0;
 }
 
 #available-songs li.song .close {
   display:none;
-}
-
-ol.empty, ul.empty {
-  margin-left: 6px;
 }
