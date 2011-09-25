@@ -33,6 +33,15 @@ li.empty {
   font-style: italic;
 }
 
+li.song {
+  xborder: solid 1px $grayLighter;
+  xpadding: 2px;
+}
+
+#available-songs li.song .close {
+  display:none;
+}
+
 ol.empty, ul.empty {
   margin-left: 6px;
 }

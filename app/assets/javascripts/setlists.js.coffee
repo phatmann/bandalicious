@@ -13,6 +13,7 @@ $ ->
     over: hideEmptyMessage
     receive: hideEmptyMessage
     remove: showEmptyMessageIfEmpty
+    distance: 3
   ).disableSelection;
 
   $('#songs').sortable(
@@ -30,6 +31,17 @@ $ ->
         data: "setlist_id=#{setlistID}&" + $('#songs').sortable('serialize'),
         dataType: 'script'
   ).disableSelection;
+
+  $('#selected-songs .close').live('click', ->
+    $(this).parent().fadeOut('fast', ->
+      $(this).appendTo($('#available-songs'))
+      $(this).fadeIn('fast')
+      showEmptyMessageIfEmpty.call($('#selected-songs'))
+      hideEmptyMessage.call($('#available-songs'))
+      $('#available-songs').sortable('refresh')
+    )
+  )
+
 
 startDragging = -> 
   if this.id == 'selected-songs'

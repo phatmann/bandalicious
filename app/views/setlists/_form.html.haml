@@ -10,6 +10,7 @@
               %ol.draggable.sortable#selected-songs
                 %li.empty Drag songs from right
                 = render :partial => 'song', :collection => @setlist.songs
+            %p.help-block Drag songs to reorder. Click &times to remove a song.
             
       .actions
         = f.button :submit
