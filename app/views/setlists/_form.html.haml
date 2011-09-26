@@ -1,6 +1,6 @@
-.row
-  .span8
-    = simple_form_for [@band, @setlist] do |f|
+.row#setlist
+  .span6
+    = simple_form_for [@band, @setlist], :html => {:class => 'form-stacked'} do |f|
       .inputs
         = f.input :name
         .clearfix
@@ -8,16 +8,16 @@
           .input
             .draggable-container
               %ul.draggable.sortable#selected-songs
-                %li.empty Drag songs from right
+                %li.empty No songs in setlist
                 = render :partial => 'song', :collection => @setlist.songs
-            %p.help-block Drag songs from right to add to setlist. Drag songs above to reorder. Click &times to remove a song.
-            
+              / %p.help-block Drag songs to reorder.
       .actions
         = f.button :submit
-  .span8
+  .span10
     .draggable-container#available-songs-container
+      %p.help-block Drag songs to left to add to setlist.
       %ul.draggable.sortable#available-songs
-        %li.empty No more songs
+        %li.empty No more songs to play!
         = render(:partial => 'song', :collection => @setlist.available_songs)
     
 

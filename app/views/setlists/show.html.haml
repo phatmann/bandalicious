@@ -5,7 +5,7 @@
   #{show.name} (#{show.date})
 
 %p.help-block Drag songs to reorder
-.row
+.row#setlist
   .span6
     %ol#songs.sortable{'data-setlist_id' => @setlist.id}
       - for song in @setlist.songs

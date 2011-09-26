@@ -6,7 +6,8 @@ $ ->
     items: 'li:not(.empty)'
     appendTo: 'body'
     create: showEmptyMessageIfEmpty
-    over: hideEmptyMessage
+    over: -> $('li.empty', this).hide()
+    out: -> if $(this).hasClass('empty') then $('li.empty', this).show()
     receive: hideEmptyMessage
     remove: showEmptyMessageIfEmpty
     distance: 3
@@ -37,8 +38,10 @@ $ ->
 
 hideEmptyMessage = ->
   $('li.empty', this).hide()
+  $(this).removeClass('empty')
  
 showEmptyMessageIfEmpty = ->
   if $('li:not(.empty)', this).length == 0
     $('li.empty', this).show()
+    $(this).addClass('empty')
     
