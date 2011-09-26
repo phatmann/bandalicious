@@ -7,7 +7,7 @@
 %p.help-block Drag songs to reorder
 .row#setlist
   .span6.song-list
-    %ul.sortable{'data-setlist_id' => @setlist.id}
+    %ul.sortable{'data-setlist_id' => @setlist.id, 'data-band_id' => @band.id}
       - for song in @setlist.songs
         %li[song]= song.name
 

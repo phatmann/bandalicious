@@ -17,12 +17,13 @@ $ ->
     scroll: true,
     axis: 'y',
     stop: ->
+      bandID    = $(this).data('band_id')
       setlistID = $(this).data('setlist_id')
       
       $.ajax
-        url: '/setlists/sort'
+        url: "/bands/#{bandID}/setlists/#{setlistID}/sort"
         type: 'post',
-        data: "setlist_id=#{setlistID}&" + $(this).sortable('serialize'),
+        data: $(this).sortable('serialize'),
         dataType: 'script'
   ).disableSelection;
 

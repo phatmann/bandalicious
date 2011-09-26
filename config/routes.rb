@@ -4,11 +4,9 @@ Bandaliscious::Application.routes.draw do
   resources :bands do
     resources :songs
     resources :shows
-    resources :setlists
-  end
-
-  resources :setlists do 
-    post 'sort', :on => :collection
+    resources :setlists do
+      post 'sort', :on => :member
+    end
   end
 
   resources :band_sessions
