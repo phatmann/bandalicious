@@ -1,20 +1,7 @@
 @import "bootstrap/preboot.scss";
 
 #setlist {
-  .draggable-container {
-    display: inline-block;
-    width: 300px;
-    @include border-radius(3px);
-    margin: 0 10px 0 0;
-    vertical-align: top;
-  }
-
-  .draggable {
-    min-height: 13px;
-    margin-bottom: 0;
-  }
-
-  .sortable {
+  .song-list ul {
     list-style-type: none;
     list-style-position: inside;
     margin: 0 0 10px 0;
@@ -44,11 +31,18 @@
     }
   }
 
-  #available-songs-container {
-    margin-top: 50px;
+  #selected_songs, #available_songs {
+    display: inline-block;
+    width: 100%;
+    margin: 0 10px 0 0;
+    vertical-align: top;
   }
 
-  #available-songs li.song .close {
-    display: none;
+  #available-songs {
+    margin-top: 50px;
+
+    .close {
+      display: none;
+    }
   }
 }

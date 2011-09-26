@@ -1,6 +1,6 @@
 $ ->
-  $('#available-songs, #selected-songs').sortable(
-    connectWith: '.draggable'
+  $('.song-list .draggable').sortable(
+    connectWith: '.song-list .draggable'
     scroll: true
     tolerance: 'pointer'
     items: 'li:not(.empty)'
@@ -13,26 +13,26 @@ $ ->
     distance: 3
   ).disableSelection;
 
-  $('#songs').sortable(
+  $('.song-list .sortable').sortable(
     scroll: true,
     axis: 'y',
     stop: ->
-      setlistID = $('#songs').data('setlist_id')
+      setlistID = $(this).data('setlist_id')
       
       $.ajax
         url: '/setlists/sort'
         type: 'post',
-        data: "setlist_id=#{setlistID}&" + $('#songs').sortable('serialize'),
+        data: "setlist_id=#{setlistID}&" + $(this).sortable('serialize'),
         dataType: 'script'
   ).disableSelection;
 
   $('#selected-songs .close').live('click', ->
     $(this).parent().fadeOut('fast', ->
-      $(this).appendTo($('#available-songs'))
+      $(this).appendTo($('#available-songs ul'))
       $(this).fadeIn('fast')
-      showEmptyMessageIfEmpty.call($('#selected-songs'))
-      hideEmptyMessage.call($('#available-songs'))
-      $('#available-songs').sortable('refresh')
+      showEmptyMessageIfEmpty.call($('#selected-songs ul'))
+      hideEmptyMessage.call($('#available-songs ul'))
+      $('#available-songs ul').sortable('refresh')
     )
   )
 
