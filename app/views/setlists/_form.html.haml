@@ -7,17 +7,22 @@
           = f.label 'Songs'
           .input
             .song-list#selected-songs
-              %ul.draggable
-                %li.empty No songs in setlist
-                = render :partial => 'song', :collection => @setlist.songs
+              %ul.connected
+                %li.setlist-item.empty.no-sort No songs in setlist.
+                = render @setlist.items
       .actions
         = f.button :submit
   .span6
     .song-list#available-songs
       %p.help-block Drag songs to left to add to setlist.
-      %ul.draggable
-        %li.empty No more songs to play!
-        = render(:partial => 'song', :collection => @setlist.available_songs)
+      / %ul#breaks
+      /   %li.song.break#song_0
+      /     Break
+      /     = hidden_field_tag 'song_ids[]', 0
+      /     %a.close{:href=>"#"} &times
+      %ul.connected
+        %li.setlist-item.empty.no-sort No more songs to play!
+        = render @setlist.available_items
   .span4
     &nbsp;
     

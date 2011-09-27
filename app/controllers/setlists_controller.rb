@@ -18,6 +18,6 @@ class SetlistsController < InheritedResources::Base
 	private
 		def song_ids_to_items(song_ids)
 			return [] unless song_ids
-			song_ids.map{|song_id| SetlistItem.new(:song_id => song_id)}
+			song_ids.map{|song_id| SetlistItem.new(:song_id => (song_id == 0) ? nil : song_id)}
 		end
 end

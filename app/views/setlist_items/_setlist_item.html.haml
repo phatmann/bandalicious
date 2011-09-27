@@ -1,0 +1,10 @@
+- if setlist_item.song
+  %li.setlist-item
+    = setlist_item.song.name
+    = hidden_field_tag 'song_ids[]', setlist_item.song.id
+    %a.close{:href=>"#"} &times
+- else
+  %li.setlist-item.break
+    = setlist_item.name || 'Break'
+    = hidden_field_tag 'song_ids[]', 0
+    %a.close{:href=>"#"} &times

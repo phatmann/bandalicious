@@ -10,4 +10,8 @@ class Setlist < ActiveRecord::Base
   def available_songs
     self.band.songs - self.songs
   end
+
+  def available_items
+    self.available_songs.map{ |song| SetlistItem.new(:song => song) }
+  end
 end

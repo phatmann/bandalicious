@@ -1,48 +1,53 @@
 @import "bootstrap/preboot.scss";
 
-#setlist {
-  .song-list ul {
-    list-style-type: none;
-    list-style-position: inside;
-    margin: 0 0 10px 0;
+.song-list ul {
+  margin: 0 0 10px 0;
+}
 
-    li {
-      cursor: move;
-      color: $gray;
-      background-color: $white;
-      font-size: 13px;
-      border-width: 1px;
-      border-color: $grayLighter;
-      border-style: solid;
-      padding: 3px 6px;
-      margin-top: -1px;
+.setlist-item {
+  width: 300px;
+  list-style-type: none;
+  list-style-position: inside;
+  cursor: move;
+  color: $gray;
+  background-color: $white;
+  font-size: 13px;
+  border-width: 1px;
+  border-color: $grayLighter;
+  border-style: solid;
+  padding: 3px 6px;
+  margin-top: -1px;
 
-      .close {
-        display: inline-block;
-        float: right;
-      }
-
-      &.empty {
-        display: none;
-        font-style: italic;
-        border: none;
-        color: $grayLighter;
-      }
-    }
-  }
-
-  #selected_songs, #available_songs {
+  .close {
     display: inline-block;
-    width: 100%;
-    margin: 0 10px 0 0;
-    vertical-align: top;
+    float: right;
   }
 
-  #available-songs {
-    margin-top: 50px;
+  &.empty {
+    display: none;
+    font-style: italic;
+    border: none;
+    color: $grayLighter;
+    margin-top: 0;
+  }
 
-    .close {
-      display: none;
-    }
+  &.break {
+    font-style: italic;
+    color: $grayLight;
+  }
+}
+
+#selected_songs, #available_songs {
+  display: inline-block;
+  width: 100%;
+  margin: 0 10px 0 0;
+  vertical-align: top;
+}
+
+#available-songs {
+  margin-top: 50px;
+
+  .close {
+    display: none;
   }
 }

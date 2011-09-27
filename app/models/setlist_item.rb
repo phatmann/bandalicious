@@ -4,6 +4,10 @@ class SetlistItem < ActiveRecord::Base
   acts_as_list :scope => :setlist
 
   def name
-    self.song ? song.name : super
+    self.song ? self.song.name : super
+  end
+
+  def song_id
+    super || 0
   end
 end

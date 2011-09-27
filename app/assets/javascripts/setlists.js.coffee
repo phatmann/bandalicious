@@ -1,9 +1,9 @@
 $ ->
-  $('.song-list .draggable').sortable(
-    connectWith: '.song-list .draggable'
+  $('.song-list .connected').sortable(
+    connectWith: '.song-list .connected'
     scroll: true
     tolerance: 'pointer'
-    items: 'li:not(.empty)'
+    items: 'li:not(.no-sort)'
     appendTo: 'body'
     create: showEmptyMessageIfEmpty
     over: -> $('li.empty', this).hide()
@@ -27,13 +27,22 @@ $ ->
         dataType: 'script'
   ).disableSelection;
 
+  $('.song.break').draggable(
+    connectToSortable: $('#selected-songs ul')
+    helper: 'clone'
+    revert: 'invalid'
+  ).disableSelection;
+
   $('#selected-songs .close').live('click', ->
     $(this).parent().fadeOut('fast', ->
-      $(this).appendTo($('#available-songs ul'))
-      $(this).fadeIn('fast')
-      showEmptyMessageIfEmpty.call($('#selected-songs ul'))
-      hideEmptyMessage.call($('#available-songs ul'))
-      $('#available-songs ul').sortable('refresh')
+      if $(this).hasClass('break')
+        $(this).remove()
+      else
+        $(this).appendTo($('#available-songs ul'))
+        $(this).fadeIn('fast')
+        showEmptyMessageIfEmpty.call($('#selected-songs ul'))
+        hideEmptyMessage.call($('#available-songs ul'))
+        $('#available-songs ul').sortable('refresh')
     )
   )
 
@@ -42,7 +51,7 @@ hideEmptyMessage = ->
   $(this).removeClass('empty')
  
 showEmptyMessageIfEmpty = ->
-  if $('li:not(.empty)', this).length == 0
+  if $('li:not(.no-sort)', this).length == 0
     $('li.empty', this).show()
     $(this).addClass('empty')
     
