@@ -27,8 +27,8 @@ $ ->
         dataType: 'script'
   ).disableSelection;
 
-  $('.song.break').draggable(
-    connectToSortable: $('#selected-songs ul')
+  $('#available-songs .break').draggable(
+    connectToSortable: $('#selected-songs-list')
     helper: 'clone'
     revert: 'invalid'
   ).disableSelection;
@@ -38,11 +38,12 @@ $ ->
       if $(this).hasClass('break')
         $(this).remove()
       else
-        $(this).appendTo($('#available-songs ul'))
+        $(this).appendTo($('#available-songs-list'))
         $(this).fadeIn('fast')
-        showEmptyMessageIfEmpty.call($('#selected-songs ul'))
-        hideEmptyMessage.call($('#available-songs ul'))
-        $('#available-songs ul').sortable('refresh')
+        hideEmptyMessage.call($('#available-songs-list'))
+        $('#available-songs-list').sortable('refresh')
+      
+      showEmptyMessageIfEmpty.call($('#selected-songs-list'))
     )
   )
 

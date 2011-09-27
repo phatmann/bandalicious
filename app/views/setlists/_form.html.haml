@@ -7,7 +7,7 @@
           = f.label 'Songs'
           .input
             .song-list#selected-songs
-              %ul.connected
+              %ul.connected#selected-songs-list
                 %li.setlist_item.empty.no-sort No songs in setlist.
                 = render @setlist.items
       .actions
@@ -15,12 +15,12 @@
   .span6
     .song-list#available-songs
       %p.help-block Drag songs to left to add to setlist.
-      / %ul#breaks
-      /   %li.song.break#song_0
-      /     Break
-      /     = hidden_field_tag 'song_ids[]', 0
-      /     %a.close{:href=>"#"} &times
-      %ul.connected
+      %ul#breaks
+        %li.setlist_item.break#setlist_item_0
+          Break
+          = hidden_field_tag 'song_ids[]', 0
+          %a.close{:href=>"#"} &times
+      %ul.connected#available-songs-list
         %li.setlist_item.empty.no-sort No more songs to play!
         = render @setlist.available_items
   .span4

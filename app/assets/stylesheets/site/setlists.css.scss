@@ -46,7 +46,9 @@
 
 #available-songs {
   margin-top: 50px;
+}
 
+#available-songs, #setlist-items {
   .close {
     display: none;
   }
