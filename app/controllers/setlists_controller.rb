@@ -4,9 +4,13 @@ class SetlistsController < InheritedResources::Base
 	before_filter :require_band
 
 	def sort
-		setlist = Setlist.find(params['id'])
-		setlist.items = song_ids_to_items(params['song'])
-		setlist.save
+		item_ids = params['setlist_item'] || []
+
+		item_ids.each_with_index do |item_id, index|
+			item = SetlistItem.find(item_id)
+			item.position = index + 1
+			item.save
+		end
 
 		head :created
 	end
@@ -16,8 +20,8 @@ class SetlistsController < InheritedResources::Base
 	end
 
 	private
-		def song_ids_to_items(song_ids)
-			return [] unless song_ids
+		def item_ids_to_items(item_ids)
+			return [] unless item_ids
 			song_ids.map{|song_id| SetlistItem.new(:song_id => (song_id == 0) ? nil : song_id)}
 		end
 end

@@ -8,8 +8,8 @@
 .row#setlist
   .span6.song-list
     %ul.sortable{'data-setlist_id' => @setlist.id, 'data-band_id' => @band.id}
-      - for item in @setlist.items
-        %li.setlist-item{:id=>"song_#{item.song_id}"}= item.name
+      - for setlist_item in @setlist.items
+        %li[setlist_item]= setlist_item.name
 
     %p
       = link_to 'Edit Setlist', edit_resource_path

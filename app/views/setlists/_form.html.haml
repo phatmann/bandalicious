@@ -8,7 +8,7 @@
           .input
             .song-list#selected-songs
               %ul.connected
-                %li.setlist-item.empty.no-sort No songs in setlist.
+                %li.setlist_item.empty.no-sort No songs in setlist.
                 = render @setlist.items
       .actions
         = f.button :submit
@@ -21,7 +21,7 @@
       /     = hidden_field_tag 'song_ids[]', 0
       /     %a.close{:href=>"#"} &times
       %ul.connected
-        %li.setlist-item.empty.no-sort No more songs to play!
+        %li.setlist_item.empty.no-sort No more songs to play!
         = render @setlist.available_items
   .span4
     &nbsp;
