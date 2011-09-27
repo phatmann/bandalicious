@@ -16,12 +16,7 @@ class SetlistsController < InheritedResources::Base
 	end
 
 	def fetch_items
-		params[:setlist][:items] = song_ids_to_items(params.delete(:song_ids))
+		song_ids = params.delete(:song_ids) || []
+		params[:setlist][:items] = song_ids.map{|song_id| SetlistItem.new(:song_id => song_id)}
 	end
-
-	private
-		def item_ids_to_items(item_ids)
-			return [] unless item_ids
-			song_ids.map{|song_id| SetlistItem.new(:song_id => (song_id == 0) ? nil : song_id)}
-		end
 end

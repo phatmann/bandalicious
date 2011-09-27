@@ -10,4 +10,8 @@ class SetlistItem < ActiveRecord::Base
   def song_id
     super || 0
   end
+
+  def song_id=(id)
+    super(id == 0 ? nil : id)
+  end
 end
