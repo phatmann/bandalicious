@@ -2,7 +2,7 @@ class SetlistsController < InheritedResources::Base
 	belongs_to :band
 	before_filter :fetch_items, :only => [:create, :update]
 	before_filter :require_band
-	custom_actions :resource => :duplicate
+	custom_actions :resource => [:duplicate, :sort]
 
 	def sort
 		item_ids = params['setlist_item'] || []

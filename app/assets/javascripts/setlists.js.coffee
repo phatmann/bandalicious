@@ -13,20 +13,6 @@ $ ->
     distance: 3
   ).disableSelection;
 
-  $('.song-list .sortable').sortable(
-    scroll: true,
-    axis: 'y',
-    stop: ->
-      bandID    = $(this).data('band_id')
-      setlistID = $(this).data('setlist_id')
-      
-      $.ajax
-        url: "/bands/#{bandID}/setlists/#{setlistID}/sort"
-        type: 'post',
-        data: $(this).sortable('serialize'),
-        dataType: 'script'
-  ).disableSelection;
-
   $('#available-songs .break').draggable(
     connectToSortable: $('#selected-songs-list')
     helper: 'clone'

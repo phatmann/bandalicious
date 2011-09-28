@@ -2,8 +2,12 @@ Bandaliscious::Application.routes.draw do
   root :to => 'home#index'
 
   resources :bands do
-    resources :songs
+    resources :songs do
+      post 'sort', :on => :collection
+    end
+
     resources :shows
+
     resources :setlists do
       post 'sort', :on => :member
       get 'duplicate', :on => :member

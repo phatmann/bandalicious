@@ -7,7 +7,7 @@
 %p.help-block Drag songs to reorder
 .row#setlist
   .span6.song-list#setlist-items
-    %ul.sortable{'data-setlist_id' => @setlist.id, 'data-band_id' => @band.id}
+    %ul.sortable{'data-sort_url' => sort_resource_path}
       = render @setlist.items
 
     %p

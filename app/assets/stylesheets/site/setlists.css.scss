@@ -4,25 +4,7 @@
   margin: 0 0 10px 0;
 }
 
-.setlist_item {
-  width: 300px;
-  list-style-type: none;
-  list-style-position: inside;
-  cursor: move;
-  color: $gray;
-  background-color: $white;
-  font-size: 13px;
-  border-width: 1px;
-  border-color: $grayLighter;
-  border-style: solid;
-  padding: 3px 6px;
-  margin-top: -1px;
-
-  .close {
-    display: inline-block;
-    float: right;
-  }
-
+li.setlist_item {
   &.empty {
     display: none;
     font-style: italic;
