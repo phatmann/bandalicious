@@ -6,6 +6,7 @@ Bandaliscious::Application.routes.draw do
     resources :shows
     resources :setlists do
       post 'sort', :on => :member
+      get 'duplicate', :on => :member
     end
   end
 
