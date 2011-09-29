@@ -7,7 +7,7 @@ gem 'rspec-rails'
 gem 'cucumber-rails'
 gem 'haml-rails'
 gem 'inherited_resources'
-gem 'acts_as_list'
+
 gem 'unicorn'
 gem 'authlogic'
 
@@ -33,3 +33,6 @@ end
 
 # Get version 2.0 (not released yet)
 gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
+
+# Need patch for handling default scope
+gem 'acts_as_list', :git => 'git://github.com/swanandp/acts_as_list.git'

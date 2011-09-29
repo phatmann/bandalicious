@@ -5,10 +5,9 @@
   #{show.name} (#{show.date})
 
 %p.help-block Drag songs to reorder
-.row#setlist
-  .span6.song-list#setlist-items
-    %ul.sortable{'data-sort_url' => sort_resource_path}
-      = render @setlist.items
+.song-list#setlist-items
+  %ul.sortable{'data-sort_url' => sort_resource_path}
+    = render @setlist.items
 
-    %p
-      = link_to 'Edit Setlist', edit_resource_path
+  .links= link_to 'Edit Setlist', edit_resource_path
+  .count #{@setlist.songs.size} songs

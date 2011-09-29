@@ -29,3 +29,21 @@ li.setlist_item, li.song {
     padding: 1px 10px 0 0;
   }
 }
+
+.song-list { 
+  @include clearfix;
+  width: 314px;
+
+  ul {
+    margin: 0 0 10px 0;
+  }
+
+  .links {
+    float: left;
+  }
+
+  .count {
+    float: right;
+    color: $grayLight;
+  }
+}

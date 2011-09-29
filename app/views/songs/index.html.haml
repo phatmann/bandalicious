@@ -1,7 +1,9 @@
 .page-header
   %h1 Songs
 
-%ul.sortable{'data-sort_url' => sort_resources_path}
-  = render @songs
+.song-list
+  %ul.sortable{'data-sort_url' => sort_resources_path}
+    = render @songs
 
-= link_to 'New Song', new_resource_path
+  .links= link_to 'New Song', new_resource_path
+  .count #{@songs.size} songs
