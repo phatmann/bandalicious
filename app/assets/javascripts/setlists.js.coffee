@@ -5,11 +5,11 @@ $ ->
     tolerance: 'pointer'
     items: 'li:not(.no-sort)'
     appendTo: 'body'
-    create: showEmptyMessageIfEmpty
+    create: updateSongCount
     over: -> $('li.empty', this).hide()
     out: -> if $(this).hasClass('empty') then $('li.empty', this).show()
-    receive: hideEmptyMessage
-    remove: showEmptyMessageIfEmpty
+    receive: updateSongCount
+    remove: updateSongCount
     distance: 3
   ).disableSelection;
 
@@ -26,10 +26,10 @@ $ ->
       else
         $(this).appendTo($('#available-songs-list'))
         $(this).fadeIn('fast')
-        hideEmptyMessage.call($('#available-songs-list'))
+        updateSongCount.call($('#available-songs-list'))
         $('#available-songs-list').sortable('refresh')
       
-      showEmptyMessageIfEmpty.call($('#selected-songs-list'))
+      updateSongCount.call($('#selected-songs-list'))
     )
   )
 
@@ -42,19 +42,24 @@ $ ->
 
       elem.appendTo($('#selected-songs-list'))
       elem.fadeIn('fast')
-      showEmptyMessageIfEmpty.call($('#available-songs-list'))
-      $('#selected-songs-list').sortable('refresh')
-      
-      hideEmptyMessage.call($('#selected-songs-list'))
+      updateSongCount.call($('#available-songs-list'))
+      $('#selected-songs-list').sortable('refresh') 
+      updateSongCount.call($('#selected-songs-list'))
     )
   )
 
-hideEmptyMessage = ->
-  $('li.empty', this).hide()
-  $(this).removeClass('empty')
- 
-showEmptyMessageIfEmpty = ->
-  if $('li:not(.no-sort)', this).length == 0
+updateSongCount = ->
+  count = $('li:not(.no-sort)', this).length
+  countElem = $('.count', $(this).parent())
+  
+  if count == 0
     $('li.empty', this).show()
     $(this).addClass('empty')
+    countElem.fadeOut('fast')
+  else
+    $('li.empty', this).hide()
+    $(this).removeClass('empty')
+    countElem.text(count + (if count > 1 then ' songs' else ' song'))
+    countElem.fadeIn('fast')
+    
     

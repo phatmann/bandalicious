@@ -10,6 +10,7 @@
               %ul.connected#selected-songs-list
                 %li.setlist_item.empty.no-sort No songs in setlist.
                 = render @setlist.items
+              .count NN songs
       .actions
         = f.button :submit
   .span6
@@ -20,6 +21,7 @@
       %ul.connected#available-songs-list
         %li.setlist_item.empty.no-sort No more songs to play!
         = render @setlist.available_items
+      .count NN songs
   .span4
     &nbsp;
     
