@@ -63,6 +63,7 @@ input[type=radio] {
 // Inputs, Textareas, Selects
 input[type=text],
 input[type=password],
+input[type=email],
 textarea,
 select,
 .uneditable-input {
@@ -102,6 +103,7 @@ textarea {
 // Focus states
 input[type=text],
 input[type=password],
+input[type=email],
 select, textarea {
   $transition: border linear .2s, box-shadow linear .2s;
   @include transition($transition);
@@ -109,6 +111,7 @@ select, textarea {
 }
 input[type=text]:focus,
 input[type=password]:focus,
+input[type=email]:focus,
 textarea:focus {
   outline: none;
   border-color: rgba(82,168,236,.8);
@@ -130,6 +133,7 @@ form div.error {
   }
   input[type=text],
   input[type=password],
+  input[type=email],
   textarea {
     border-color: $error-text;
     @include box-shadow(0 0 3px rgba(171,41,32,.25));
@@ -221,7 +225,7 @@ input.disabled {
 // Inline Fields (input fields that appear as inline objects
 .inline-inputs {
   color: $gray;
-  span, input[type=text] {
+  span, input[type=text], input[type=email] {
     display: inline-block;
   }
   input.mini {
@@ -239,7 +243,8 @@ input.disabled {
 .input-prepend,
 .input-append {
   input[type=text],
-  input[type=password] {
+  input[type=password],
+  input[type=email] {
     @include border-radius(0 3px 3px 0);
   }
   .add-on {
