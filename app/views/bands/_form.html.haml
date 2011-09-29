@@ -1,7 +1,7 @@
 = simple_form_for @band do |f|
   .inputs
-    = f.input :name
-    = f.input :username, :hint => "This will appear in your URLs; e.g. 'rockband'"
+    = f.input :name, :label => 'Band name', :hint => "The name of your band; e.g. <i>Mud Honeys</i>".html_safe
+    = f.input :username, :hint => "The name you will use to login. Choose a short name with no spaces; e.g. <i>mudhoneys</i>".html_safe
     = f.input :password
     = f.input :password_confirmation
   .actions
