@@ -18,8 +18,19 @@ li.setlist_item, li.song {
   padding: 3px 6px;
   margin-top: -1px;
 
+  .close, .add, .edit {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   .close {
     display: inline-block;
+    float: right;
+  }
+
+  .add {
+    display: none;
     float: right;
   }
 

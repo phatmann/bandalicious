@@ -33,6 +33,22 @@ $ ->
     )
   )
 
+  $('#available-songs .add').live('click', ->
+    $(this).parent().fadeOut('fast', ->
+      if $(this).hasClass('break')
+        elem = $(this).clone()
+      else
+        elem = $(this)
+
+      elem.appendTo($('#selected-songs-list'))
+      elem.fadeIn('fast')
+      showEmptyMessageIfEmpty.call($('#available-songs-list'))
+      $('#selected-songs-list').sortable('refresh')
+      
+      hideEmptyMessage.call($('#selected-songs-list'))
+    )
+  )
+
 hideEmptyMessage = ->
   $('li.empty', this).hide()
   $(this).removeClass('empty')

@@ -14,4 +14,8 @@ class SetlistItem < ActiveRecord::Base
   def song_id=(id)
     super(id == 0 ? nil : id)
   end
+
+  def self.break
+    SetlistItem.new
+  end
 end

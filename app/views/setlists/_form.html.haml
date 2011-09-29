@@ -14,12 +14,9 @@
         = f.button :submit
   .span6
     .song-list#available-songs
-      %p.help-block Drag songs to left to add to setlist.
+      %p.help-block Drag songs to left or click + to add to setlist.
       %ul#breaks
-        %li.setlist_item.break#setlist_item_0
-          Break
-          = hidden_field_tag 'song_ids[]', 0
-          %a.close{:href=>"#"} &times
+        = render SetlistItem.break
       %ul.connected#available-songs-list
         %li.setlist_item.empty.no-sort No more songs to play!
         = render @setlist.available_items
