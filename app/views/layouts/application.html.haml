@@ -1,7 +1,7 @@
 !!! 5
 %html
   %head
-    %title Bandaliscious
+    %title Bandaliscious - #{current_band ? current_band.name + ' -' : ''} #{yield(:title)}
     = stylesheet_link_tag "site", "bootstrap"
     = javascript_include_tag "application"
     
@@ -12,5 +12,7 @@
     = render "layouts/top_bar"
     .container
       = render 'layouts/notice'
+      .page-header
+        %h1= yield(:title)
       = yield
       = render 'layouts/footer'
