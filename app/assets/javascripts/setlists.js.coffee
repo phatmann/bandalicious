@@ -34,12 +34,10 @@ $ ->
   )
 
   $('#available-songs .add').live('click', ->
-    $(this).parent().fadeOut('fast', ->
-      if $(this).hasClass('break')
-        elem = $(this).clone()
-      else
-        elem = $(this)
-
+    elem = $(this).parent();
+    elem = elem.clone() if elem.hasClass('break')
+    
+    elem.fadeOut('fast', ->
       elem.appendTo($('#selected-songs-list'))
       elem.fadeIn('fast')
       updateSongCount.call($('#available-songs-list'))
