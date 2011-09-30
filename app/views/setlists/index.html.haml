@@ -4,7 +4,7 @@
   %tbody
     - @setlists.each do |setlist|
       %tr
-        %td= link_to setlist.name, resource_path(setlist)
+        %td= link_to setlist_display_name(setlist), resource_path(setlist)
         %td= link_to 'copy', duplicate_resource_path(setlist)
         %td= link_to 'delete', resource_path(setlist), :confirm => 'Are you sure?', :method => :delete
 

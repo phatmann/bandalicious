@@ -9,3 +9,5 @@ $ ->
         data: $(this).sortable('serialize'),
         dataType: 'script'
   ).disableSelection;
+
+  $("input.date-picker").datepicker(dateFormat: "yy-mm-dd");
