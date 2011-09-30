@@ -31,18 +31,16 @@ fieldset {
 }
 
 // Set font for forms
-label,
+/*label,
 input,
 select,
 textarea {
   @include sans-serif-font(normal,13px,normal);
-}
+}*/
 
 // Float labels left
 label {
   padding-top: 6px;
-  font-size: 13px;
-  line-height: 18px;
   float: left;
   width: 130px;
   text-align: right;
@@ -70,8 +68,6 @@ select,
   display: inline-block;
   width: 210px;
   padding: 4px;
-  font-size: 13px;
-  line-height: $baseline;
   height: $baseline;
   color: $gray;
   border: 1px solid #ccc;
@@ -206,7 +202,7 @@ input.disabled {
 // Help Text
 .help-inline,
 .help-block {
-  font-size: 12px;
+  font-size: $basefont * 0.8;
   line-height: $baseline;
   color: $grayLight;
 }
@@ -341,7 +337,7 @@ input.disabled {
     width: auto;
     font-weight: bold;
     text-align: left;
-    line-height: 20px;
+    line-height: $baseline + 2;
     padding-top: 0;
   }
   .clearfix {

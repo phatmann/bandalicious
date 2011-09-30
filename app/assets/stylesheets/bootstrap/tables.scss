@@ -12,7 +12,7 @@ table {
   margin-bottom: $baseline;
   padding: 0;
   border-collapse: separate;
-  font-size: 13px;
+  font-size: $basefont;
   th, td {
     padding: 10px 10px 9px;
     line-height: $baseline * .75;
