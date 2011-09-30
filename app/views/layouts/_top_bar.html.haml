@@ -18,4 +18,4 @@
             %li{:class => controller_name == 'bands' ? 'active' : ''}
               = link_to current_band.name, edit_band_path(current_band)
             %li
-              = link_to '[sign out]', band_session_path(current_band_session), :method => :delete
+              = link_to '[sign out]', :logout
