@@ -5,8 +5,7 @@ gem 'jquery-rails'
 gem 'rspec-rails'
 gem 'haml-rails'
 gem 'inherited_resources'
-
-gem 'unicorn'
+gem 'thin'
 gem 'authlogic'
 
 group :development do
