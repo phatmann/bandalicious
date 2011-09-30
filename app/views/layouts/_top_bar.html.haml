@@ -3,6 +3,7 @@
     .fill
       .container
         %h3
+          = image_tag 'logo-sm.png'
           %a{:href=>'/'} Bandaliscious
         - if current_band
           - unless current_band.admin?

@@ -4,6 +4,12 @@ body {
   padding-top: 60px !important;
 }
 
+.topbar h3 img {
+  float: left;
+  margin: 5px 10px 0 0;
+  xbackground-color: white;
+}
+
 li.setlist_item, li.song {
   width: 300px;
   list-style-type: none;

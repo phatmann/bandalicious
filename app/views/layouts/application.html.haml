@@ -1,6 +1,7 @@
 !!! 5
 %html
   %head
+    = favicon_link_tag
     %title Bandaliscious - #{current_band ? current_band.name + ' -' : ''} #{yield(:title)}
     = stylesheet_link_tag "site", "bootstrap"
     = javascript_include_tag "application"

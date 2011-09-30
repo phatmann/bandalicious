@@ -1,16 +1,16 @@
 .hero-unit
-  %h1 Bandaliscious
-  %p Remember all your songs, make killer setlists from them
-  %p
-    %a.btn.primary.large{:href=>new_band_path} Get started &raquo;
+  %div
+    %h1 Bandaliscious
+    %p Remember all your songs, make killer setlists from them
+    %p
+      %a.btn.primary.large{:href=>new_band_path} Get started &raquo;
+  = image_tag('logo-lg.png')
 .row
-  .span9
+  .span9#info
     %h2 It's what bands need
-    %dl
-      %dt You want to keep track of all the songs you play. Even the old ones. 
-      %dd Bandaliscious delivers.
-      %dt You want to make great setlists, and reuse them for your next shows.
-      %dd Bandaliscious is what you need.
+    %ul
+      %li Keep track of all the songs you play. Even the old ones. 
+      %li Make great setlists, and reuse them for your next shows.
     %p
       %a.btn{:href=>new_band_path} Let's do this!
   .span7
