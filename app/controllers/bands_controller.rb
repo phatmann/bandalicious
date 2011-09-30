@@ -4,10 +4,10 @@ class BandsController < InheritedResources::Base
   before_filter :require_admin, :only => [:index]
 
   def create
-    create!{'/'}
+    create!(:notice => 'Welcome to Bandaliscious!'){'/'}
   end
 
   def update
-    update!{'/'}
+    update!(:notice => 'Band info updated!'){'/'}
   end
 end

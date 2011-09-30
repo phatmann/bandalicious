@@ -6,4 +6,4 @@
     = f.input :password
     = f.input :password_confirmation
   .actions
-    = f.button :submit
+    = f.button :submit, @band.new_record? ? 'Sign Up' : 'Update Band Info'

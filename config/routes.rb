@@ -15,8 +15,10 @@ Bandaliscious::Application.routes.draw do
   end
 
   resources :band_sessions
+
   match 'login'  => 'band_sessions#new', :as => :login
   match 'logout' => 'band_sessions#destroy', :as => :logout
+  match 'signup' => 'bands#new', :as => :signup
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

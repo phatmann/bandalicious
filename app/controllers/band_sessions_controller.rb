@@ -1,7 +1,6 @@
 class BandSessionsController < ApplicationController
   before_filter :require_no_band, :only => [:new, :create]
   before_filter :require_band, :only => :destroy
-  layout 'home'
 
   def new
     @band_session = BandSession.new

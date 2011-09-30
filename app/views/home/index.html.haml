@@ -3,7 +3,7 @@
     %h1 Bandaliscious
     %p Remember all your songs, make killer setlists from them
     %p
-      %a.btn.primary.large{:href=>new_band_path} Get started &raquo;
+      = link_to "Get started &raquo;".html_safe, :signup, :class => 'btn primary large'
   = image_tag('logo-lg.png')
 .row
   .span9#info
@@ -12,7 +12,7 @@
       %li Keep track of all the songs you play. Even the old ones. 
       %li Make great setlists, and reuse them for your next shows.
     %p
-      %a.btn{:href=>new_band_path} Let's do this!
+      = link_to "Let's do this!", :signup, :class => 'btn'
   .span7
     .well
       %h2 Login
