@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
-gem 'sqlite3'
 gem 'jquery-rails'
 gem 'rspec-rails'
 gem 'cucumber-rails'
@@ -12,6 +11,7 @@ gem 'unicorn'
 gem 'authlogic'
 
 group :development do
+  gem 'sqlite3'
   gem 'ruby-debug19', :require => 'ruby-debug'
 end
 
