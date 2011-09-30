@@ -1,4 +1,4 @@
-Bandaliscious::Application.routes.draw do
+Bandalicious::Application.routes.draw do
   root :to => 'home#index'
 
   resources :bands do

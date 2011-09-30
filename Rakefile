@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Bandaliscious::Application.load_tasks
+Bandalicious::Application.load_tasks
