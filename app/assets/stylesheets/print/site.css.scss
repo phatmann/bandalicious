@@ -1,0 +1,17 @@
+@import "bootstrap/preboot.scss";
+
+.topbar, footer, .links, .help-block {
+  display: none;
+}
+
+li.setlist_item, li.song {
+  border: none;
+  font-size: $basefont * 1.5;
+  line-height: $basefont * 1.8;
+  color: black;
+}
+
+.song-list .count {
+  float: left;
+  margin-left: 6px;
+}

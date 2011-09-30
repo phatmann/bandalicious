@@ -5,5 +5,7 @@
   %ul.sortable{'data-sort_url' => sort_resource_path}
     = render @setlist.items
 
-  .links= link_to 'Edit Setlist', edit_resource_path
+  .links
+    = link_to 'Print', '#', :class => 'print btn'
+    = link_to 'Edit Setlist', edit_resource_path
   .count #{@setlist.songs.size} songs

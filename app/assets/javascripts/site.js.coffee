@@ -11,3 +11,5 @@ $ ->
   ).disableSelection;
 
   $("input.date-picker").datepicker(dateFormat: "yy-mm-dd");
+
+  $("a.print").click(-> print())
