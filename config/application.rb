@@ -40,6 +40,6 @@ module Bandaliscious
     # Enable the asset pipeline
     config.assets.enabled = true
     config.assets.precompile += %w( site.css home.css bootstrap.css )
-    config.assets.paths << "#{Rails.root}/vendor/assets/javascripts"
+    # config.assets.paths << "#{Rails.root}/vendor/assets/javascripts"
   end
 end
