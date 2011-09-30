@@ -3,7 +3,6 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.0'
 gem 'jquery-rails'
 gem 'rspec-rails'
-gem 'cucumber-rails'
 gem 'haml-rails'
 gem 'inherited_resources'
 
@@ -18,6 +17,7 @@ end
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'cucumber-rails'
 end
 
 group :production do
