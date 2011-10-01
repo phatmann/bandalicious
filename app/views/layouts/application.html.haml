@@ -3,7 +3,7 @@
   %head
     = favicon_link_tag '/assets/logo-fav.png', :type => 'image/png'
     %title Bandalicious - #{current_band ? current_band.name + ' -' : ''} #{yield(:title)}
-    = stylesheet_link_tag "site", "bootstrap", :media => "all"
+    = stylesheet_link_tag "bootstrap", "site", :media => "all"
     = stylesheet_link_tag "print", :media => "print"
     = javascript_include_tag "application"
     
