@@ -32,6 +32,7 @@ $ ->
       
       updateSongCount.call($('#selected-songs-list'))
     )
+    return false
   )
 
   $('#available-songs .add').live('click', ->
@@ -46,6 +47,7 @@ $ ->
       $('#selected-songs-list').sortable('refresh') 
       updateSongCount.call($('#selected-songs-list'))
     )
+    return false
   )
 
 updateSongCount = ->
