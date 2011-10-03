@@ -20,6 +20,7 @@ $ ->
   ).disableSelection;
 
   $('#selected-songs .close').live('click', ->
+    #alert('close');return
     $(this).parent().fadeOut('fast', ->
       if $(this).hasClass('break')
         $(this).remove()
@@ -34,6 +35,7 @@ $ ->
   )
 
   $('#available-songs .add').live('click', ->
+    #alert('add');return
     elem = $(this).parent();
     elem = elem.clone() if elem.hasClass('break')
     

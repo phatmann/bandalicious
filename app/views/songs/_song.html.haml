@@ -1,5 +1,6 @@
 %li[song]
-  = song.name
-  = link_to "&times".html_safe, resource_path(song), :confirm => 'Are you sure?', :method => :delete, :class => 'close'
+  .name
+    %span= song.name
+  = link_to "<span>&times</span>".html_safe, resource_path(song), :confirm => 'Are you sure?', :method => :delete, :class => 'close'
   = link_to image_tag('edit.png'), edit_resource_path(song), :class => 'edit'
   

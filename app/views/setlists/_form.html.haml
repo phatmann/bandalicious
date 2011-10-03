@@ -1,5 +1,5 @@
 .row#setlist
-  .span6
+  .span8
     = simple_form_for [@band, @setlist], :html => {:class => 'form-stacked'} do |f|
       .inputs
         = f.input :name
@@ -14,7 +14,7 @@
               .count NN songs
       .actions
         = f.button :submit
-  .span6
+  .span8
     .song-list#available-songs
       %p.help-block Drag songs to left or click + to add to setlist.
       %ul#breaks
@@ -23,8 +23,6 @@
         %li.setlist_item.empty.no-sort No more songs to play!
         = render @setlist.available_items
       .count NN songs
-  .span4
-    &nbsp;
     
 
 

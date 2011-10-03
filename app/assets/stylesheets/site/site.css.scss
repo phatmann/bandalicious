@@ -10,7 +10,7 @@ body {
 }
 
 li.setlist_item, li.song {
-  width: 300px;
+  width: 420px;
   list-style-type: none;
   list-style-position: inside;
   cursor: move;
@@ -19,29 +19,40 @@ li.setlist_item, li.song {
   border-width: 1px;
   border-color: $grayLighter;
   border-style: solid;
-  padding: 3px 6px;
+  height: $baseline * 1.5;
   margin-top: -1px;
 
+  .close, .add, .edit, .name {
+    display: inline-block;
+    height: 100%;
+
+    span, img {
+      display: inline-block;
+      margin-top: $baseline * 0.2;
+      margin-left: $baseline * 0.5;
+    }
+  }
+
+  .name {
+    float: left;
+  }
+
   .close, .add, .edit {
+    float: right;
+    width: $baseline * 1.5;
+
     &:hover {
       text-decoration: none;
     }
   }
 
-  .close {
-    display: inline-block;
-    float: right;
-  }
-
   .add {
     display: none;
-    float: right;
   }
 
-  .edit {
-    display: inline-block;
-    float: right;
-    padding: 1px 10px 0 0;
+  .edit img {
+    margin-top: $baseline * 0.6;
+    margin-left: $baseline * 0.6;
   }
 }
 

@@ -1,5 +1,8 @@
 %li[setlist_item]{:class => setlist_item.song ? nil : 'setlist_item break'}
-  = setlist_item.name || 'Break'
+  .name
+    %span= setlist_item.name || 'Break'
+  %a.close{:href=>"#"}
+    %span &times
+  %a.add{:href=>"#"}
+    %span +
   = hidden_field_tag 'song_ids[]', setlist_item.song_id
-  %a.close{:href=>"#"} &times
-  %a.add{:href=>"#"} +
