@@ -1,5 +1,6 @@
 //= require jquery
 //= require jquery-ui
-//= require_tree ../../../vendor/assets/javascripts/
 //= require jquery_ujs
+//= require jquery.ui.mouse.touch
+//= require bootstrap-alerts
 //= require_tree .
