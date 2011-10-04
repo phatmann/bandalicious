@@ -1,7 +1,8 @@
-%ul.tabs
-  %li{:class => controller_name == 'songs' ? 'active' : ''}
-    = link_to 'Songs', band_songs_path(current_band)
-  %li{:class => controller_name == 'setlists' ? 'active' : ''}
-    = link_to 'Setlists', band_setlists_path(current_band)
-  / %li{:class => controller_name == 'shows' ? 'active' : ''}
-  /  = link_to 'Shows', band_shows_path(current_band)
+- if current_band && !current_band.admin?
+  %ul.tabs
+    %li{:class => controller_name == 'songs' ? 'active' : ''}
+      = link_to 'Songs', band_songs_path(current_band)
+    %li{:class => controller_name == 'setlists' ? 'active' : ''}
+      = link_to 'Setlists', band_setlists_path(current_band)
+    / %li{:class => controller_name == 'shows' ? 'active' : ''}
+    /  = link_to 'Shows', band_shows_path(current_band)
