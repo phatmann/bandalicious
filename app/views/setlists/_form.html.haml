@@ -1,27 +1,27 @@
-.row#setlist
+.row
   .span8
     = simple_form_for [@band, @setlist], :html => {:class => 'form-stacked'} do |f|
-      .inputs
-        = f.input :name
-        = f.input :date, :as => :date_picker
-        .clearfix
-          = f.label 'Songs'
-          .input
-            .song-list#selected-songs
-              %ul.connected#selected-songs-list
-                %li.setlist_item.empty.no-sort Drag songs here.
-                = render @setlist.items
-              .count NN songs
+      .clearfix
+        .name-input= f.input :name
+        .date-input= f.input :date, :as => :date_picker
+      .clearfix
+        = f.label 'Songs'
+        .input
+          .song-list#selected-songs
+            %ul.connected#selected-songs-list
+              %li.setlist_item.empty.no-sort Drag songs here.
+              = render @setlist.items
+            .count NN songs
       .actions
         = f.button :submit
   .span8
     .song-list#available-songs
-      %p.help-block Drag songs to left or click + to add to setlist.
-      %ul#breaks
-        = render SetlistItem.break
+      .help-block Drag songs or click +
       %ul.connected#available-songs-list
         %li.setlist_item.empty.no-sort No more songs to play!
         = render @setlist.available_items
+      %ul#breaks
+        = render SetlistItem.break
       .count NN songs
     
 

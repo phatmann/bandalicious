@@ -1,36 +1,57 @@
 @import "bootstrap/preboot.scss";
 
-li.setlist_item {
-  &.empty {
-    display: none;
-    font-style: italic;
-    border: none;
-    color: $grayLighter;
-    margin-top: 0;
+.setlists {
+  form {
+    padding-left: 0;
   }
 
-  &.break {
-    font-style: italic;
-    color: $grayLight;
+  .name-input {
+    float: left;
+    input {
+      width: $basefont * 14;
+    }
   }
-}
 
-#selected-songs, #available-songs {
-  .count {
-    display: none;
+  .date-input {
+    float: left;
+    margin-left: 20px;
+    input {
+      width: $basefont * 6.5;
+    }
   }
-}
 
-#available-songs {
-  margin-top: 0px;
-}
+  li.setlist_item {
+    &.empty {
+      display: none;
+      font-style: italic;
+      border: none;
+      color: $grayLighter;
+      margin-top: 0;
+    }
 
-#available-songs, #setlist-items {
-  .close {
-    display: none;
+    &.break {
+      font-style: italic;
+      color: $grayLight;
+    }
   }
-}
 
-#available-songs .add {
-  display: inline-block;
+  #selected-songs, #available-songs {
+    .count {
+      display: none;
+    }
+  }
+
+  #available-songs {
+    margin-top: 87px;
+  }
+
+  #available-songs, #setlist-items {
+    .close {
+      display: none;
+    }
+  }
+
+  #available-songs .add {
+    display: inline-block;
+  }
 }
