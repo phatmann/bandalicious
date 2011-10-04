@@ -2,11 +2,34 @@
 
 body {
   padding-top: 60px;
+  background-color: $black;
 }
 
 .topbar h3 img {
   float: left;
   margin: 1px 10px 0 0;
+}
+
+.tabs, .pills {
+  background-color: $black;
+  margin-bottom: 0;
+  border-bottom: none;
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.content {
+  margin: 0 -20px;
+  background-color: $white;
+  padding: 20px;
+  @include border-radius(3px);
+}
+
+footer {
+  padding: 20px;
+  color: $grayLight;
 }
 
 li.setlist_item, li.song {

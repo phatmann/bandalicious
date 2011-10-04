@@ -15,7 +15,8 @@
     = render "layouts/top_bar"
     .container
       = render 'layouts/notice'
-      .page-header
+      = render 'layouts/tabs'
+      .content{:class => controller_name}
         %h1= yield(:title)
-      = yield
-      = render 'layouts/footer'
+        = yield
+    = render 'layouts/footer'

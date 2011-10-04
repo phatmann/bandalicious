@@ -1,5 +1,14 @@
 @import 'bootstrap/preboot.scss';
 
+body {
+  background-color: $black;
+}
+
+.container {
+  background-color: $white;
+  padding: 0 60px;
+}
+
 .alert-message {
   margin-top: 20px;
 }
