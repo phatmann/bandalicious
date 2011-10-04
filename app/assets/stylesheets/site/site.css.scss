@@ -1,5 +1,9 @@
 @import "bootstrap/preboot.scss";
 
+html {
+  background-color: $black;
+}
+
 body {
   padding-top: 60px;
   background-color: $black;
