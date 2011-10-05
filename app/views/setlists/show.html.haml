@@ -6,6 +6,7 @@
     = render @setlist.items
 
   .links
-    = link_to 'Print', '#', :class => 'print btn'
-    = link_to 'Edit Setlist', edit_resource_path
-  .count #{@setlist.songs.size} songs
+    = link_to 'Add/Remove Songs', edit_resource_path
+    = link_to 'Print Setlist', '#', :class => 'btn print'
+  .count
+    #{@setlist.songs.size} songs
