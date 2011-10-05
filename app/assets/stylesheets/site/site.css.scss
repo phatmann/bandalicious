@@ -36,8 +36,11 @@ footer {
   color: $grayLight;
 }
 
+$setlistItemWidth: 420px;
+$setlistBtnWidth: $baseline * 1.5;
+
 li.setlist_item, li.song {
-  width: 420px;
+  width: $setlistItemWidth;
   list-style-type: none;
   list-style-position: inside;
   cursor: move;
@@ -62,11 +65,12 @@ li.setlist_item, li.song {
 
   .name {
     float: left;
+    width: $setlistItemWidth - $setlistBtnWidth;
   }
 
   .close, .add, .edit {
     float: right;
-    width: $baseline * 1.5;
+    width: $setlistBtnWidth;
 
     &:hover {
       text-decoration: none;

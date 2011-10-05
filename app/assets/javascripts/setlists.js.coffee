@@ -4,23 +4,22 @@ $ ->
     scroll: true
     tolerance: 'pointer'
     items: 'li:not(.no-sort)'
-    appendTo: 'body'
+    handle: '.name'
     create: updateSongCount
     over: -> $('li.empty', this).hide()
     out: -> if $(this).hasClass('empty') then $('li.empty', this).show()
     receive: updateSongCount
     remove: updateSongCount
-    distance: 3
   ).disableSelection;
 
   $('#available-songs .break').draggable(
     connectToSortable: $('#selected-songs-list')
     helper: 'clone'
     revert: 'invalid'
+    handle: '.name'
   ).disableSelection;
 
   $('#selected-songs .close').live('click', ->
-    #alert('close');return
     $(this).parent().fadeOut('fast', ->
       if $(this).hasClass('break')
         $(this).remove()
@@ -36,7 +35,6 @@ $ ->
   )
 
   $('#available-songs .add').live('click', ->
-    #alert('add');return
     elem = $(this).parent();
     elem = elem.clone() if elem.hasClass('break')
     
