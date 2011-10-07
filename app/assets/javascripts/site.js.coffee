@@ -1,15 +1,15 @@
 $ ->
   $('.sortable').sortable(
-    scroll: true,
-    axis: 'y',
+    scroll: true
+    axis: 'y'
+    handle: '.handle'
     stop: ->
       $.ajax
         url: $(this).data('sort_url')
-        type: 'post',
-        data: $(this).sortable('serialize'),
+        type: 'post'
+        data: $(this).sortable('serialize')
         dataType: 'script'
-  ).disableSelection;
+  ).disableSelection
 
-  $("input.date-picker").datepicker(dateFormat: "yy-mm-dd");
-
+  $("input.date-picker").datepicker(dateFormat: "yy-mm-dd")
   $("a.print").click(-> print())

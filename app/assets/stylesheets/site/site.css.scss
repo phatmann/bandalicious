@@ -36,11 +36,8 @@ footer {
   color: $grayLight;
 }
 
-$setlistItemWidth: 420px;
-$setlistBtnWidth: $baseline * 1.5;
-
 li.setlist_item, li.song {
-  width: $setlistItemWidth;
+  width: 420px;
   list-style-type: none;
   list-style-position: inside;
   color: $gray;
@@ -62,15 +59,21 @@ li.setlist_item, li.song {
     }
   }
 
+  .handle {
+    float: left;
+    width: $baseline * 1.5;
+    height: $baseline * 1.5;
+    background-color: $grayLight;
+    cursor: move;
+  }
+
   .name {
     float: left;
-    width: $setlistItemWidth - ($setlistBtnWidth * 3);
-    cursor: move;
   }
 
   .close, .add, .edit {
     float: right;
-    width: $setlistBtnWidth;
+    width: $baseline * 1.5;
 
     &:hover {
       text-decoration: none;
