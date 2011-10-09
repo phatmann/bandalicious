@@ -24,5 +24,5 @@ Bandalicious::Application.configure do
 
   # Asset settings
   config.assets.compress = false
-  config.assets.debug    = false
+  config.assets.debug    = true
 end

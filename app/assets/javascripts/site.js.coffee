@@ -2,7 +2,7 @@ $ ->
   $('.sortable').sortable(
     scroll: true
     axis: 'y'
-    handle: '.handle'
+    handle: dragHandle()
     stop: ->
       $.ajax
         url: $(this).data('sort_url')
@@ -13,3 +13,6 @@ $ ->
 
   $("input.date-picker").datepicker(dateFormat: "yy-mm-dd")
   $("a.print").click(-> print())
+
+# handles only for multi-touch
+window.dragHandle = -> if $('.handle:visible').length > 0 then '.handle' else null  

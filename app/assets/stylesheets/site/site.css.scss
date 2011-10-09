@@ -47,6 +47,7 @@ li.setlist_item, li.song {
   border-style: solid;
   height: $baseline * 1.5;
   margin-top: -1px;
+  cursor: move;
 
   .close, .add, .edit, .name {
     display: inline-block;
@@ -60,11 +61,7 @@ li.setlist_item, li.song {
   }
 
   .handle {
-    float: left;
-    width: $baseline * 1.5;
-    height: $baseline * 1.5;
-    background-color: $grayLight;
-    cursor: move;
+    display: none;
   }
 
   .name {
@@ -109,5 +106,29 @@ li.setlist_item, li.song {
 
   .btn {
     margin-right: 10px;
+  }
+}
+
+/* iPhone and Android styles */
+@media screen and (max-device-width: 480px) {
+  li.setlist_item, li.song {
+    cursor: default;
+
+    .handle {
+      display: inline-block;
+      float: left;
+      height: 100%;
+      width: $baseline * 1.5;
+      cursor: move;
+
+      img {
+        margin-top: $baseline * 0.4;
+        margin-left: $baseline * 0.3;
+      }
+    }
+
+    .name span {
+      margin-left: 0
+    }
   }
 }

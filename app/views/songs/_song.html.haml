@@ -1,5 +1,5 @@
 %li[song]
-  .handle &nbsp;
+  .handle= image_tag('handle.png')
   .name
     %span= song.name
   = link_to "<span>&times</span>".html_safe, resource_path(song), :confirm => 'Are you sure?', :method => :delete, :class => 'close'
