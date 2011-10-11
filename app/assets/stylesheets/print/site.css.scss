@@ -1,6 +1,14 @@
 @import "bootstrap/preboot.scss";
 
-.topbar, footer, .links, .help-block, .alert-message {
+html, body, .container, .content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  @include border-radius(0);
+}
+
+.topbar, .tabs, footer, .links, .help-block, .alert-message {
   display: none;
 }
 
@@ -9,9 +17,13 @@ li.setlist_item, li.song {
   font-size: $basefont * 1.5;
   line-height: $basefont * 1.8;
   color: black;
+
+  .name {
+    float: none;
+  }
 }
 
 .song-list .count {
-  float: left;
+  float: none;
   margin-left: 6px;
 }
