@@ -1,0 +1,24 @@
+Mon, 10 Oct 2011 08:08:34 -0700
+doc/README_FOR_APP	Thu, 04 Aug 2011 07:56:09 -0700
+app/controllers/application_controller.rb	Sat, 24 Sep 2011 08:37:22 -0700
+app/controllers/band_sessions_controller.rb	Fri, 30 Sep 2011 06:09:31 -0700
+app/controllers/bands_controller.rb	Fri, 30 Sep 2011 08:14:52 -0700
+app/controllers/home_controller.rb	Sat, 24 Sep 2011 08:35:18 -0700
+app/controllers/setlists_controller.rb	Wed, 28 Sep 2011 08:59:10 -0700
+app/controllers/shows_controller.rb	Sat, 24 Sep 2011 08:11:10 -0700
+app/controllers/songs_controller.rb	Wed, 28 Sep 2011 08:59:10 -0700
+app/helpers/application_helper.rb	Thu, 29 Sep 2011 07:42:20 -0700
+app/helpers/band_sessions_helper.rb	Sat, 24 Sep 2011 06:09:06 -0700
+app/helpers/bands_helper.rb	Thu, 04 Aug 2011 08:16:20 -0700
+app/helpers/home_helper.rb	Fri, 23 Sep 2011 19:23:53 -0700
+app/helpers/setlists_helper.rb	Fri, 30 Sep 2011 14:41:34 -0700
+app/helpers/shows_helper.rb	Thu, 15 Sep 2011 23:56:51 -0700
+app/helpers/songs_helper.rb	Thu, 15 Sep 2011 22:55:53 -0700
+app/inputs/date_picker_input.rb	Fri, 30 Sep 2011 09:36:29 -0700
+app/models/band.rb	Wed, 28 Sep 2011 17:39:34 -0700
+app/models/band_session.rb	Sat, 24 Sep 2011 06:57:17 -0700
+app/models/setlist.rb	Tue, 27 Sep 2011 07:18:34 -0700
+app/models/setlist_item.rb	Thu, 29 Sep 2011 06:09:50 -0700
+app/models/setlist_song.rb	Sun, 25 Sep 2011 10:11:03 -0700
+app/models/show.rb	Fri, 16 Sep 2011 00:10:52 -0700
+app/models/song.rb	Wed, 28 Sep 2011 16:25:15 -0700
