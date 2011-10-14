@@ -17,13 +17,10 @@
   .span8
     .song-list#available-songs
       .help-block Drag songs or click +
+      %ul#breaks
+        = render SetlistItem.break
       %ul.connected#available-songs-list
         %li.setlist_item.empty.no-sort No more songs to play!
         = render @setlist.available_items
-      %ul#breaks
-        = render SetlistItem.break
       .count NN songs
     
-
-
-

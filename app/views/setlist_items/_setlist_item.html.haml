@@ -1,6 +1,6 @@
 %li[setlist_item]{:class => setlist_item_class(setlist_item, defined?(setlist_item_counter) ? setlist_item_counter : 0)}
   .name
-    %span= setlist_item.name || 'Break'
+    %span= setlist_item.name || ('&ndash;' * 10 + ' Break ' + '&ndash;' * 10).html_safe
   %a.close{:href=>"#"}
     %span &times
   %a.add{:href=>"#"}
