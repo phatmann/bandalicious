@@ -47,6 +47,8 @@ li.setlist_item, li.song {
   border-style: solid;
   height: $baseline * 1.5;
   margin-top: -1px;
+  white-space: nowrap;
+  overflow: visible;
 
   .close, .add, .edit, .name {
     display: inline-block;
