@@ -1,4 +1,4 @@
-%li[setlist_item]{:class => setlist_item_class(setlist_item, setlist_item_counter)}
+%li[setlist_item]{:class => setlist_item_class(setlist_item, defined?(setlist_item_counter) ? setlist_item_counter : 0)}
   .name
     %span= setlist_item.name || 'Break'
   %a.close{:href=>"#"}
