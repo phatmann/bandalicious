@@ -20,6 +20,10 @@ li.setlist_item, li.song {
   line-height: $basefont * 1.8;
   color: black;
 
+  a.edit, a.close {
+    display: none;
+  }
+
   .name {
     float: none;
   }
