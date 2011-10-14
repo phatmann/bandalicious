@@ -1,4 +1,4 @@
-- title setlist_display_name(@setlist)
+- title setlist_display_name(@setlist), "#{@setlist.songs.size} songs"
 
 %p.help-block Drag songs to reorder
 .song-list#setlist-items
@@ -8,5 +8,3 @@
   .links
     = link_to 'Add/Remove Songs', edit_resource_path
     = link_to 'Print Setlist', '#', :class => 'btn print'
-  .count
-    #{@setlist.songs.size} songs

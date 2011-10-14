@@ -1,4 +1,4 @@
-@import "bootstrap/preboot.scss";
+@import "site/shared.scss";
 
 html, body, .container, .content {
   width: 100%;
@@ -12,6 +12,8 @@ html, body, .container, .content {
   display: none;
 }
 
+$column-length: 25;
+
 li.setlist_item, li.song {
   border: none;
   font-size: $basefont * 1.5;
@@ -21,9 +23,17 @@ li.setlist_item, li.song {
   .name {
     float: none;
   }
+
+  &.page-break {
+    page-break-before: always;
+  }
+
+  &.column-break {
+    margin-top: (1 - floor($baseline * 1.5)) * $column-length;
+  }
+
+  &.column2 {
+    margin-left: $setlistItemWidth + 20px;
+  }
 }
 
-.song-list .count {
-  float: none;
-  margin-left: 6px;
-}

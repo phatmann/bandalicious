@@ -5,7 +5,7 @@
     %title Bandalicious - #{current_band ? current_band.name + ' -' : ''} #{yield(:title)}
     
     = stylesheet_link_tag "bootstrap", "site", :media => "all"
-    = stylesheet_link_tag "print", :xmedia => "print"
+    = stylesheet_link_tag "print", :media => "print"
     = stylesheet_link_tag "/stylesheets/jquery-ui/ui-darkness/jquery-ui.css"
 
     = javascript_include_tag "application"
@@ -19,5 +19,6 @@
       .content{:class => controller_name}
         .page-header
           %h1= yield(:title)
+          .stats= yield(:stats)
         = yield
     = render 'layouts/footer'

@@ -1,4 +1,4 @@
-%li[song]
+%li[song]{:class => 'song ' + column_marking(song_counter)}
   .name
     %span= song.name
   = link_to "<span>&times</span>".html_safe, resource_path(song), :confirm => 'Are you sure?', :method => :delete, :class => 'close'
