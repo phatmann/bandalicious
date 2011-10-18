@@ -32,28 +32,30 @@
 	},
 	"file_history":
 	[
+		"/Users/tony/Documents/bandalicious/app/views/layouts/application.html.haml",
+		"/Users/tony/Documents/bandalicious/app/assets/javascripts/application.js",
+		"/Users/tony/Documents/bandalicious/app/assets/javascripts/setlists.js.coffee",
+		"/Users/tony/Documents/bandalicious/app/assets/javascripts/site.js.coffee",
+		"/Users/tony/Documents/bandalicious/vendor/assets/javascripts/jquery.ui.touch.js",
+		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/site/site.css.scss",
 		"/Users/tony/Documents/bandalicious/app/views/setlist_items/_setlist_item.html.haml",
+		"/Users/tony/Documents/bandalicious/app/views/songs/_song.html.haml",
+		"/Users/tony/Documents/bandalicious/vendor/assets/javascripts/jquery.ui.mouse.touch.js",
+		"/Users/tony/Documents/bandalicious/vendor/assets/javascripts/jquery.ui.touches.js",
 		"/Users/tony/Documents/bandalicious/app/views/setlists/_form.html.haml",
 		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/site/setlists.css.scss",
-		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/site/site.css.scss",
 		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/print/site.css.scss",
-		"/Users/tony/Documents/bandalicious/app/assets/javascripts/site.js.coffee",
-		"/Users/tony/Documents/bandalicious/app/views/layouts/application.html.haml",
 		"/Users/tony/Documents/bandalicious/app/views/setlists/show.html.haml",
-		"/Users/tony/Documents/bandalicious/app/assets/javascripts/setlists.js.coffee",
-		"/Users/tony/Documents/bandalicious/app/assets/javascripts/application.js",
 		"/Users/tony/Documents/bandalicious/app/views/songs/index.html.haml",
 		"/Users/tony/Documents/bandalicious/app/controllers/setlists_controller.rb",
 		"/Users/tony/Documents/bandalicious/app/helpers/setlists_helper.rb",
 		"/Users/tony/Documents/bandalicious/app/helpers/application_helper.rb",
-		"/Users/tony/Documents/bandalicious/app/views/songs/_song.html.haml",
 		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/site/shared.css.scss",
 		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/print.css",
 		"/Users/tony/Documents/bandalicious/config/environments/development.rb",
 		"/Users/tony/Dropbox/Songs/lyrics/scratch.txt",
 		"/Users/tony/Desktop/sortable-handle-issue/index.html",
 		"/Users/tony/Documents/TalentTech/T80c.diff",
-		"/Users/tony/Documents/bandalicious/vendor/assets/javascripts/jquery.ui.mouse.touch.js",
 		"/Users/tony/Documents/bandalicious/vendor/assets/javascripts/xjquery-ui.min.js",
 		"/Users/tony/Documents/bandalicious/app/assets/javascripts/songs.js.coffee",
 		"/Users/tony/Documents/TalentTech/T80b.diff",
@@ -157,9 +159,7 @@
 		"/Users/tony/.profile",
 		"/Users/tony/Documents/TalentTech/src/github/ts_web/app/controllers/api_accounts.rb",
 		"/Users/tony/Documents/TalentTech/src/github/ts_web/app/views/api_accounts/index.html.haml",
-		"/Users/tony/Documents/TalentTech/src/github/ts_web/app/views/api_accounts/new.html.haml",
-		"/Users/tony/Documents/TalentTech/src/github/ts_web/app/views/api_accounts/edit.html.haml",
-		"/Users/tony/Documents/TalentTech/src/github/ts_web/app/views/api_accounts/show.html.haml"
+		"/Users/tony/Documents/TalentTech/src/github/ts_web/app/views/api_accounts/new.html.haml"
 	],
 	"find":
 	{
@@ -184,6 +184,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"addtouch",
 			"inBox",
 			"target",
 			"setlistItemWidth",

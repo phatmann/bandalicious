@@ -5,7 +5,6 @@ module SetlistsHelper
     s
   end
 
-
   def setlist_item_class(setlist_item, index)
     k = 'setlist_item ' + column_marking(index)
     k << ' break' unless setlist_item.song

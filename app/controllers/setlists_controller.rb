@@ -2,7 +2,7 @@ class SetlistsController < InheritedResources::Base
 	belongs_to :band
 	before_filter :fetch_items, :only => [:create, :update]
 	before_filter :require_band
-	custom_actions :resource => [:duplicate, :sort]
+	custom_actions :resource => [:duplicate, :sort, :email]
 
 	def sort
 		item_ids = params['setlist_item'] || []
@@ -24,6 +24,12 @@ class SetlistsController < InheritedResources::Base
 		setlist_copy.items = setlist.items.map{|item| item.dup}
 		setlist_copy.save
 		redirect_to edit_resource_url(setlist_copy)
+	end
+
+	def email
+		setlist = resource
+		SongMailer.setlist_email('thephatmann@gmail.com', setlist).deliver
+		redirect_to resource_url(setlist, :notice => 'Email sent!')
 	end
 
 	private

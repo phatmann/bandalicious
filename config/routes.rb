@@ -11,6 +11,7 @@ Bandalicious::Application.routes.draw do
     resources :setlists do
       post 'sort', :on => :member
       get 'duplicate', :on => :member
+      get 'email', :on => :member
     end
   end
 

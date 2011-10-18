@@ -1,0 +1,9 @@
+!!! 5
+%html
+  %head
+   
+  %body
+    %h1= @setlist_name
+    %ul
+      - for item in @setlist.items
+        %li= item.name || '------- Break -------'
