@@ -37,7 +37,7 @@ footer {
 }
 
 li.setlist_item, li.song {
-  width: $setlistItemWidth;
+  width: 420px;
   list-style-type: none;
   list-style-position: inside;
   color: $gray;
@@ -49,6 +49,7 @@ li.setlist_item, li.song {
   margin-top: -1px;
   white-space: nowrap;
   overflow: visible;
+  cursor: move;
 
   .close, .add, .edit, .name {
     display: inline-block;
@@ -61,15 +62,17 @@ li.setlist_item, li.song {
     }
   }
 
+  .handle {
+    display: none;
+  }
+
   .name {
     float: left;
-    width: $setlistItemWidth - ($setlistBtnWidth * 3);
-    cursor: move;
   }
 
   .close, .add, .edit {
     float: right;
-    width: $setlistBtnWidth;
+    width: $baseline * 1.5;
 
     &:hover {
       text-decoration: none;
@@ -114,5 +117,29 @@ li.setlist_item, li.song {
     float: right;
     color: $grayLight;
     margin-top: 15px;
+  }
+}
+
+/* iPhone and Android styles */
+@media screen and (max-device-width: 480px) {
+  li.setlist_item, li.song {
+    cursor: default;
+
+    .handle {
+      display: inline-block;
+      float: left;
+      height: 100%;
+      width: $baseline * 1.5;
+      cursor: move;
+
+      img {
+        margin-top: $baseline * 0.4;
+        margin-left: $baseline * 0.3;
+      }
+    }
+
+    .name span {
+      margin-left: 0
+    }
   }
 }
