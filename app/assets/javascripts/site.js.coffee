@@ -9,10 +9,11 @@ $ ->
         type: 'post'
         data: $(this).sortable('serialize')
         dataType: 'script'
-  ).disableSelection
+  ).disableSelection()
 
   $("input.date-picker").datepicker(dateFormat: "yy-mm-dd")
   $("a.print").click(-> print())
+  $('.handle:visible').addTouch()
 
 # handles only for multi-touch
 window.dragHandle = -> if $('.handle:visible').length > 0 then '.handle' else null  

@@ -10,14 +10,14 @@ $ ->
     out: -> if $(this).hasClass('empty') then $('li.empty', this).show()
     receive: updateSongCount
     remove: updateSongCount
-  ).disableSelection;
+  ).disableSelection()
 
   $('#available-songs .break').draggable(
     connectToSortable: $('#selected-songs-list')
     helper: 'clone'
     revert: 'invalid'
     handle: dragHandle()
-  ).disableSelection;
+  ).disableSelection()
 
   $('#selected-songs .close').live('click', ->
     $(this).parent().fadeOut('fast', ->
