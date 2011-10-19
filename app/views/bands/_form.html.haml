@@ -5,5 +5,7 @@
     = f.input :email, :required => false, :hint => "The best email address to contact your band"
     = f.input :password
     = f.input :password_confirmation
+    %fieldset
+      = f.input :member_emails, :label => "Band member emails", :hint => "Who gets the setlist? Separate with commas."
   .actions
     = f.button :submit, @band.new_record? ? 'Sign Up' : 'Update Band Info'

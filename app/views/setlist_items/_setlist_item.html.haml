@@ -1,7 +1,7 @@
 %li[setlist_item]{:class => setlist_item_class(setlist_item, defined?(setlist_item_counter) ? setlist_item_counter : 0)}
   .handle= image_tag('handle.png')
   .name
-    %span= setlist_item.name || ('&ndash;' * 10 + ' Break ' + '&ndash;' * 10).html_safe
+    %span= setlist_item.name || (' Break&nbsp;&nbsp;&nbsp;' + '&ndash;' * 30).html_safe
   %a.close{:href=>"#"}
     %span &times
   %a.add{:href=>"#"}
