@@ -6,4 +6,4 @@
     %h1= @setlist_name
     %ul
       - for item in @setlist.items
-        %li= item.name || (' Break&nbsp;&nbsp;&nbsp;' + '&ndash;' * 20).html_safe
+        %li= item.name || '- Break -'

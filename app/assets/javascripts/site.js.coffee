@@ -12,7 +12,7 @@ $ ->
   ).disableSelection()
 
   $("input.date-picker").datepicker(dateFormat: "yy-mm-dd")
-  $("a.print").click(-> print())
+  $("a.print").click(-> print();return false)
   $('.handle:visible').addTouch()
 
 # handles only for multi-touch
