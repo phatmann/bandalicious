@@ -1,3 +1,7 @@
-// Place all the styles related to the bands controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap/preboot.scss";
+
+.bands {
+  textarea {
+    height: $baseline * 6;
+  }
+}

@@ -1,10 +1,8 @@
 class SongMailer < ActionMailer::Base
-  default from: "info@massyfergusonband.com"
-
-  def setlist_email(recipient, setlist)
+  def setlist_email(band, recipients, setlist)
     @setlist_name = "Setlist for #{setlist.name}"
     @setlist_name << " (#{setlist.date.to_formatted_s(:long)})" if setlist.date
     @setlist = setlist
-    mail(:to => recipient, :subject => @setlist_name)
+    mail(:from => band.email, :to => recipients, :subject => @setlist_name)
   end
 end

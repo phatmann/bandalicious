@@ -32,7 +32,7 @@ class SetlistsController < InheritedResources::Base
 		if @band.member_emails.blank?
 			redirect_to edit_band_url(@band), :notice => 'Please fill in the band member emails.'
 		else
-			SongMailer.setlist_email(@band.member_emails, setlist).deliver
+			SongMailer.setlist_email(@band, @band.member_emails, setlist).deliver
 			redirect_to resource_url(setlist), :notice => 'Email sent.'
 		end
 	end

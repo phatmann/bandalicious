@@ -6,6 +6,6 @@
     = f.input :password
     = f.input :password_confirmation
     %fieldset
-      = f.input :member_emails, :label => "Band member emails", :hint => "Who gets the setlist? Separate with commas."
+      = f.input :member_emails, :as => :text, :label => "Band member emails", :input_html => {:class => 'xlarge'}, :hint => "Who gets the setlist? Separate with commas."
   .actions
     = f.button :submit, @band.new_record? ? 'Sign Up' : 'Update Band Info'
