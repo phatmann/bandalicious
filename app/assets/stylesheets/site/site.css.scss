@@ -24,11 +24,33 @@ body {
   }
 }
 
-.content {
+.container-inner {
   margin: 0 -20px;
   background-color: $white;
   padding: 20px;
   @include border-radius(3px);
+  @include clearfix;
+}
+
+.sidebar {
+  float: left;
+  width: 220px;
+  margin-right: 40px;
+
+  h2 {
+    margin: 0 0 10px 0;
+    font-size: $basefont;
+    line-height: $baseline;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+  }
+}
+
+.content {
+  float: left;
 }
 
 footer {
@@ -95,14 +117,6 @@ li.setlist_item, li.song {
 
   ul {
     margin: 0 0 $basefont 0;
-  }
-
-  .links {
-    float: left;
-  }
-
-  .btn {
-    margin-right: 10px;
   }
 }
 

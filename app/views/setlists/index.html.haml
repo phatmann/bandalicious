@@ -1,12 +1,12 @@
 - title 'Setlists'
 
+- content_for :sidebar do
+  = link_to 'New setlist', new_resource_path
+
 %table
   %tbody
     - @setlists.each do |setlist|
       %tr
-        %td= link_to setlist_display_name(setlist), resource_path(setlist)
-        %td= link_to 'copy', duplicate_resource_path(setlist)
-        %td= link_to 'delete', resource_path(setlist), :confirm => 'Are you sure?', :method => :delete
-
-%br
-= link_to 'New Setlist', new_resource_path
+        %td.name= link_to setlist_display_name(setlist), resource_path(setlist)
+        %td.link= link_to 'copy', duplicate_resource_path(setlist)
+        %td.link= link_to 'delete', resource_path(setlist), :confirm => 'Are you sure?', :method => :delete

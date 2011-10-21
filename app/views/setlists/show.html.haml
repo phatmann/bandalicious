@@ -1,11 +1,17 @@
 - title setlist_display_name(@setlist), "#{@setlist.songs.size} songs"
 
-%p.help-block Drag songs to reorder
+- content_for :sidebar do
+  / %h2 Setlist actions
+  %ul
+    %li= link_to 'Edit setlist', edit_resource_path
+    %li= link_to 'Print setlist', '#', :class => 'print'
+    %li= link_to 'Email setlist', email_resource_path
+
 .song-list#setlist-items
   %ul.sortable{'data-sort_url' => sort_resource_path}
     = render @setlist.items
+- if @setlist.items.size > 1
+  %p.help-block Drag songs to reorder
 
-  .links
-    = link_to 'Add/Remove Songs', edit_resource_path
-    = link_to 'Print Setlist', '#', :class => 'btn print'
-    = link_to 'Email Setlist', email_resource_path, :class => 'btn'
+
+

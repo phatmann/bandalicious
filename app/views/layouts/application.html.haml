@@ -16,9 +16,14 @@
     .container
       = render 'layouts/notice'
       = render 'layouts/tabs'
-      .content{:class => controller_name}
+
+      .container-inner{:class => controller_name}
         .page-header
-          %h1= yield(:title)
-          .stats= yield(:stats)
-        = yield
+          %h1= yield :title
+          .stats= yield :stats
+        - unless yield(:sidebar).blank?
+          .sidebar
+            .well
+              = yield :sidebar
+        .content= yield
     = render 'layouts/footer'

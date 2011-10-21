@@ -1,8 +1,10 @@
 - title 'Songs', "#{@songs.size} songs"
 
-%p.help-block Drag songs to reorder
+- content_for :sidebar do
+  = link_to 'Add song', new_resource_path
+
 .song-list
   %ul.sortable{'data-sort_url' => sort_resources_path}
     = render @songs
-
-  .links= link_to 'Add Song', new_resource_path
+- if @songs.size > 1
+  %p.help-block Drag songs to reorder

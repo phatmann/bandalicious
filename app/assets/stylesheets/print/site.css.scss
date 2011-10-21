@@ -1,6 +1,6 @@
 @import "site/shared.scss";
 
-html, body, .container, .content {
+html, body, .container, .container-inner {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@ html, body, .container, .content {
   @include border-radius(0);
 }
 
-.topbar, .tabs, footer, .links, .help-block, .alert-message {
+.sidebar, .topbar, .tabs, footer, .help-block, .alert-message {
   display: none;
 }
 
