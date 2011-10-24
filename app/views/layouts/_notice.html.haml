@@ -2,3 +2,7 @@
   .alert-message.success{:'data-alert'=>"alert"}
     %a.close{:href=>"#"} &times
     = flash[:notice]
+- if flash[:alert]
+  .alert-message.error{:'data-alert'=>"alert"}
+    %a.close{:href=>"#"} &times
+    = flash[:alert]

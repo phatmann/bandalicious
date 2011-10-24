@@ -1,0 +1,11 @@
+= simple_form_for [@band, @member] do |f|
+  .inputs
+    = f.input :name
+    = f.input :email
+    = f.input :cell_phone
+    = f.input :home_phone
+    = f.input :work_phone
+    = f.input :instrument
+
+  .actions
+    = f.button :submit

@@ -7,6 +7,7 @@ Bandalicious::Application.routes.draw do
     end
 
     resources :shows
+    resources :members
 
     resources :setlists do
       post 'sort', :on => :member

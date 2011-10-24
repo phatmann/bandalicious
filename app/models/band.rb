@@ -2,6 +2,7 @@ class Band < ActiveRecord::Base
 	has_many :songs
 	has_many :setlists
 	has_many :shows
+  has_many :members
 
   acts_as_authentic
 

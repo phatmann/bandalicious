@@ -4,5 +4,12 @@
       = link_to 'Songs', band_songs_path(current_band)
     %li{:class => controller_name == 'setlists' ? 'active' : ''}
       = link_to 'Setlists', band_setlists_path(current_band)
+
+    - if controller_name == 'bands' || controller_name == 'members'
+      %li{:class => controller_name == 'bands' ? 'active' : ''}
+        = link_to 'Band Info', edit_band_path(current_band)
+      %li{:class => controller_name == 'members' ? 'active' : ''}
+        = link_to 'Band Members', band_members_path(current_band)
+
     / %li{:class => controller_name == 'shows' ? 'active' : ''}
     /  = link_to 'Shows', band_shows_path(current_band)

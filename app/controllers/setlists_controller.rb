@@ -28,12 +28,13 @@ class SetlistsController < InheritedResources::Base
 
 	def email
 		setlist = resource
+		recipients = @band.members.map(&:email).reject(&:blank?)
 
-		if @band.member_emails.blank?
-			redirect_to edit_band_url(@band), :notice => 'Please fill in the band member emails.'
+		if recipients.empty?
+			redirect_to band_members_path(@band), :alert => 'Please add band members with emails.'
 		else
-			SongMailer.setlist_email(@band, @band.member_emails, setlist).deliver
-			redirect_to resource_url(setlist), :notice => 'Email sent.'
+			SongMailer.setlist_email(@band, recipients, setlist).deliver
+			redirect_to resource_path(setlist), :notice => 'Email sent.'
 		end
 	end
 

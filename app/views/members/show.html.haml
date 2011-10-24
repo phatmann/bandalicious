@@ -1,0 +1,24 @@
+- title 'Band Member'
+- content_for :sidebar do
+  %ul
+    %li= link_to 'Edit Member', edit_resource_path(@member)
+    %li= link_to 'Delete Member', resource_path(@member), :confirm => 'Are you sure?', :method => :delete
+
+%p
+  %b Name:
+  = @member.name
+%p
+  %b Email:
+  = @member.email
+%p
+  %b Cell phone:
+  = @member.cell_phone
+%p
+  %b Home phone:
+  = @member.home_phone
+%p
+  %b Work phone:
+  = @member.work_phone
+%p
+  %b Instrument:
+  = @member.instrument

@@ -1,0 +1,18 @@
+- title 'Band Members'
+
+- content_for :sidebar do
+  = link_to 'Add band member', new_resource_path
+
+%table
+  %tr
+    %th Name
+    %th Email
+    %th
+    %th
+
+  - collection.each do |member|
+    %tr
+      %td= link_to member.name, resource_path(member)
+      %td= member.email
+      %td= link_to 'edit', edit_resource_path(member)
+      %td= link_to 'delete', resource_path(member), :confirm => 'Are you sure?', :method => :delete
