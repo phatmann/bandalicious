@@ -1,7 +1,9 @@
 %li[song]{:class => 'song ' + column_marking(song_counter)}
-  .handle= image_tag('handle.png')
+  - if @edit
+    .handle= image_tag('handle.png')
   .name
     %span= song.name
-  = link_to "<span>&times</span>".html_safe, resource_path(song), :confirm => 'Are you sure?', :method => :delete, :class => 'close'
-  = link_to image_tag('edit.png'), edit_resource_path(song), :class => 'edit'
+  - if @edit
+    = link_to "<span>&times</span>".html_safe, resource_path(song), :confirm => 'Are you sure?', :method => :delete, :class => 'close'
+    = link_to image_tag('edit.png'), edit_resource_path(song), :class => 'edit'
   

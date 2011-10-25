@@ -1,10 +1,16 @@
 - title 'Songs', "#{@songs.size} songs"
 
 - content_for :sidebar do
-  = link_to 'Add song', new_resource_path
-
-.song-list
-  %ul.sortable{'data-sort_url' => sort_resources_path}
-    = render @songs
-- if @songs.size > 1
+  %ul
+    - if @edit
+      %li= link_to 'Done editing', collection_path, :class => 'primary large btn'
+    - else
+      %li= link_to 'Add song', new_resource_path
+      %li= link_to 'Edit songs', collection_path(:edit => true)
+- if @edit && @songs.size > 1
   %p.help-block Drag songs to reorder
+.song-list
+  - if @edit
+    %ul.movable.sortable{'data-sort_url' => sort_resources_path}= render @songs
+  - else
+    %ul= render @songs

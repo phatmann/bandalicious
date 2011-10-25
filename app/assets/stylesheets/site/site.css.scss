@@ -64,14 +64,9 @@ li.setlist_item, li.song {
   list-style-position: inside;
   color: $gray;
   background-color: $white;
-  border-width: 1px;
-  border-color: $grayLighter;
-  border-style: solid;
   height: $baseline * 1.5;
-  margin-top: -1px;
   white-space: nowrap;
   overflow: visible;
-  cursor: move;
 
   .close, .add, .edit, .name {
     display: inline-block;
@@ -109,6 +104,14 @@ li.setlist_item, li.song {
     margin-top: $baseline * 0.6;
     margin-left: $baseline * 0.6;
   }
+}
+
+.movable li {
+  margin-top: -1px;
+  border-width: 1px;
+  border-color: $grayLighter;
+  border-style: solid;
+  cursor: move;
 }
 
 .song-list { 

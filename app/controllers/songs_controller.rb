@@ -3,6 +3,11 @@ class SongsController < InheritedResources::Base
   before_filter :require_band
   custom_actions :collection => :sort
   
+  def index
+    @edit = params[:edit]
+    index!
+  end
+
   def create
     create!(:notice => 'New song added.') { collection_path }
   end

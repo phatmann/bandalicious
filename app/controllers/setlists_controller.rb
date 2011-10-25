@@ -4,6 +4,11 @@ class SetlistsController < InheritedResources::Base
 	before_filter :require_band
 	custom_actions :resource => [:duplicate, :sort, :email]
 
+	def show
+		@edit = params[:edit]
+		show!
+	end
+
 	def sort
 		item_ids = params['setlist_item'] || []
 

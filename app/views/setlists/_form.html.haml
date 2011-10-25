@@ -8,7 +8,7 @@
         = f.label 'Songs'
         .input
           .song-list#selected-songs
-            %ul.connected#selected-songs-list
+            %ul.movable.connected#selected-songs-list
               %li.setlist_item.empty.no-sort Drag songs here.
               = render @setlist.items
             .count NN songs
@@ -17,9 +17,9 @@
   .span8
     .song-list#available-songs
       .help-block Drag songs or click +
-      %ul#breaks
+      %ul.movable#breaks
         = render SetlistItem.break
-      %ul.connected#available-songs-list
+      %ul.movable.connected#available-songs-list
         %li.setlist_item.empty.no-sort No more songs to play!
         = render @setlist.available_items
       .count NN songs
