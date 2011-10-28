@@ -1,6 +1,7 @@
-class Show < ActiveRecord::Base
-	belongs_to :band
-	belongs_to :setlist
+require 'spec_helper'
+
+describe Show do
+  pending "add some examples to (or delete) #{__FILE__}"
 end
 
 # == Schema Information

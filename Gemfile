@@ -11,6 +11,7 @@ gem 'authlogic'
 group :development do
   gem 'sqlite3'
   gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'annotate', :git => 'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
 end
 
 group :test do

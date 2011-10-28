@@ -25,3 +25,31 @@ RSpec.configure do |config|
   # instead of true.
   config.use_transactional_fixtures = true
 end
+
+require 'authlogic/test_case'
+
+module LoginHelper
+  include Authlogic::TestCase
+
+  @@current_band = nil
+
+  def create_band(attrs = {})
+    attrs = attrs.merge(:name => 'LoginBand', :username => 'login_band', :email => 'login_user@example.com',
+                        :password => 'password', :password_confirmation => 'password')
+    band ||= Band.new(attrs)
+  end
+
+  def login_band(band = nil)
+    activate_authlogic
+    @@current_band = band || create_band
+    BandSession.create(@@current_band)
+  end
+
+  def login_admin
+    login_band(create_band(:admin => true))
+  end
+
+  def current_band
+    @@current_band
+  end
+end

@@ -15,3 +15,17 @@ class Setlist < ActiveRecord::Base
     self.available_songs.map{ |song| SetlistItem.new(:song => song) }
   end
 end
+
+# == Schema Information
+#
+# Table name: setlists
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  band_id    :integer
+#  show_id    :integer
+#  created_at :datetime
+#  updated_at :datetime
+#  date       :date
+#
+

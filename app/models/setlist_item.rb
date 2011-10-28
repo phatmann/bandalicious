@@ -19,3 +19,17 @@ class SetlistItem < ActiveRecord::Base
     SetlistItem.new
   end
 end
+
+# == Schema Information
+#
+# Table name: setlist_items
+#
+#  id         :integer         not null, primary key
+#  position   :integer
+#  song_id    :integer
+#  setlist_id :integer
+#  created_at :datetime
+#  updated_at :datetime
+#  name       :string(255)
+#
+
