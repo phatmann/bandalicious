@@ -60,7 +60,7 @@ describe SetlistsController do
 
       it "redirects to the created setlist" do
         post :create, :band_id => current_band.id, :setlist => valid_attributes
-        response.should redirect_to(band_setlist_url(current_band, Setlist.last))
+        response.should redirect_to([current_band, Setlist.last])
       end
     end
 
@@ -94,7 +94,7 @@ describe SetlistsController do
       it "redirects to the setlist" do
         setlist = Setlist.create! valid_attributes
         put :update, :band_id => current_band.id, :id => setlist.id, :setlist => valid_attributes
-        response.should redirect_to(band_setlist_url(current_band, setlist))
+        response.should redirect_to([current_band, setlist])
       end
     end
 

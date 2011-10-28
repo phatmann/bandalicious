@@ -1,7 +1,7 @@
 class SetlistsController < InheritedResources::Base
 	belongs_to :band
-	before_filter :fetch_items, :only => [:create, :update]
 	before_filter :require_band
+	before_filter :fetch_items, :only => [:create, :update]
 	custom_actions :resource => [:duplicate, :sort, :email]
 
 	def show
