@@ -99,7 +99,7 @@ describe MembersController do
     describe "with invalid params" do
       it "assigns the member as @member" do
         member = Member.create! valid_attributes
-        put :update, :band_id => current_band.id, :id => member.id.to_s, :member => {}
+        put :update, :band_id => current_band.id, :id => member.id.to_s, :member => {:name => ''}
         assigns(:member).should eq(member)
       end
 

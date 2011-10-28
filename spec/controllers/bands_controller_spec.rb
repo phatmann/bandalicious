@@ -108,15 +108,12 @@ describe BandsController do
     describe "with invalid params" do
       it "assigns the band as @band" do
         band = Band.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
-        Band.any_instance.stub(:save).and_return(false)
-        put :update, :id => band.id.to_s, :band => {}
+        put :update, :id => band.id.to_s, :band => {:name => ''}
         assigns(:band).should eq(band)
       end
 
       it "re-renders the 'edit' template" do
         band = Band.create! valid_attributes
-        # Trigger the behavior that occurs when invalid params are submitted
         put :update, :id => band.id.to_s, :band => {:name => ''}
         response.should_not redirect_to('/')
         response.should render_template("edit")
