@@ -1,30 +1,32 @@
 require 'spec_helper'
 
-describe "band_members/new.html.haml" do
+describe "members/new.html.haml" do
+  include LoginHelper
+
   before(:each) do
-    assign(:band_member, stub_model(BandMember,
+    login_band
+    assign(:band, current_band)
+    assign(:member, stub_model(Member,
       :name => "MyString",
       :email => "MyString",
       :cell_phone => "MyString",
       :home_phone => "MyString",
       :work_phone => "MyString",
       :instrument => "MyString",
-      :band => ""
+      :band_id => current_band.id
     ).as_new_record)
   end
 
-  it "renders new band_member form" do
+  it "renders new member form" do
     render
 
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "form", :action => band_members_path, :method => "post" do
-      assert_select "input#band_member_name", :name => "band_member[name]"
-      assert_select "input#band_member_email", :name => "band_member[email]"
-      assert_select "input#band_member_cell_phone", :name => "band_member[cell_phone]"
-      assert_select "input#band_member_home_phone", :name => "band_member[home_phone]"
-      assert_select "input#band_member_work_phone", :name => "band_member[work_phone]"
-      assert_select "input#band_member_instrument", :name => "band_member[instrument]"
-      assert_select "input#band_member_band", :name => "band_member[band]"
+    assert_select "form", :action => band_members_path(current_band), :method => "post" do
+      assert_select "input#member_name", :name => "member[name]"
+      assert_select "input#member_email", :name => "member[email]"
+      assert_select "input#member_cell_phone", :name => "member[cell_phone]"
+      assert_select "input#member_home_phone", :name => "member[home_phone]"
+      assert_select "input#member_work_phone", :name => "member[work_phone]"
+      assert_select "input#member_instrument", :name => "member[instrument]"
     end
   end
 end

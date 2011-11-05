@@ -1,33 +1,31 @@
 require 'spec_helper'
 
-describe "band_members/show.html.haml" do
+describe "members/show.html.haml" do
+  include LoginHelper
+
   before(:each) do
-    @band_member = assign(:band_member, stub_model(BandMember,
+    login_band
+    @member = assign(:member, stub_model(Member,
       :name => "Name",
       :email => "Email",
       :cell_phone => "Cell Phone",
       :home_phone => "Home Phone",
       :work_phone => "Work Phone",
       :instrument => "Instrument",
-      :band => ""
+      :band_id => current_band.id
     ))
   end
 
   it "renders attributes in <p>" do
+    view.stub(:resource_path).and_return("#")
+    view.stub(:edit_resource_path).and_return("#")
     render
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Name/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Email/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Cell Phone/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Home Phone/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Work Phone/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Instrument/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(//)
   end
 end

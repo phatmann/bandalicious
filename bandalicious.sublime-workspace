@@ -7,22 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/models/band.rb",
-			"settings":
-			{
-				"buffer_size": 749,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "spec/controllers/bands_controller_spec.rb",
-			"settings":
-			{
-				"buffer_size": 4408,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
@@ -48,24 +32,47 @@
 	},
 	"file_history":
 	[
+		"/Users/tony/Documents/bandalicious/spec/models/member_spec.rb",
+		"/Users/tony/Documents/bandalicious/spec/helpers/band_sessions_helper_spec.rb",
+		"/Users/tony/Documents/bandalicious/app/controllers/songs_controller.rb",
+		"/Users/tony/Documents/bandalicious/app/models/song.rb",
+		"/Users/tony/Documents/bandalicious/spec/controllers/songs_controller_spec.rb",
+		"/Users/tony/Documents/bandalicious/spec/controllers/members_controller_spec.rb",
+		"/Users/tony/Documents/bandalicious/spec/models/show_spec.rb",
+		"/Users/tony/Documents/bandalicious/app/views/shows/_form.html.haml",
+		"/Users/tony/Documents/bandalicious/spec/controllers/shows_controller_spec.rb",
+		"/Users/tony/Documents/bandalicious/spec/controllers/setlists_controller_spec.rb",
+		"/Users/tony/Documents/bandalicious/app/models/show.rb",
+		"/Users/tony/Documents/bandalicious/app/controllers/setlists_controller.rb",
+		"/Users/tony/Documents/bandalicious/app/controllers/shows_controller.rb",
+		"/Users/tony/Documents/bandalicious/spec/controllers/bands_controller_spec.rb",
+		"/Users/tony/Documents/bandalicious/app/models/setlist.rb",
+		"/Users/tony/Documents/bandalicious/app/views/shows/index.html.haml",
+		"/Users/tony/Documents/bandalicious/app/controllers/members_controller.rb",
+		"/Users/tony/Documents/bandalicious/app/controllers/bands_controller.rb",
+		"/Users/tony/Documents/bandalicious/app/models/member.rb",
+		"/Users/tony/Documents/bandalicious/spec/spec_helper.rb",
+		"/Users/tony/Documents/bandalicious/spec/controllers/home_controller_spec.rb",
+		"/Users/tony/Documents/bandalicious/app/models/band.rb",
+		"/Users/tony/Documents/bandalicious/app/views/bands/index.html.haml",
+		"/Users/tony/Documents/bandalicious/spec/models/song_spec.rb",
+		"/Users/tony/Documents/bandalicious/spec/models/band_spec.rb",
+		"/Users/tony/Documents/bandalicious/spec/models/setlist_spec.rb",
+		"/Users/tony/Documents/bandalicious/spec/models/setlist_song_spec.rb",
 		"/Users/tony/Documents/Massy Ferguson/site/config.ru",
 		"/Users/tony/Documents/bandalicious/Gemfile",
 		"/Users/tony/Documents/bandalicious/Rakefile",
-		"/Users/tony/Documents/bandalicious/spec/controllers/bands_controller_spec.rb",
 		"/Users/tony/Documents/bandalicious/app/views/setlists/show.html.haml",
 		"/Users/tony/Documents/bandalicious/app/views/members/show.html.haml",
 		"/Users/tony/Documents/bandalicious/app/views/members/index.html.haml",
 		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/print/site.css.scss",
 		"/Users/tony/Documents/bandalicious/app/views/songs/index.html.haml",
-		"/Users/tony/Documents/bandalicious/app/controllers/songs_controller.rb",
 		"/Users/tony/Documents/bandalicious/app/views/songs/_song.html.haml",
 		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/site/site.css.scss",
-		"/Users/tony/Documents/bandalicious/app/controllers/setlists_controller.rb",
 		"/Users/tony/Documents/bandalicious/app/views/setlists/_form.html.haml",
 		"/Users/tony/Documents/bandalicious/app/assets/javascripts/site.js.coffee",
 		"/Users/tony/Documents/bandalicious/app/views/layouts/_tabs.html.haml",
 		"/Users/tony/Documents/bandalicious/config/routes.rb",
-		"/Users/tony/Documents/bandalicious/app/controllers/members_controller.rb",
 		"/Users/tony/Documents/bandalicious/app/views/members/_form.html.haml",
 		"/Users/tony/Documents/bandalicious/app/views/layouts/_notice.html.haml",
 		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/bootstrap/forms.scss",
@@ -79,7 +86,6 @@
 		"/Users/tony/Documents/bandalicious/app/views/bands/_form.html.haml",
 		"/Users/tony/Documents/bandalicious/app/views/bands/new.html.haml",
 		"/Users/tony/Documents/bandalicious/app/models/band_member.rb",
-		"/Users/tony/Documents/bandalicious/app/models/band.rb",
 		"/Users/tony/Documents/bandalicious/db/migrate/20111024123449_create_members.rb",
 		"/Users/tony/Documents/bandalicious/app/views/\nmembers/new.html.haml",
 		"/Users/tony/Documents/bandalicious/app/views/band_members/index.html.haml",
@@ -139,7 +145,6 @@
 		"/Users/tony/Documents/bandalicious/bandalicious.sublime-workspace",
 		"/Users/tony/Documents/bandalicious/config/initializers/session_store.rb",
 		"/Users/tony/Documents/bandalicious/config.ru",
-		"/Users/tony/Documents/bandalicious/app/controllers/bands_controller.rb",
 		"/Users/tony/Documents/bandalicious/config/environment.rb",
 		"/Users/tony/Documents/bandalicious/config/initializers/secret_token.rb",
 		"/Users/tony/Documents/bandalicious/vendor/ruby/1.8/gems/bcrypt-ruby-3.0.1/ext/mri/Makefile",
@@ -154,28 +159,7 @@
 		"/Users/tony/Documents/bandaliscious/app/views/shows/index.html.haml",
 		"/Users/tony/Documents/bandaliscious/Gemfile",
 		"/Users/tony/Documents/bandaliscious/app/assets/javascripts/application.js",
-		"/Users/tony/Documents/bandaliscious/app/views/setlists/_song.html.haml",
-		"/Users/tony/Documents/bandaliscious/app/views/setlists/show.html.haml",
-		"/Users/tony/Documents/bandaliscious/app/views/setlists/_form.html.haml",
-		"/Users/tony/Documents/bandaliscious/app/assets/stylesheets/setlists.css.scss",
-		"/Users/tony/Documents/bandaliscious/app/assets/stylesheets/bootstrap/forms.scss",
-		"/Users/tony/Documents/bandaliscious/app/assets/javascripts/setlists.js.coffee",
-		"/Users/tony/Documents/bandaliscious/app/controllers/setlists_controller.rb",
-		"/Users/tony/Documents/bandaliscious/config/routes.rb",
-		"/Users/tony/Documents/bandaliscious/app/controllers/setlist_songs_controller.rb",
-		"/Users/tony/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
-		"/Users/tony/Documents/bandaliscious/app/views/songs/index.html.haml",
-		"/Users/tony/Documents/bandaliscious/app/controllers/application_controller.rb",
-		"/Users/tony/Documents/bandaliscious/db/migrate/20110916063213_create_setlists.rb",
-		"/Users/tony/Documents/bandaliscious/db/migrate/20110916065650_create_shows.rb",
-		"/Users/tony/Documents/bandaliscious/config/initializers/wrap_parameters.rb",
-		"/Users/tony/Documents/bandaliscious/app/models/setlist.rb",
-		"/Users/tony/Documents/bandaliscious/app/views/setlists/index.html.haml",
-		"/Users/tony/Documents/bandaliscious/config/initializers/simple_form.rb",
-		"/Users/tony/Documents/bandaliscious/app/views/songs/_form.html.haml",
-		"/Users/tony/Documents/bandaliscious/app/views/shows/_form.html.haml",
-		"/Users/tony/Documents/bandaliscious/app/views/bands/_form.html.haml",
-		"/Users/tony/Documents/bandaliscious/.gitignore"
+		"/Users/tony/Documents/bandaliscious/app/views/setlists/_song.html.haml"
 	],
 	"find":
 	{
@@ -200,6 +184,11 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"redirect_to",
+			"red",
+			"path",
+			"band_member",
+			"BandMember",
 			"email",
 			"@band_",
 			"@band",
@@ -302,6 +291,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"member",
+			"Member",
 			"bandalicious",
 			"api_account"
 		],
@@ -314,63 +305,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/models/band.rb",
-					"settings":
-					{
-						"buffer_size": 749,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "spec/controllers/bands_controller_spec.rb",
-					"settings":
-					{
-						"buffer_size": 4408,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								342,
-								342
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2.0,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 10.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -405,10 +341,6 @@
 		]
 	},
 	"menu_visible": true,
-	"output.find_results":
-	{
-		"height": 110.0
-	},
 	"replace":
 	{
 		"height": 62.0

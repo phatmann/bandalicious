@@ -1,10 +1,15 @@
 require 'spec_helper'
 
 describe "Shows" do
+  include LoginHelper
+
+  before do
+    login_band
+  end
+
   describe "GET /shows" do
     it "works! (now write some real specs)" do
-      # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
-      get shows_path
+      get band_shows_path(current_band)
       response.status.should be(200)
     end
   end

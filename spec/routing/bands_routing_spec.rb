@@ -2,7 +2,6 @@ require "spec_helper"
 
 describe BandsController do
   describe "routing" do
-
     it "routes to #index" do
       get("/bands").should route_to("bands#index")
     end
@@ -30,6 +29,5 @@ describe BandsController do
     it "routes to #destroy" do
       delete("/bands/1").should route_to("bands#destroy", :id => "1")
     end
-
   end
 end

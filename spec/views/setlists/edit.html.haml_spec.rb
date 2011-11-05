@@ -1,15 +1,18 @@
 require 'spec_helper'
 
 describe "setlists/edit.html.haml" do
+  include LoginHelper
+
   before(:each) do
-    @setlist = assign(:setlist, stub_model(Setlist))
+    login_band
+    @band = assign(:band, current_band)
+    @setlist = assign(:setlist, stub_model(Setlist, :name => 'Name', :band_id => @band.id))
   end
 
   it "renders the edit setlist form" do
     render
-
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "form", :action => setlists_path(@setlist), :method => "post" do
+    assert_select "form", :action => band_setlists_path(current_band, @setlist), :method => "post" do
+      assert_select "input#setlist_name", :name => "setlist[name]"
     end
   end
 end

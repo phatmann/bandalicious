@@ -1,44 +1,39 @@
 require 'spec_helper'
 
-describe "band_members/index.html.haml" do
+describe "members/index.html.haml" do
+  include LoginHelper
+
   before(:each) do
-    assign(:band_members, [
-      stub_model(BandMember,
+    login_band
+
+    @members = assign(:members, [
+      stub_model(Member,
         :name => "Name",
         :email => "Email",
         :cell_phone => "Cell Phone",
         :home_phone => "Home Phone",
         :work_phone => "Work Phone",
         :instrument => "Instrument",
-        :band => ""
+        :band_id => current_band.id
       ),
-      stub_model(BandMember,
+      stub_model(Member,
         :name => "Name",
         :email => "Email",
         :cell_phone => "Cell Phone",
         :home_phone => "Home Phone",
         :work_phone => "Work Phone",
         :instrument => "Instrument",
-        :band => ""
+        :band_id => current_band.id
       )
     ])
   end
 
-  it "renders a list of band_members" do
+  it "renders a list of members" do
+    view.stub(:new_resource_path).and_return("#")
+    view.stub(:resource_path).and_return("#")
+    view.stub(:collection).and_return(@members)
     render
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Name".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Email".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "tr>td", :text => "Cell Phone".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "tr>td", :text => "Home Phone".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "tr>td", :text => "Work Phone".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "tr>td", :text => "Instrument".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "tr>td", :text => "".to_s, :count => 2
   end
 end
