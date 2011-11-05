@@ -8,7 +8,7 @@
     %th Name
     %th Email
 
-  - collection.each do |member|
+  - @members.each do |member|
     %tr
       %td= link_to member.name, resource_path(member)
       %td= member.email

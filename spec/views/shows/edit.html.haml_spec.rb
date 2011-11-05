@@ -1,15 +1,18 @@
 require 'spec_helper'
 
 describe "shows/edit.html.haml" do
+  include LoginHelper
+
   before(:each) do
-    @show = assign(:show, stub_model(Show))
+    login_band
+    @band = assign(:band, current_band)
+    @show = assign(:show, stub_model(Show, :name => 'Name', :band_id => @band.id))
   end
 
   it "renders the edit show form" do
     render
-
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "form", :action => shows_path(@show), :method => "post" do
+    assert_select "form", :action => band_shows_path(@band, @show), :method => "post" do
+      assert_select "input#show_name", :name => "show[name]"
     end
   end
 end
