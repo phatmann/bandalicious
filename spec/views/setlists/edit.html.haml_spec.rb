@@ -11,7 +11,7 @@ describe "setlists/edit.html.haml" do
 
   it "renders the edit setlist form" do
     render
-    assert_select "form", :action => band_setlists_path(current_band, @setlist), :method => "post" do
+    assert_select "form", :action => band_setlists_path(@band, @setlist), :method => "post" do
       assert_select "input#setlist_name", :name => "setlist[name]"
     end
   end
