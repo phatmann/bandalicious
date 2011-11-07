@@ -15,7 +15,7 @@ group :development do
 end
 
 group :test do
-  # Pretty printed test output
+  gem "capybara"
   gem 'turn', :require => false
   gem 'cucumber-rails'
 end

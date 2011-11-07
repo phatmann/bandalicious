@@ -7,6 +7,7 @@ describe "setlists/show.html.haml" do
   end
 
   it "renders attributes in <p>" do
+    view.stub(:resource_path).and_return("#")
     view.stub(:edit_resource_path).and_return("#")
     view.stub(:email_resource_path).and_return("#")
     render

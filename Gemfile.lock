@@ -217,6 +217,7 @@ DEPENDENCIES
   acts_as_list!
   annotate!
   authlogic
+  capybara
   coffee-rails (~> 3.1.0)
   cucumber-rails
   haml-rails
