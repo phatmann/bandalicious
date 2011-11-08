@@ -4,13 +4,14 @@ describe "Songs" do
   include LoginHelper
 
   before do
-    login_band
+    login_band_via_form
   end
 
-  describe "GET /songs" do
-    it "works! (now write some real specs)" do
-      get band_songs_path(current_band)
-      response.status.should be(200)
+  describe "/bands/songs" do
+    it "shows list of songs" do
+      song = Factory(:song, :band => current_band)
+      visit band_songs_path(current_band)
+      page.has_content?(song.name)
     end
   end
 end

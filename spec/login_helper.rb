@@ -6,9 +6,8 @@ module LoginHelper
   @@current_band = nil
 
   def create_band(attrs = {})
-    attrs = attrs.merge(:name => 'LoginBand', :username => 'login_band', :email => 'login_user@example.com',
-                        :password => 'password', :password_confirmation => 'password')
-    @@current_band = Band.create(attrs)
+    @@current_band = Factory.build(:band, attrs)
+    @@current_band.save_without_session_maintenance
   end
 
   def login_band(attrs = {})

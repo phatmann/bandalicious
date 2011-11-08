@@ -4,13 +4,14 @@ describe "Members" do
   include LoginHelper
 
   before do
-    login_band
+    login_band_via_form
   end
 
-  describe "GET /members" do
-    it "works! (now write some real specs)" do
-      get band_members_path(current_band)
-      response.status.should be(200)
+  describe "/bands/members" do
+    it "shows list of band members" do
+      member = Factory(:member, :band => current_band)
+      visit band_members_path(current_band)
+      page.has_content?(member.name)
     end
   end
 end

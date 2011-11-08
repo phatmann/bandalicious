@@ -18,6 +18,7 @@ group :test do
   gem "capybara"
   gem 'turn', :require => false
   gem 'cucumber-rails'
+  gem 'factory_girl_rails'
 end
 
 group :production do

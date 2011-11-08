@@ -4,13 +4,14 @@ describe "Setlists" do
   include LoginHelper
 
   before do
-    login_band
+    login_band_via_form
   end
 
-  describe "GET /setlists" do
-    it "works! (now write some real specs)" do
-      get band_setlists_path(current_band)
-      response.status.should be(200)
+  describe "/bands/setlists" do
+    it "shows list of setlists" do
+      setlist = Factory(:setlist, :band => current_band)
+      visit band_setlists_path(current_band)
+      page.has_content?(setlist.name)
     end
   end
 end

@@ -9,14 +9,9 @@ describe "Bands" do
 
   describe "/bands" do
     it "shows list of bands" do
-      Band.create(
-        :name => 'Band1',
-        :username => 'band1',
-        :password => 'band1pw', :password_confirmation => 'band1pw',
-        :email => 'band1@example.com')
-      
+      band = Factory(:band)
       visit bands_path
-      page.has_content?('Band1')
+      page.has_content?(band.name)
     end
   end
 end
