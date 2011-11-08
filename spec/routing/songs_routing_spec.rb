@@ -1,40 +1,33 @@
 require "spec_helper"
 
 describe SongsController do
-  include LoginHelper
-
-  before do
-    login_band
-  end
-
   describe "routing" do
     it "routes to #index" do
-      get("/bands/#{current_band.id}/songs").should route_to("songs#index")
+      get("/bands/1/songs").should route_to("songs#index", :band_id => "1")
     end
 
     it "routes to #new" do
-      get("/bands/#{current_band.id}/songs/new").should route_to("songs#new")
+      get("/bands/1/songs/new").should route_to("songs#new", :band_id => "1")
     end
 
-    it "routes to #show" do
-      get("/bands/#{current_band.id}/songs/1").should route_to("songs#show", :id => "1")
+    it "routes to #song" do
+      get("/bands/1/songs/1").should route_to("songs#show", :band_id => "1", :id => "1")
     end
 
     it "routes to #edit" do
-      get("/bands/#{current_band.id}/songs/1/edit").should route_to("songs#edit", :id => "1")
+      get("/bands/1/songs/1/edit").should route_to("songs#edit", :band_id => "1", :id => "1")
     end
 
     it "routes to #create" do
-      post("/bands/#{current_band.id}/songs").should route_to("songs#create")
+      post("/bands/1/songs").should route_to("songs#create", :band_id => "1")
     end
 
     it "routes to #update" do
-      put("/bands/#{current_band.id}/songs/1").should route_to("songs#update", :id => "1")
+      put("/bands/1/songs/1").should route_to("songs#update", :band_id => "1", :id => "1")
     end
 
     it "routes to #destroy" do
-      delete("/bands/#{current_band.id}/songs/1").should route_to("songs#destroy", :id => "1")
+      delete("/bands/1/songs/1").should route_to("songs#destroy", :band_id => "1", :id => "1")
     end
-
   end
 end
