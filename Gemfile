@@ -19,6 +19,8 @@ group :test do
   gem 'turn', :require => false
   gem 'cucumber-rails'
   gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem 'spork', '~> 0.9.0.rc'
 end
 
 group :production do
