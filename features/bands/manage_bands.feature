@@ -7,9 +7,22 @@ Feature: Manage bands
     Given an admin is logged in
 
   Scenario: List bands
-  #   Given the following bands exist:
-  #     | Name         |
-  #     | Band1        |
-  #     | Band2        |
-  #   When I list the bands
-  #   Then I should see the bands
+    Given the following bands exist:
+      | Name         |
+      | Band1        |
+      | Band2        |
+    When I list the bands
+    Then I should see the bands
+      | Name         |
+      | Band1        |
+      | Band2        |
+
+  Scenario: Delete bands
+    Given the following bands exist:
+      | Name         |
+      | Band1        |
+      | Band2        |
+    When I delete the first band
+    Then I should see the bands
+      | Name         |
+      | Band2        |
