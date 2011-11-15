@@ -7,6 +7,70 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "features/bands/manage_bands.feature",
+			"settings":
+			{
+				"buffer_size": 655,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "features/step_definitions/bands_steps.rb",
+			"settings":
+			{
+				"buffer_size": 189,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "features/step_definitions/login_steps.rb",
+			"settings":
+			{
+				"buffer_size": 882,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/requests/bands_spec.rb",
+			"settings":
+			{
+				"buffer_size": 297,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "features/support/authlogic.rb",
+			"settings":
+			{
+				"buffer_size": 155,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/cucumber.yml",
+			"settings":
+			{
+				"buffer_size": 474,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/login_helper.rb",
+			"settings":
+			{
+				"buffer_size": 762,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 899,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
@@ -32,9 +96,13 @@
 	},
 	"file_history":
 	[
+		"/Users/tony/Documents/bandalicious/features/support/env.rb",
+		"/Users/tony/Documents/bandalicious/features/bands/untitled",
+		"/Users/tony/Documents/bandalicious/Gemfile",
+		"/Users/tony/Documents/bandalicious/spec/login_helper.rb",
+		"/Users/tony/Documents/bandalicious/.rvmrc",
 		"/Users/tony/Documents/bandalicious/spec/requests/bands_spec.rb",
 		"/Users/tony/Documents/bandalicious/spec/factories.rb",
-		"/Users/tony/Documents/bandalicious/spec/login_helper.rb",
 		"/Users/tony/Documents/bandalicious/spec/requests/members_spec.rb",
 		"/Users/tony/Documents/bandalicious/spec/requests/setlists_spec.rb",
 		"/Users/tony/Documents/bandalicious/spec/requests/shows_spec.rb",
@@ -45,7 +113,6 @@
 		"/Users/tony/Documents/bandalicious/spec/routing/songs_routing_spec.rb",
 		"/Users/tony/Documents/bandalicious/spec/spec_helper.rb",
 		"/Users/tony/Documents/bandalicious/app/views/band_sessions/_form.html.haml",
-		"/Users/tony/Documents/bandalicious/Gemfile",
 		"/Users/tony/Documents/bandalicious/spec/controllers/bands_controller_spec.rb",
 		"/Users/tony/Documents/bandalicious/app/views/home/index.html.haml",
 		"/Users/tony/Documents/bandalicious/app/assets/javascripts/site.js.coffee",
@@ -156,10 +223,7 @@
 		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/site/shared.css.scss",
 		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/print.css",
 		"/Users/tony/Documents/bandalicious/config/environments/development.rb",
-		"/Users/tony/Dropbox/Songs/lyrics/scratch.txt",
-		"/Users/tony/Desktop/sortable-handle-issue/index.html",
-		"/Users/tony/Documents/TalentTech/T80c.diff",
-		"/Users/tony/Documents/bandalicious/vendor/assets/javascripts/xjquery-ui.min.js"
+		"/Users/tony/Dropbox/Songs/lyrics/scratch.txt"
 	],
 	"find":
 	{
@@ -319,8 +383,227 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "features/bands/manage_bands.feature",
+					"settings":
+					{
+						"buffer_size": 655,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								632,
+								632
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Cucumber/Cucumber Feature.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "features/step_definitions/bands_steps.rb",
+					"settings":
+					{
+						"buffer_size": 189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								179,
+								179
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "features/step_definitions/login_steps.rb",
+					"settings":
+					{
+						"buffer_size": 882,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "spec/requests/bands_spec.rb",
+					"settings":
+					{
+						"buffer_size": 297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								259,
+								259
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "features/support/authlogic.rb",
+					"settings":
+					{
+						"buffer_size": 155,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								155,
+								155
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "config/cucumber.yml",
+					"settings":
+					{
+						"buffer_size": 474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								340,
+								340
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "spec/login_helper.rb",
+					"settings":
+					{
+						"buffer_size": 762,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 899,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								528,
+								528
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -355,14 +638,6 @@
 		]
 	},
 	"menu_visible": true,
-	"output.exec":
-	{
-		"height": 110.0
-	},
-	"output.tests":
-	{
-		"height": 110.0
-	},
 	"replace":
 	{
 		"height": 62.0
