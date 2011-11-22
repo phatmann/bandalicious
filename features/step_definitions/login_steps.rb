@@ -11,7 +11,6 @@ Given /^a band is logged in as "(.*)"$/ do |username|
   fill_in "Username", :with => username 
   fill_in "Password", :with => 'generic'
   click_on "Login"
-  # response.body.should =~ /Logged/m  
 end
 
 Given /^a band is logged in$/ do

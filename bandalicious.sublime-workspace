@@ -35,7 +35,7 @@
 			"file": "spec/requests/bands_spec.rb",
 			"settings":
 			{
-				"buffer_size": 297,
+				"buffer_size": 287,
 				"line_ending": "Unix"
 			}
 		},
@@ -68,6 +68,14 @@
 			"settings":
 			{
 				"buffer_size": 899,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/setlist_items/_setlist_item.html.haml",
+			"settings":
+			{
+				"buffer_size": 351,
 				"line_ending": "Unix"
 			}
 		}
@@ -383,7 +391,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -473,15 +481,15 @@
 					"file": "spec/requests/bands_spec.rb",
 					"settings":
 					{
-						"buffer_size": 297,
+						"buffer_size": 287,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								259,
-								259
+								0,
+								0
 							]
 						],
 						"settings":
@@ -597,6 +605,32 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/setlist_items/_setlist_item.html.haml",
+					"settings":
+					{
+						"buffer_size": 351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138,
+								138
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
