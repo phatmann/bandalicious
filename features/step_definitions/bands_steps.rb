@@ -13,7 +13,7 @@ end
 
 When /^I sign up with the following info:$/ do |table|
   band_attrs = table.hashes.first
-  visit '/signup'
+  visit signup_path
   fill_in 'Band name', :with => band_attrs[:name]
   fill_in 'Username',  :with => band_attrs[:username]
   fill_in 'Email',     :with => band_attrs[:email]
