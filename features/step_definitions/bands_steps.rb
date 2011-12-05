@@ -3,7 +3,7 @@ When /^I list the bands$/ do
 end
 
 Then /^I should see the bands:$/ do |table|
-  actual_table = tableish('tr', 'td:first')
+  actual_table = all('tr').map{|tr| [tr.find('td:first').text]}
   table.diff!(actual_table)
 end
 

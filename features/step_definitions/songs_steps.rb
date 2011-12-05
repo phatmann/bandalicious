@@ -9,7 +9,7 @@ When /^I list the songs$/ do
 end
 
 Then /^I should see the songs:$/ do |table|
-  actual_table = tableish('.song-list ul li', '.name span')
+  actual_table = all('.song-list ul li').map {|li| [li.find('.name span').text]}
   table.diff!(actual_table)
 end
 
@@ -54,4 +54,15 @@ When /^I delete the song "(.*)"$/ do |name|
     And I find the song "#{name}"
     And I click on the song delete link
   }
+end
+
+When /^I move the song "([^"]*)" under "([^"]*)"$/ do |name1, name2|
+  page.execute_script %Q{
+    var song1 = $(".name span:contains('#{name1}')").parent().parent(); 
+    var song2 = $(".name span:contains('#{name2}')").parent().parent();  
+    distance_between_elements = song2.offset().top - song1.offset().top;
+    height_of_elements = song1.height();
+    dy = (distance_between_elements * ($('li.song').size() - 1)) + height_of_elements/2;
+    song1.simulate('drag', {dx:0, dy:dy});
+  }     
 end

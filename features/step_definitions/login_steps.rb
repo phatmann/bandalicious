@@ -1,33 +1,38 @@
 Given /^a band is logged in as "(.*)"$/ do |username|
-  @current_band = Factory.build(:band,
+  @current_band = Factory(:band,
     :username => username,
     :password => 'generic',
     :email => "#{username}@example.com",
     :admin => (username == 'admin')
   )
-  @current_band.save_without_session_maintenance
+  
+  #@current_band.save_without_session_maintenance
 
-  visit "/" 
+  visit "/"
   fill_in "Username", :with => username 
   fill_in "Password", :with => 'generic'
   click_on "Login"
 end
 
 Given /^a band is logged in$/ do
-  Then %Q{a band is logged in as "sample_band"}
+  steps %Q{Given a band is logged in as "sample_band"}
 end
 
 Given /^an admin is logged in$/ do
-  Then %Q{a band is logged in as "admin"}
+  steps %Q{Given a band is logged in as "admin"}
 end
 
 Given /^a band is logged in as "(.*)" without form$/ do |username|
-  @current_band = Factory(:band,
+  @current_band = Factory.build(:band,
     :username => username,
     :password => 'generic',
-    :email => "#{login}@example.com",
+    :email => "#{username}@example.com",
     :admin => (username == 'admin')
   )
   
   BandSession.create!(@current_band)
+end
+
+Given /^a band is logged in without form$/ do
+  steps %Q{Given a band is logged in as "sample_band" without form}
 end

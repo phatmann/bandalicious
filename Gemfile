@@ -16,10 +16,12 @@ end
 
 group :test do
   gem "capybara"
+  gem "capybara-webkit"
   gem 'turn', :require => false
   gem 'cucumber-rails'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
+  gem 'minitest'
   gem 'spork', '~> 0.9.0.rc'
 end
 

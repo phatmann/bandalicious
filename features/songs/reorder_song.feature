@@ -1,4 +1,6 @@
 @javascript
+@leave_the_window_open
+@allow_rescue
 
 Feature: Reorder song
   As a band
@@ -11,6 +13,13 @@ Feature: Reorder song
       | Song1       |
       | Song2       |
       | Song3       |
+
+  Scenario: Turn on editing
+    When I turn on song editing
+    Then I should see the songs:
+      | Song1       |
+      | Song3       |
+      | Song2       |
 
   Scenario: Reorder song
     When I move the song "Song2" under "Song3"
