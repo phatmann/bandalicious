@@ -1,7 +1,3 @@
-@javascript
-@leave_the_window_open
-@allow_rescue
-
 Feature: Reorder song
   As a band
   I need to move songs around
@@ -18,8 +14,8 @@ Feature: Reorder song
     When I turn on song editing
     Then I should see the songs:
       | Song1       |
-      | Song3       |
       | Song2       |
+      | Song3       |
 
   Scenario: Reorder song
     When I move the song "Song2" under "Song3"

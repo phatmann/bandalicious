@@ -38,6 +38,6 @@ Bandalicious::Application.configure do
   config.active_support.deprecation = :stderr
 
   # Asset settings
-  config.assets.compress = false
-  config.assets.debug    = true
+  #config.assets.compress = false
+  #config.assets.debug    = true
 end

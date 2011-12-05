@@ -57,6 +57,7 @@ When /^I delete the song "(.*)"$/ do |name|
 end
 
 When /^I move the song "([^"]*)" under "([^"]*)"$/ do |name1, name2|
+  pending
   page.execute_script %Q{
     var song1 = $(".name span:contains('#{name1}')").parent().parent(); 
     var song2 = $(".name span:contains('#{name2}')").parent().parent();  
