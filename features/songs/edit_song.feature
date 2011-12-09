@@ -11,7 +11,9 @@ Feature: Edit song
       | Song3       |
 
   Scenario: Edit song
-    When I change the name of song "Song1" to "Song1x"
+    When I edit song "Song1"
+    And I change the name of song to "Song1x"
+    And I save the song
     Then I should see the songs:
       | Song1x      |
       | Song2       |

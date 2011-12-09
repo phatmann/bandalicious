@@ -37,14 +37,19 @@ And /I click on the song delete link/ do
   @song.find('a.close').click
 end
 
-When /^I change the name of song "([^"]*)" to "([^"]*)"$/ do |name, new_name|
+When /^I edit song "(.*)"$/ do |name|
   steps %Q{
     When I turn on song editing
     And I find the song "#{name}"
     And I click on the song edit link
   }
-  
-  fill_in "Name", :with => new_name
+end
+
+When /^I change the name of song to "(.*)"$/ do |name|
+  fill_in "Name", :with => name
+end
+
+When /^I save the song$/ do
   click_on "Update Song"
 end
 
