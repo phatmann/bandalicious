@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
 gem 'jquery-rails'
+gem 'jquery-ui-themes'
 gem 'rspec-rails'
 gem 'haml-rails'
 gem 'inherited_resources'
@@ -23,6 +24,7 @@ group :test do
   gem 'database_cleaner'
   gem 'minitest'
   gem 'spork'
+  gem "selenium-webdriver", "~> 2.17.0"
 end
 
 group :production do

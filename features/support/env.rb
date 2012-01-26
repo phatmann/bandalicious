@@ -8,7 +8,7 @@ Spork.prefork do
   Dir.glob(File.join(File.dirname(__FILE__), '../../spec/factories/*.rb')).each {|f| require f }
 
   Capybara.default_selector = :css
-  #Capybara.javascript_driver = :webkit
+  Capybara.javascript_driver = :webkit
 end
  
 Spork.each_run do
