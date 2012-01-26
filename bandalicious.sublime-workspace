@@ -8,18 +8,10 @@
 	"buffers":
 	[
 		{
-			"file": "features/songs/reorder_song.feature",
+			"file": "features/setlists/make_setlist.feature",
 			"settings":
 			{
-				"buffer_size": 586,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "features/step_definitions/login_steps.rb",
-			"settings":
-			{
-				"buffer_size": 980,
+				"buffer_size": 424,
 				"line_ending": "Unix"
 			}
 		},
@@ -27,7 +19,23 @@
 			"file": "features/step_definitions/songs_steps.rb",
 			"settings":
 			{
-				"buffer_size": 1841,
+				"buffer_size": 1887,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "features/step_definitions/setlists_steps.rb",
+			"settings":
+			{
+				"buffer_size": 406,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/setlists/_form.html.haml",
+			"settings":
+			{
+				"buffer_size": 841,
 				"line_ending": "Unix"
 			}
 		}
@@ -56,23 +64,44 @@
 	},
 	"file_history":
 	[
+		"/Users/tony/Documents/bandalicious/app/views/setlist_items/_setlist_item.html.haml",
+		"/Users/tony/Documents/bandalicious/features/setlists/remove_song_from_setlist.feature",
+		"/Users/tony/Documents/bandalicious/features/setlists/add_song_to_setlist.feature",
+		"/Users/tony/Documents/bandalicious/features/songs/list_songs.feature",
+		"/Users/tony/Documents/bandalicious/features/setlists/list_setlists.feature",
+		"/Users/tony/Documents/bandalicious/features/setlists/edit_setlist.feature",
+		"/Users/tony/Documents/bandalicious/features/setlists/reorder_setlist_items.feature",
+		"/Users/tony/Documents/bandalicious/features/songs/edit_song.feature",
+		"/Users/tony/Documents/bandalicious/vendor/ruby/1.9.1/gems/gherkin-2.6.8/features/feature_parser.feature",
+		"/Users/tony/Documents/bandalicious/vendor/ruby/1.9.1/gems/gherkin-2.6.8/features/escaped_pipes.feature",
+		"/Users/tony/Documents/bandalicious/vendor/ruby/1.9.1/gems/gherkin-2.6.8/examples/parse_and_output_json.rb",
+		"/Users/tony/Documents/bandalicious/vendor/ruby/1.9.1/gems/gherkin-2.6.8/lib/gherkin/i18n.yml",
+		"/Users/tony/Documents/bandalicious/vendor/ruby/1.9.1/gems/gherkin-2.6.8/lib/gherkin/tag_expression.rb",
+		"/Users/tony/Documents/bandalicious/vendor/ruby/1.9.1/gems/gherkin-2.6.8/lib/gherkin/parser/meta.txt",
+		"/Users/tony/Documents/bandalicious/vendor/ruby/1.9.1/gems/gherkin-2.6.8/lib/gherkin/parser/steps.txt",
+		"/Users/tony/Documents/bandalicious/vendor/ruby/1.9.1/gems/gherkin-2.6.8/lib/gherkin/parser/root.txt",
+		"/Users/tony/Documents/bandalicious/vendor/ruby/1.9.1/gems/gherkin-2.6.8/lib/gherkin/parser/parser.rb",
+		"/Users/tony/Documents/bandalicious/vendor/ruby/1.9.1/gems/gherkin-2.6.8/lib/gherkin.rb",
+		"/Users/tony/Documents/bandalicious/vendor/ruby/1.9.1/gems/gherkin-2.6.8/lib/gherkin_lexer_en.bundle",
+		"/Users/tony/Documents/bandalicious/features/setlists/make_setlist.feature",
+		"/Users/tony/Documents/bandalicious/features/step_definitions/songs_steps.rb",
 		"/Users/tony/Documents/bandalicious/features/step_definitions/login_steps.rb",
+		"/Users/tony/Documents/bandalicious/features/songs/reorder_song.feature",
+		"/Users/tony/Documents/bandalicious/app/views/setlists/_form.html.haml",
+		"/Users/tony/Documents/bandalicious/features/setlists/new_setlist.feature",
+		"/Users/tony/Documents/bandalicious/features/sets/new_setlist.feature",
 		"/Users/tony/Documents/bandalicious/features/support/env.rb",
 		"/Users/tony/Documents/bandalicious/config/environments/test.rb",
 		"/Users/tony/Documents/bandalicious/features/support/authlogic.rb",
-		"/Users/tony/Documents/bandalicious/features/songs/reorder_song.feature",
-		"/Users/tony/Documents/bandalicious/features/step_definitions/songs_steps.rb",
 		"/Users/tony/Documents/bandalicious/features/step_definitions/bands_steps.rb",
 		"/Users/tony/Library/Application Support/Sublime Text 2/Packages/Default/Base File.sublime-settings",
 		"/Users/tony/Library/Application Support/Sublime Text 2/Packages/Default/Global.sublime-settings",
-		"/Users/tony/Documents/bandalicious/features/songs/list_songs.feature",
 		"/Users/tony/Documents/bandalicious/app/assets/javascripts/application.js",
 		"/Users/tony/Documents/bandalicious/Gemfile",
 		"/Users/tony/Documents/bandalicious/features/support/examiners.rb",
 		"/Users/tony/Documents/bandalicious/config/environment.rb",
 		"/Users/tony/Documents/bandalicious/config/cucumber.yml",
 		"/Users/tony/Documents/bandalicious/features/songs/delete_song.feature",
-		"/Users/tony/Documents/bandalicious/features/songs/edit_song.feature",
 		"/Users/tony/Documents/bandalicious/features/songs/add_song.feature",
 		"/Users/tony/Documents/bandalicious/features/bands/signup_band.feature",
 		"/Users/tony/Documents/bandalicious/features/bands/list_bands.feature",
@@ -84,7 +113,6 @@
 		"/Users/tony/Documents/scripts/allow-buffalo-connect",
 		"/Users/tony/Documents/bandalicious/spec/requests/bands_spec.rb",
 		"/Users/tony/Documents/bandalicious/spec/login_helper.rb",
-		"/Users/tony/Documents/bandalicious/app/views/setlist_items/_setlist_item.html.haml",
 		"/Users/tony/Documents/bandalicious/features/bands/untitled",
 		"/Users/tony/Documents/bandalicious/.rvmrc",
 		"/Users/tony/Documents/bandalicious/spec/factories.rb",
@@ -123,7 +151,6 @@
 		"/Users/tony/Documents/bandalicious/app/views/songs/index.html.haml",
 		"/Users/tony/Documents/bandalicious/spec/views/songs/show.html.haml_spec.rb",
 		"/Users/tony/Documents/bandalicious/app/views/songs/show.html.haml",
-		"/Users/tony/Documents/bandalicious/app/views/setlists/_form.html.haml",
 		"/Users/tony/Documents/bandalicious/spec/views/members/edit.html.haml_spec.rb",
 		"/Users/tony/Documents/bandalicious/spec/views/members/new.html.haml_spec.rb",
 		"/Users/tony/Documents/bandalicious/app/views/setlists/edit.html.haml",
@@ -164,26 +191,7 @@
 		"/Users/tony/Documents/bandalicious/app/views/layouts/_notice.html.haml",
 		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/bootstrap/forms.scss",
 		"/Users/tony/Documents/bandalicious/app/views/bands/edit.html.haml",
-		"/Users/tony/Documents/bandalicious/app/views/members/edit.html.haml",
-		"/Users/tony/Documents/bandalicious/app/views/members/new.html.haml",
-		"/Users/tony/Documents/bandalicious/app/views/bands/_tabs.html.haml",
-		"/Users/tony/Documents/bandalicious/app/views/bands/_sidebar.html.haml",
-		"/Users/tony/Documents/bandalicious/app/views/\nmembers/edit.html.haml",
-		"/Users/tony/Documents/bandalicious/app/controllers/band_members_controller.rb",
-		"/Users/tony/Documents/bandalicious/app/views/bands/new.html.haml",
-		"/Users/tony/Documents/bandalicious/app/models/band_member.rb",
-		"/Users/tony/Documents/bandalicious/db/migrate/20111024123449_create_members.rb",
-		"/Users/tony/Documents/bandalicious/app/views/\nmembers/new.html.haml",
-		"/Users/tony/Documents/bandalicious/app/views/band_members/index.html.haml",
-		"/Users/tony/Documents/bandalicious/app/views/band_members/_form.html.haml",
-		"/Users/tony/Documents/bandalicious/db/migrate/20111024123449_create_band_members.rb",
-		"/Users/tony/Documents/bandalicious/app/views/band_members/new.html.haml",
-		"/Users/tony/Documents/bandalicious/app/views/band_members/edit.html.haml",
-		"/Users/tony/Documents/bandalicious/app/views/songs/edit.html.haml",
-		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/site/band_sessions.css.scss",
-		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/site/shows.css.scss",
-		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/site/band_members.css.scss",
-		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/site/songs.css.scss"
+		"/Users/tony/Documents/bandalicious/app/views/members/edit.html.haml"
 	],
 	"find":
 	{
@@ -194,6 +202,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"/Users/tony/Documents/bandalicious/vendor/ruby/1.9.1/gems/gherkin-2.6.8",
 			""
 		]
 	},
@@ -202,6 +211,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"Scenario Outline",
 			"find",
 			"tableish",
 			"webrat",
@@ -352,18 +362,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "features/songs/reorder_song.feature",
+					"file": "features/setlists/make_setlist.feature",
 					"settings":
 					{
-						"buffer_size": 586,
+						"buffer_size": 424,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								144,
+								144
 							]
 						],
 						"settings":
@@ -380,18 +390,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "features/step_definitions/login_steps.rb",
+					"file": "features/step_definitions/songs_steps.rb",
 					"settings":
 					{
-						"buffer_size": 980,
+						"buffer_size": 1887,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								147,
-								147
+								784,
+								810
 							]
 						],
 						"settings":
@@ -399,6 +409,32 @@
 							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 309.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "features/step_definitions/setlists_steps.rb",
+					"settings":
+					{
+						"buffer_size": 406,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								321,
+								321
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -407,29 +443,29 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "features/step_definitions/songs_steps.rb",
+					"buffer": 3,
+					"file": "app/views/setlists/_form.html.haml",
 					"settings":
 					{
-						"buffer_size": 1841,
+						"buffer_size": 841,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1408,
-								1408
+								545,
+								561
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 592.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -10,7 +10,7 @@ gem 'authlogic'
 
 group :development do
   gem 'sqlite3'
-  gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'ruby-debug'
   gem 'annotate', :git => 'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
 end
 
@@ -22,7 +22,7 @@ group :test do
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'minitest'
-  gem 'spork', '~> 0.9.0.rc'
+  gem 'spork'
 end
 
 group :production do
@@ -30,8 +30,8 @@ group :production do
 end
 
 group :assets do
-  gem 'sass-rails', "~> 3.1.0"
-  gem 'coffee-rails', "~> 3.1.0"
+  gem 'sass-rails'
+  gem 'coffee-rails'
   gem 'uglifier'
 end
 
