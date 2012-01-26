@@ -34,13 +34,13 @@ Then /^I should see "(.*)" in the selected songs list$/ do |name|
 end
 
 Then /^I should not see "(.*)" in the available songs list$/ do |name|
-  pending
+  page.should_not have_css('#available-songs .name span', :text => name)
 end
 
 Then /^I should see a break in the selected songs list$/ do
-  pending
+  page.should have_css('#selected-songs .break')
 end
 
 Then /^I should see a break above the available songs list$/ do
-  pending
+  page.should have_css('#breaks .break')
 end

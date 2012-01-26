@@ -1,12 +1,12 @@
 Given /^a band is logged in as "(.*)"$/ do |username|
-  @current_band = Factory.build(:band,
+  @current_band = Factory(:band,
     :username => username,
     :password => 'generic',
     :email => "#{username}@example.com",
     :admin => (username == 'admin')
   )
   
-  @current_band.save_without_session_maintenance
+  #@current_band.save_without_session_maintenance
 
   visit "/"
   fill_in "Username", :with => username 
@@ -31,6 +31,7 @@ Given /^a band is logged in as "(.*)" without form$/ do |username|
   )
   
   BandSession.create!(@current_band)
+  visit "/"
 end
 
 Given /^a band is logged in without form$/ do
