@@ -1,5 +1,4 @@
 @javascript
-@allow_rescue
 
 Feature: Add song or break to setlist
   As a band

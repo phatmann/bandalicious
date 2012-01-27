@@ -4,21 +4,19 @@ When /^I create a new setlist$/ do
 end
 
 When /^I add "(.*)" to setlist by clicking$/ do |name|
-  @song = find('#available-songs .name span', :text => name).find(:xpath, '../..')
-  @song.find('a.add').click
+  song = find_song('#available-songs', name).find('a.add').click
 end
 
 When /^I add "(.*)" to setlist by dragging$/ do |name|
-  pending
+  song = find_song('#available-songs', name).drag_to(find('#selected-songs'))
 end
 
 When /^I add a break to setlist by clicking$/ do
-  @song = find('#breaks .name span').find(:xpath, '../..')
-  @song.find('a.add').click
+  song = find_break('#breaks').find('a.add').click
 end
 
 When /^I add a break to setlist by dragging$/ do
-  pending
+  song = find_break('#breaks').drag_to(find('#selected-songs'))
 end
 
 When /^I save the setlist$/ do
