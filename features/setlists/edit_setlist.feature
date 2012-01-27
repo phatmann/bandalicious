@@ -5,16 +5,11 @@ Feature: Edit setlist
 
   Background:
     Given a band is logged in
-    And the band has the following setlists:
+    And the band has the setlists:
       | Setlist1    |
-      | Setlist2    |
-      | Setlist3    |
     
   Scenario: Edit setlist
     When I edit setlist "Setlist1"
-    And I change the name of setlist "Setlist1" to "Setlist1x"
+    And I change the name of the setlist to "Setlist1x"
     And I save the setlist
-    Then I should see the songs:
-      | Setlist1x   |
-      | Setlist2    |
-      | Setlist3    |
+    Then the setlist name should show as "Setlist1x"

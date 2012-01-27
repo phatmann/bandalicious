@@ -5,7 +5,7 @@ Feature: List setlists
 
   Background:
     Given a band is logged in
-    And the band has the following setlists:
+    And the band has the setlists:
       | Setlist1    |
       | Setlist2    |
       | Setlist3    |

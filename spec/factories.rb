@@ -18,6 +18,7 @@ FactoryGirl.define do
 
   factory :setlist do
     sequence(:name){ |n| "Setlist#{n}" }
+    date { Date.today }
     association :band
   end
 

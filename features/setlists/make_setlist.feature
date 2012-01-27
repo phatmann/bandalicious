@@ -1,3 +1,5 @@
+@javascript
+
 Feature: Make setlist
   As a band
   I need to make a setlist
@@ -12,6 +14,7 @@ Feature: Make setlist
 
   Scenario: Make setlist
     When I create a new setlist
+    And I set the name of the setlist to "Setlist1"
     And I add "Song1" to the setlist
     And I save the setlist
     Then I should see a setlist with the songs:
