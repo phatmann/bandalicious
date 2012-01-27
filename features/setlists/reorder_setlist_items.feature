@@ -1,3 +1,5 @@
+@javascript
+
 Feature: Reorder songs in setlist
   As a band
   I need to reorder songs in the setlist
