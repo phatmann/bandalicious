@@ -8,6 +8,7 @@ gem 'haml-rails'
 gem 'inherited_resources'
 gem 'thin'
 gem 'authlogic'
+gem 'acts_as_list'
 
 group :development do
   gem 'sqlite3'
@@ -39,6 +40,3 @@ end
 
 # Get version 2.0 (not released yet)
 gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
-
-# Need patch for handling default scope
-gem 'acts_as_list', :git => 'git://github.com/swanandp/acts_as_list.git'
