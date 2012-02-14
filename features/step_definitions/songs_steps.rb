@@ -61,14 +61,10 @@ When /^I delete the song "(.*)"$/ do |name|
   }
 end
 
-When /^I move the song "([^"]*)" under "([^"]*)"$/ do |name1, name2|
-  pending
+When /^I drag song "([^"]*)" down one song$/ do |name|
   page.execute_script %Q{
-    var song1 = $(".name span:contains('#{name1}')").parent().parent(); 
-    var song2 = $(".name span:contains('#{name2}')").parent().parent();  
-    distance_between_elements = song2.offset().top - song1.offset().top;
-    height_of_elements = song1.height();
-    dy = (distance_between_elements * ($('li.song').size() - 1)) + height_of_elements/2;
-    song1.simulate('drag', {dx:0, dy:dy});
-  }     
+    var song = $(".name span:contains('#{name}')").parent().parent(); 
+    song.simulateDragSortable({ move: 1 });
+  } 
+  sleep 1
 end

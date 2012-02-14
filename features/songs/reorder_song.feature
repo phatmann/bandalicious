@@ -1,3 +1,5 @@
+@javascript
+
 Feature: Reorder song
   As a band
   I need to move songs around
@@ -18,8 +20,9 @@ Feature: Reorder song
       | Song3       |
 
   Scenario: Reorder song
-    When I move the song "Song2" under "Song3"
+    When I turn on song editing
+    And I drag song "Song1" down one song
     Then I should see the songs:
+      | Song2       |
       | Song1       |
       | Song3       |
-      | Song2       |
