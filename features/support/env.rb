@@ -8,7 +8,10 @@ Spork.prefork do
   require "factory_girl/step_definitions"
   Dir.glob(File.join(File.dirname(__FILE__), '../../spec/factories/*.rb')).each {|f| require f }
 
-  Capybara.default_selector = :css
+  require 'email_spec'
+  require 'email_spec/cucumber'
+
+  Capybara.default_selector  = :css
   Capybara.javascript_driver = :webkit
 end
  
@@ -23,7 +26,6 @@ Spork.each_run do
 	end
 	
 	ActiveRecord::Base.shared_connection = ActiveRecord::Base.connection
-
   DatabaseCleaner.strategy = :truncation
   ActionController::Base.allow_rescue = false
 end

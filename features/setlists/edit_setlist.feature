@@ -9,7 +9,8 @@ Feature: Edit setlist
       | Setlist1    |
     
   Scenario: Edit setlist
-    When I edit setlist "Setlist1"
+    When I list the setlists
+    And I edit the setlist "Setlist1"
     And I change the name of the setlist to "Setlist1x"
     And I save the setlist
     Then the setlist name should show as "Setlist1x"

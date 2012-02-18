@@ -25,6 +25,7 @@ group :test do
   gem 'database_cleaner'
   gem 'minitest'
   gem 'spork'
+  gem 'email_spec'
   gem "selenium-webdriver", "~> 2.17.0"
 end
 

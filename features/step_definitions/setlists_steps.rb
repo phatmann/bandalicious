@@ -1,3 +1,17 @@
+Given /^the band has the setlists:$/ do |table|
+  table.raw.each do |row|
+    s = Setlist.create(:name => row[0], :date => Date.today, :band => @current_band)
+  end
+end
+
+Given /^the band has a setlist "(.*)" with the songs:$/ do |name, table|
+  setlist = Setlist.create(:name => name, :band => @current_band)
+  table.raw.each do |row|
+    song = Song.create(:name => row[0], :band => @current_band)
+    item = SetlistItem.create(:song_id => song.id, :setlist_id => setlist.id)
+  end
+end
+
 When /^I create a new setlist$/ do
   visit band_setlists_path(@current_band)
   click_on 'New setlist'
@@ -53,14 +67,7 @@ Then /^I should see a break above the available songs list$/ do
   page.should have_css('#breaks .break')
 end
 
-Given /^the band has the setlists:$/ do |table|
-  table.raw.each do |row|
-    s = Setlist.create(:name => row[0], :date => Date.today, :band => @current_band)
-  end
-end
-
-When /^I edit setlist "(.*)"$/ do |name|
-  visit band_setlists_path(@current_band)
+When /^I edit the setlist "(.*)"$/ do |name|
   click_on name
   click_on 'Edit setlist'
 end
@@ -75,6 +82,10 @@ end
 
 When /^I list the setlists$/ do
   visit band_setlists_path(@current_band)
+end
+
+When /^I view the setlist "(.*)"$/ do |name|
+  click_on name
 end
 
 Then /^I should see the setlists:$/ do |table|
