@@ -116,10 +116,23 @@ When /^I remove the break by dragging$/ do
   find_break('#selected-songs').drag_to(find('#available-songs'))
 end
 
-When /^I drag "([^"]*)" down one song$/ do |name|
+When /^I drag "(.*)" down one song$/ do |name|
   page.execute_script %Q{
     var song = $(".name span:contains('#{name}')").parent().parent(); 
     song.simulateDragSortable({ move: 1, listItem:'li:not(.no-sort)', tolerance:'pointer' });
   } 
   sleep 1
+end
+
+When /^I email the setlist "(.*)"$/ do |name|
+  click_on name
+  click_on 'Email setlist'
+end
+
+Then /^"(.*)" will receive an email with the songs:$/ do |member, table|
+  unread_emails_for(member).size.should == 1
+  open_email member
+  table.raw.each do |row|
+    current_email.should have_body_text(row[0])
+  end
 end

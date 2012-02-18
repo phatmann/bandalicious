@@ -29,3 +29,9 @@ Then /^I should see the home page for "(.*)"$/ do |name|
     page.should have_link(name)
   end
 end
+
+Given /^the band has the members:$/ do |table|
+  table.raw.each do |row|
+    Member.create(:name => row[0], :email => row[1], :band => @current_band)
+  end
+end
