@@ -8,8 +8,8 @@
       %li= link_to 'Edit setlist', edit_resource_path
       %li= link_to 'Print setlist', '#', :class => 'print'
       %li= link_to 'Email setlist', email_resource_path
-      %br
-      %li= link_to 'Reorder songs', resource_path(:edit => true)
+      / %br
+      / %li= link_to 'Reorder songs', resource_path(:edit => true)
 
 - if @edit && @setlist.items.size > 1
   %p.help-block Drag songs to reorder
