@@ -37,3 +37,7 @@ end
 When /^I save the member$/ do
   click_on "Update Member"
 end
+
+When /^I list the members$/ do
+  visit band_members_path(@current_band)
+end
