@@ -3,15 +3,40 @@
 	{
 		"selected_items":
 		[
+			[
+				"be",
+				"be_nil"
+			],
+			[
+				"song",
+				"song_ids"
+			],
+			[
+				"should",
+				"should_not"
+			],
+			[
+				"selected",
+				"selected-songs"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "features/setlists/make_setlist.feature",
+			"file": "features/step_definitions/members_steps.rb",
 			"settings":
 			{
-				"buffer_size": 424,
+				"buffer_size": 466,
+				"line_ending": "Unix",
+				"name": "members_steps.rb"
+			}
+		},
+		{
+			"file": "features/members/add_member.feature",
+			"settings":
+			{
+				"buffer_size": 304,
 				"line_ending": "Unix"
 			}
 		},
@@ -19,23 +44,7 @@
 			"file": "features/step_definitions/songs_steps.rb",
 			"settings":
 			{
-				"buffer_size": 1887,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "features/step_definitions/setlists_steps.rb",
-			"settings":
-			{
-				"buffer_size": 406,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/setlists/_form.html.haml",
-			"settings":
-			{
-				"buffer_size": 841,
+				"buffer_size": 1591,
 				"line_ending": "Unix"
 			}
 		}
@@ -46,12 +55,16 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
 		],
-		"width": 530.0
+		"width": 449.0
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 125.0
 	},
 	"distraction_free":
 	{
@@ -64,6 +77,51 @@
 	},
 	"file_history":
 	[
+		"/Users/tmann/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/tmann/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/tmann/Documents/7actions/bandalicious/features/setlists/print_setlist.feature",
+		"/Users/tmann/Documents/7actions/bandalicious/features/setlists/email_setlist.feature",
+		"/Users/tmann/Documents/7actions/bandalicious/features/step_definitions/setlists_steps.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/features/step_definitions/bands_steps.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/features/step_definitions/email_steps.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/features/setlists/show_setlist.feature",
+		"/Users/tmann/Documents/7actions/bandalicious/Gemfile",
+		"/Users/tmann/Documents/7actions/bandalicious/features/support/env.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/features/setlists/edit_setlist.feature",
+		"/Users/tmann/Documents/7actions/bandalicious/features/setlists/make_setlist.feature",
+		"/Users/tmann/Documents/7actions/bandalicious/vendor/assets/javascripts/jquery.simulate.drag-sortable.js",
+		"/Users/tmann/Documents/7actions/bandalicious/app/views/setlists/_form.html.haml",
+		"/Users/tmann/Documents/7actions/bandalicious/app/views/setlist_items/_setlist_item.html.haml",
+		"/Users/tmann/Documents/7actions/bandalicious/features/songs/reorder_song.feature",
+		"/Users/tmann/Documents/7actions/bandalicious/features/step_definitions/songs_steps.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/features/setlists/reorder_setlist_items.feature",
+		"/Users/tmann/Documents/7actions/bandalicious/app/assets/javascripts/setlists.js.coffee",
+		"/Users/tmann/Documents/7actions/bandalicious/app/assets/javascripts/songs.js.coffee",
+		"/Users/tmann/Documents/7actions/bandalicious/public/js/jquery.simulate.drag-sortable.js",
+		"/Users/tmann/Documents/7actions/bandalicious/app/assets/javascripts/site.js.coffee",
+		"/Users/tmann/Documents/7actions/bandalicious/app/views/layouts/application.html.haml",
+		"/Users/tmann/Documents/7actions/bandalicious/app/views/setlists/show.html.haml",
+		"/Users/tmann/Documents/7actions/bandalicious/app/controllers/setlists_controller.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/spec/models/setlist_spec.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/spec/models/setlist_item_spec.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/features/support/helpers/setlists_helpers.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/features/setlists/remove_song_from_setlist.feature",
+		"/Users/tmann/Documents/7actions/bandalicious/spec/factories.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/features/setlists/add_song_to_setlist.feature",
+		"/Users/tmann/Documents/7actions/bandalicious/features/setlists/list_setlists.feature",
+		"/Users/tmann/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/Users/tmann/Library/Application Support/Sublime Text 2/Packages/Default/Base File.sublime-settings",
+		"/Users/tmann/Library/Application Support/Sublime Text 2/Packages/Default/Global.sublime-settings",
+		"/Users/tmann/Documents/7actions/bandalicious/features/support/setlists_helpers.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/features/songs/edit_song.feature",
+		"/Users/tmann/Documents/7actions/bandalicious/app/models/setlist.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/app/models/song.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/features/support/examiners.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/app/assets/stylesheets/site.css",
+		"/Users/tmann/Documents/7actions/bandalicious/features/support/authlogic.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/features/step_definitions/login_steps.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/config/initializers/session_store.rb",
+		"/Users/tmann/Documents/7actions/bandalicious/config/initializers/wrap_parameters.rb",
 		"/Users/tony/Documents/bandalicious/app/views/setlist_items/_setlist_item.html.haml",
 		"/Users/tony/Documents/bandalicious/features/setlists/remove_song_from_setlist.feature",
 		"/Users/tony/Documents/bandalicious/features/setlists/add_song_to_setlist.feature",
@@ -146,52 +204,7 @@
 		"/Users/tony/Documents/bandalicious/spec/views/setlists/edit.html.haml_spec.rb",
 		"/Users/tony/Documents/bandalicious/spec/views/songs/edit.html.haml_spec.rb",
 		"/Users/tony/Documents/bandalicious/spec/views/setlists/new.html.haml_spec.rb",
-		"/Users/tony/Documents/bandalicious/spec/views/songs/new.html.haml_spec.rb",
-		"/Users/tony/Documents/bandalicious/spec/views/songs/index.html.haml_spec.rb",
-		"/Users/tony/Documents/bandalicious/app/views/songs/index.html.haml",
-		"/Users/tony/Documents/bandalicious/spec/views/songs/show.html.haml_spec.rb",
-		"/Users/tony/Documents/bandalicious/app/views/songs/show.html.haml",
-		"/Users/tony/Documents/bandalicious/spec/views/members/edit.html.haml_spec.rb",
-		"/Users/tony/Documents/bandalicious/spec/views/members/new.html.haml_spec.rb",
-		"/Users/tony/Documents/bandalicious/app/views/setlists/edit.html.haml",
-		"/Users/tony/Documents/bandalicious/app/views/members/show.html.haml",
-		"/Users/tony/Documents/bandalicious/app/views/setlists/index.html.haml",
-		"/Users/tony/Documents/bandalicious/spec/controllers/members_controller_spec.rb",
-		"/Users/tony/Documents/bandalicious/app/views/members/_form.html.haml",
-		"/Users/tony/Documents/bandalicious/spec/routing/bands_routing_spec.rb",
-		"/Users/tony/Documents/bandalicious/spec/views/bands/edit.html.haml_spec.rb",
-		"/Users/tony/Documents/bandalicious/spec/models/member_spec.rb",
-		"/Users/tony/Documents/bandalicious/spec/helpers/band_sessions_helper_spec.rb",
-		"/Users/tony/Documents/bandalicious/app/controllers/songs_controller.rb",
-		"/Users/tony/Documents/bandalicious/app/models/song.rb",
-		"/Users/tony/Documents/bandalicious/spec/controllers/songs_controller_spec.rb",
-		"/Users/tony/Documents/bandalicious/spec/models/show_spec.rb",
-		"/Users/tony/Documents/bandalicious/app/views/shows/_form.html.haml",
-		"/Users/tony/Documents/bandalicious/spec/controllers/shows_controller_spec.rb",
-		"/Users/tony/Documents/bandalicious/spec/controllers/setlists_controller_spec.rb",
-		"/Users/tony/Documents/bandalicious/app/models/show.rb",
-		"/Users/tony/Documents/bandalicious/app/controllers/setlists_controller.rb",
-		"/Users/tony/Documents/bandalicious/app/controllers/shows_controller.rb",
-		"/Users/tony/Documents/bandalicious/app/models/setlist.rb",
-		"/Users/tony/Documents/bandalicious/app/controllers/members_controller.rb",
-		"/Users/tony/Documents/bandalicious/app/controllers/bands_controller.rb",
-		"/Users/tony/Documents/bandalicious/app/models/member.rb",
-		"/Users/tony/Documents/bandalicious/spec/controllers/home_controller_spec.rb",
-		"/Users/tony/Documents/bandalicious/spec/models/song_spec.rb",
-		"/Users/tony/Documents/bandalicious/spec/models/band_spec.rb",
-		"/Users/tony/Documents/bandalicious/spec/models/setlist_spec.rb",
-		"/Users/tony/Documents/bandalicious/spec/models/setlist_song_spec.rb",
-		"/Users/tony/Documents/Massy Ferguson/site/config.ru",
-		"/Users/tony/Documents/bandalicious/Rakefile",
-		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/print/site.css.scss",
-		"/Users/tony/Documents/bandalicious/app/views/songs/_song.html.haml",
-		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/site/site.css.scss",
-		"/Users/tony/Documents/bandalicious/app/views/layouts/_tabs.html.haml",
-		"/Users/tony/Documents/bandalicious/config/routes.rb",
-		"/Users/tony/Documents/bandalicious/app/views/layouts/_notice.html.haml",
-		"/Users/tony/Documents/bandalicious/app/assets/stylesheets/bootstrap/forms.scss",
-		"/Users/tony/Documents/bandalicious/app/views/bands/edit.html.haml",
-		"/Users/tony/Documents/bandalicious/app/views/members/edit.html.haml"
+		"/Users/tony/Documents/bandalicious/spec/views/songs/new.html.haml_spec.rb"
 	],
 	"find":
 	{
@@ -211,6 +224,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"# express the regexp above with the code you wish you had",
 			"Scenario Outline",
 			"find",
 			"tableish",
@@ -357,28 +371,29 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "features/setlists/make_setlist.feature",
+					"file": "features/step_definitions/members_steps.rb",
 					"settings":
 					{
-						"buffer_size": 424,
+						"buffer_size": 466,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								144,
-								144
+								259,
+								259
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Cucumber/Cucumber Feature.tmLanguage",
+							"auto_name": "members_steps.rb",
+							"syntax": "Packages/Cucumber/Cucumber Plain Text Feature.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -390,51 +405,25 @@
 				},
 				{
 					"buffer": 1,
-					"file": "features/step_definitions/songs_steps.rb",
+					"file": "features/members/add_member.feature",
 					"settings":
 					{
-						"buffer_size": 1887,
+						"buffer_size": 304,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								784,
-								810
+								304,
+								304
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"syntax": "Packages/Cucumber/Cucumber Plain Text Feature.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 309.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "features/step_definitions/setlists_steps.rb",
-					"settings":
-					{
-						"buffer_size": 406,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								321,
-								321
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -443,24 +432,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/views/setlists/_form.html.haml",
+					"buffer": 2,
+					"file": "features/step_definitions/songs_steps.rb",
 					"settings":
 					{
-						"buffer_size": 841,
+						"buffer_size": 1591,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								545,
-								561
+								368,
+								212
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
