@@ -35,3 +35,19 @@ Given /^the band has the members:$/ do |table|
     Member.create(:name => row[0], :email => row[1], :band => @current_band)
   end
 end
+
+When /^I edit band info$/ do
+  click_on @current_band.name
+end
+
+When /^I change the band name to "(.*)"$/ do |name|
+  fill_in 'Band name', :with => name
+end
+
+When /^I save the band info$/ do
+  click_on 'Update Band Info'
+end
+
+Then /^my band should show as "(.*)"$/ do |name|
+  first('.secondary-nav li:first a').should have_content(name)
+end
