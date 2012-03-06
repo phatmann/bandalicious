@@ -2,8 +2,7 @@
 //= require jquery-ui
 //= require jquery_ujs
 //= require jquery.ui.touch
-//= require bootstrap-alerts
-//= require bootstrap-modal
+//= require bootstrap
 //= require_tree .
 
 // TODO: only require when testing

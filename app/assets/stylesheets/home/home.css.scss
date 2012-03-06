@@ -1,4 +1,5 @@
-@import 'bootstrap/preboot.scss';
+@import "bootstrap";
+/*@import "responsive";*/
 
 body {
   background-color: $black;
@@ -26,6 +27,13 @@ body {
   }
 
   padding: 5px 0px 5px 15px;
+}
+
+footer {
+  margin: 24px 0;
+  padding-top: 24px;
+  border-top: 1px solid #EEE;
+  color: $grayLight;
 }
 
 .hero-unit {

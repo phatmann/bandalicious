@@ -1,4 +1,4 @@
-@import "bootstrap/preboot.scss";
+@import "variables";
 
 .setlists {
   form {
@@ -8,7 +8,7 @@
   .name-input {
     float: left;
     input {
-      width: $basefont * 14;
+      width: $baseFontSize * 14;
     }
   }
 
@@ -16,7 +16,7 @@
     float: left;
     margin-left: 20px;
     input {
-      width: $basefont * 6.5;
+      width: $baseFontSize * 6.5;
     }
   }
 
@@ -42,7 +42,7 @@
   }
 
   #available-songs {
-    margin-top: 87px;
+    margin-top: 57px;
   }
 
   #available-songs, #setlist-items {

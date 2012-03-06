@@ -1,5 +1,5 @@
 .row
-  .span8
+  .span6
     = simple_form_for [@band, @setlist], :html => {:class => 'form-stacked'} do |f|
       .clearfix
         .name-input= f.input :name
@@ -14,7 +14,7 @@
             .count NN songs
       .actions
         = f.button :submit
-  .span8
+  .span6
     .song-list#available-songs
       .help-block Drag songs or click +
       %ul.movable#breaks

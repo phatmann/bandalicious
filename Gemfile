@@ -9,6 +9,7 @@ gem 'inherited_resources'
 gem 'thin'
 gem 'authlogic'
 gem 'acts_as_list'
+gem 'simple_form'
 
 group :development do
   gem 'sqlite3'
@@ -26,7 +27,7 @@ group :test do
   gem 'minitest'
   gem 'spork'
   gem 'email_spec'
-  gem "selenium-webdriver", "~> 2.17.0"
+  gem 'selenium-webdriver'
 end
 
 group :production do
@@ -37,7 +38,7 @@ group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
+  gem 'anjlab-bootstrap-rails', '>= 2.0', :require => 'bootstrap-rails'
 end
 
-# Get version 2.0 (not released yet)
-gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
+

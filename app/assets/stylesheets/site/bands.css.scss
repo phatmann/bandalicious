@@ -1,7 +1,7 @@
-@import "bootstrap/preboot.scss";
+@import "variables";
 
 .bands {
   textarea {
-    height: $baseline * 6;
+    height: $baseLineHeight * 6;
   }
 }

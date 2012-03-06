@@ -1,3 +1,7 @@
+$baseFontSize: 15px;
+
+@import "bootstrap";
+/*@import "responsive";*/
 @import "shared.scss";
 
 html {
@@ -9,12 +13,22 @@ body {
   background-color: $black;
 }
 
-.topbar h3 img {
+footer {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #EEE;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.navbar img {
   float: left;
   margin: 1px 10px 0 0;
 }
 
-.tabs, .pills {
+.nav-tabs, .nav-pills {
   background-color: $black;
   margin-bottom: 0;
   border-bottom: none;
@@ -39,8 +53,8 @@ body {
 
   h2 {
     margin: 0 0 10px 0;
-    font-size: $basefont;
-    line-height: $baseline;
+    font-size: $baseFontSize;
+    line-height: $baseLineHeight;
   }
 
   ul {
@@ -55,6 +69,8 @@ body {
 
 footer {
   padding: 20px;
+  margin: 24px 0;
+  border-top: 1px solid #EEE;
   color: $grayLight;
 }
 
@@ -64,7 +80,7 @@ li.setlist_item, li.song {
   list-style-position: inside;
   color: $gray;
   background-color: $white;
-  height: $baseline * 1.5;
+  height: $baseLineHeight * 1.5;
   white-space: nowrap;
   overflow: visible;
 
@@ -74,8 +90,8 @@ li.setlist_item, li.song {
 
     span, img {
       display: inline-block;
-      margin-top: $baseline * 0.2;
-      margin-left: $baseline * 0.5;
+      margin-top: $baseLineHeight * 0.2;
+      margin-left: $baseLineHeight * 0.5;
     }
   }
 
@@ -89,7 +105,7 @@ li.setlist_item, li.song {
 
   .close, .add, .edit {
     float: right;
-    width: $baseline * 1.5;
+    width: $baseLineHeight * 1.5;
 
     &:hover {
       text-decoration: none;
@@ -101,8 +117,8 @@ li.setlist_item, li.song {
   }
 
   .edit img {
-    margin-top: $baseline * 0.6;
-    margin-left: $baseline * 0.6;
+    margin-top: $baseLineHeight * 0.6;
+    margin-left: $baseLineHeight * 0.6;
   }
 }
 
@@ -119,7 +135,7 @@ li.setlist_item, li.song {
   width: 422px;
 
   ul {
-    margin: 0 0 $basefont 0;
+    margin: 0 0 $baseFontSize 0;
   }
 }
 
@@ -146,12 +162,12 @@ li.setlist_item, li.song {
       display: inline-block;
       float: left;
       height: 100%;
-      width: $baseline * 1.5;
+      width: $baseLineHeight * 1.5;
       cursor: move;
 
       img {
-        margin-top: $baseline * 0.4;
-        margin-left: $baseline * 0.3;
+        margin-top: $baseLineHeight * 0.4;
+        margin-left: $baseLineHeight * 0.3;
       }
     }
 

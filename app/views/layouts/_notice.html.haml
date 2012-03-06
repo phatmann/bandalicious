@@ -1,8 +1,8 @@
 - if flash[:notice]
-  .alert-message.success{:'data-alert'=>"alert"}
+  .alert.success{:'data-dismiss'=>"alert"}
     %a.close{:href=>"#"} &times
     = flash[:notice]
 - if flash[:alert]
-  .alert-message.error{:'data-alert'=>"alert"}
+  .alert.error{:'data-dismiss'=>"alert"}
     %a.close{:href=>"#"} &times
     = flash[:alert]
