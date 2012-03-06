@@ -1,6 +1,6 @@
 .row
   .span6
-    = simple_form_for [@band, @setlist], :html => {:class => 'form-stacked'} do |f|
+    = simple_form_for [@band, @setlist] do |f|
       .clearfix
         .name-input= f.input :name
         .date-input= f.input :date, :as => :date_picker
