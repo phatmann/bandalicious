@@ -1,6 +1,6 @@
 %li[song]{:class => 'song ' + column_marking(song_counter)}
   - if @edit
-    .handle <i class="icon-move"></i>
+    .handle <i class="icon-resize-vertical"></i>
   .name
     = @edit ? link_to(song.name, edit_resource_path(song)) : song.name
   - if @edit
