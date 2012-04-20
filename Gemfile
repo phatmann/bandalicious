@@ -13,8 +13,8 @@ gem 'simple_form'
 
 group :development do
   gem 'sqlite3'
-  gem 'ruby-debug'
-  gem 'annotate', :git => 'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
+  # gem 'ruby-debug'
+  # gem 'annotate', :git => 'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
 end
 
 group :test do

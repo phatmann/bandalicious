@@ -1,10 +1,10 @@
 - title 'Songs', "#{@songs.size} songs"
 
 - content_for :sidebar do
-  %ul
-    - if @edit
-      %li= link_to 'Done editing', collection_path, :class => 'primary large btn'
-    - else
+  - if @edit
+    =link_to 'Done editing', collection_path, :class => 'btn btn-primary'
+  - else
+    %ul.nav.nav-list
       %li= link_to 'Add song', new_resource_path
       %li= link_to 'Edit songs', collection_path(:edit => true)
 - if @edit && @songs.size > 1

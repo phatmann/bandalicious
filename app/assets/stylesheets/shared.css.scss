@@ -1,0 +1,7 @@
+@import "variables";
+
+.footer {
+  @include clearfix;
+  padding: 20px;
+  border-top: 1px solid $black;
+}

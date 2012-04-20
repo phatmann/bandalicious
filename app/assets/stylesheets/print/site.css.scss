@@ -1,5 +1,4 @@
 @import "mixins";
-@import "site/shared.scss";
 
 html, body, .container, .container-inner {
   width: 100%;
@@ -12,33 +11,3 @@ html, body, .container, .container-inner {
 .sidebar, .topbar, .tabs, footer, .help-block, .alert-message {
   display: none;
 }
-
-$column-length: 25;
-
-li.setlist_item, li.song {
-  border: none;
-  font-size: $baseFontSize * 1.5;
-  line-height: $baseFontSize * 1.8;
-  color: black;
-
-  a.edit, a.close {
-    display: none;
-  }
-
-  .name {
-    float: none;
-  }
-
-  &.page-break {
-    page-break-before: always;
-  }
-
-  &.column-break {
-    margin-top: (1 - floor($baseLineHeight * 1.5)) * $column-length;
-  }
-
-  &.column2 {
-    margin-left: $setlistItemWidth + 20px;
-  }
-}
-

@@ -12,17 +12,22 @@
     = csrf_meta_tags
   %body
     = render "layouts/top_bar"
-    .container
-      = render 'layouts/notice'
-      = render 'layouts/tabs'
-
-      .container-inner{:class => controller_name}
-        .page-header
-          %h1= yield :title
-          .stats= yield :stats
-        - unless yield(:sidebar).blank?
-          .sidebar
-            .well
-              = yield :sidebar
-        .content= yield
+    .container-fluid
+      .row-fluid
+        .span12
+          = render 'layouts/notice'
+          = render 'layouts/tabs'
+      .row-fluid
+        .span12
+          .page-header
+            %h1= yield :title
+            .stats= yield :stats
+      - if yield(:sidebar).blank?
+        .row-fluid
+          .span12= yield
+      - else
+        .row-fluid{:class => controller_name}
+          .span2
+            .well= yield :sidebar
+          .span10= yield
     = render 'layouts/footer'

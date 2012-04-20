@@ -2,7 +2,7 @@
   .span6
     = simple_form_for [@band, @setlist] do |f|
       .clearfix
-        .name-input= f.input :name
+        .name-input= f.input :name, :required => false
         .date-input= f.input :date, :as => :date_picker
       .clearfix
         = f.label 'Songs'
@@ -12,7 +12,7 @@
               %li.setlist_item.empty.no-sort Drag songs here.
               = render @setlist.items
             .count NN songs
-      .actions
+      .form-actions
         = f.button :submit
   .span6
     .song-list#available-songs
