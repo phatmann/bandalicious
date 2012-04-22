@@ -5,7 +5,48 @@ body {
   margin-top: 60px;
 }
 
-footer {
+.song-list {
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  .song, .setlist_item {
+    @include clearfix;
+
+    div, a {
+      float: left;
+    }
+  }
+
+  .movable .song, .movable .setlist_item {
+    padding: 2px 0;
+  }
+
+  a {
+    display: inline-block;
+    padding-left: 5px;
+  }
+
+  .handle, .name span {
+    cursor: pointer;
+  }
+}
+
+.page-header {
   @include clearfix;
-  padding: 20px;
+
+  h1 {
+    float: left;
+  }
+
+  h4 {
+    float: right;
+    margin: 10px 0 0 40px;
+  }
+}
+
+.navbar img {
+  float: left;
+  margin: 1px 10px 0 0;
 }

@@ -8,6 +8,6 @@ html, body, .container, .container-inner {
   @include border-radius(0);
 }
 
-.sidebar, .topbar, .tabs, footer, .help-block, .alert-message {
+.sidebar, .navbar, .nav-tabs, footer, .help-block, .alert-message {
   display: none;
 }

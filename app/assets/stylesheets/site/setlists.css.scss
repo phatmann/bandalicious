@@ -1,0 +1,27 @@
+@import "variables";
+
+.setlist_item.break {
+  font-style: italic;
+  color: $grayLight;
+}
+
+#available-songs-list, #selected-songs-list, #breaks {
+  padding-left: 10px;
+}
+
+#available-songs {
+  .remove {
+    display: none;
+  }
+}
+
+#selected-songs {
+  .add {
+    display: none;
+  }
+}
+
+.count {
+  margin-top: $baseLineHeight / 2;
+  color: $gray;
+}

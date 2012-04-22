@@ -21,13 +21,13 @@
         .span12
           .page-header
             %h1= yield :title
-            .stats= yield :stats
+            %h4= yield :stats
       - if yield(:sidebar).blank?
         .row-fluid
           .span12= yield
       - else
         .row-fluid{:class => controller_name}
-          .span2
+          .span2.sidebar
             .well= yield :sidebar
           .span10= yield
     = render 'layouts/footer'

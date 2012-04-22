@@ -1,5 +1,5 @@
 = simple_form_for [@band, @song] do |f|
   .inputs
-    = f.input :name
+    = f.input :name, :required => false
   .actions
     = f.button :submit

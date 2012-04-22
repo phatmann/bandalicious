@@ -4,7 +4,7 @@ $ ->
     scroll: true
     tolerance: 'pointer'
     items: 'li:not(.no-sort)'
-    handle: dragHandle()
+    xhandle: dragHandle()
     create: updateSongCount
     over: -> $('li.empty', this).hide()
     out: -> if $(this).hasClass('empty') then $('li.empty', this).show()
@@ -16,10 +16,10 @@ $ ->
     connectToSortable: $('#selected-songs-list')
     helper: 'clone'
     revert: 'invalid'
-    handle: dragHandle()
+    xhandle: dragHandle()
   ).disableSelection()
 
-  $('#selected-songs .close').live('click', ->
+  $('#selected-songs .remove').live('click', ->
     $(this).parent().fadeOut('fast', ->
       if $(this).hasClass('break')
         $(this).remove()

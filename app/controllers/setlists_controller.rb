@@ -4,9 +4,9 @@ class SetlistsController < InheritedResources::Base
 	before_filter :fetch_items, :only => [:create, :update]
 	custom_actions :resource => [:duplicate, :sort, :email]
 
-	def show
-		@edit = params[:edit]
-		show!
+	def edit
+		@edit = true
+		edit!
 	end
 
 	def sort
